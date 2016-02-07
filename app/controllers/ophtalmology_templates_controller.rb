@@ -1,6 +1,7 @@
 class OphtalmologyTemplatesController < ApplicationController
 	before_action :set_ophtalmology_template, only: [:show, :edit, :update, :destroy]
 	def index
+		@ophtalmology_templates = OphtalmologyTemplate.all
 	end
 	def new 
 		@ophtalmology_template = OphtalmologyTemplate.new
