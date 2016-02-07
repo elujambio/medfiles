@@ -1,0 +1,13 @@
+<p><%= @doctor.name %></p>
+<p><%= @doctor.country %></p>
+<p><%= @doctor.state %></p>
+<p><%= @doctor.city %></p>
+<p><%= @doctor.phone %></p>
+<p><%= @doctor.facebook %></p>
+<p><%= @doctor.website %></p>
+<p><%= @doctor.profession %></p>
+<p><%= @doctor.speciality %></p>
+ 
+<% if doctor_signed_in? and @doctor == current_doctor %>
+	<%= link_to "EDITAR", edit_doctor_registration_path %>
+<% end %>

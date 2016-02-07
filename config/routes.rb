@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :ophtalmology_templates
+  resources :doctors, only: [:show] 
 end
