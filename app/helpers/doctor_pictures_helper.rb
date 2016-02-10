@@ -1,0 +1,2 @@
+module DoctorPicturesHelper
+end

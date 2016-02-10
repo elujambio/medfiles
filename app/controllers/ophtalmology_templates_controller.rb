@@ -1,13 +1,16 @@
 class OphtalmologyTemplatesController < ApplicationController
+	before_action :authenticate_doctor!
 	before_action :set_ophtalmology_template, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_doctor_for_ophtalmology_template!, only: [:show, :edit, :update, :destroy]
 	def index
-		@ophtalmology_templates = OphtalmologyTemplate.all
+		@ophtalmology_templates = OphtalmologyTemplate.where(doctor: current_doctor)
 	end
 	def new 
 		@ophtalmology_template = OphtalmologyTemplate.new
 	end
 	def create
 		@ophtalmology_template = OphtalmologyTemplate.new(ophtalmology_template_params)
+		@ophtalmology_template.doctor = current_doctor
 		if @ophtalmology_template.save 
 			flash[:notice] = "Expediente guardado."
 			redirect_to @ophtalmology_template
@@ -19,7 +22,6 @@ class OphtalmologyTemplatesController < ApplicationController
 	def show 
 	end
 	def edit 
-
 	end 
 	def update
 		if @ophtalmology_template.update(ophtalmology_template_params)

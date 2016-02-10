@@ -5,6 +5,5 @@ class DoctorsController < ApplicationController
 		rescue ActiveRecord::RecordNotFound
 			flash[:alert] = "No encontramos lo que buscabas"
 			redirect_to root_url
-		
 	end
 end
