@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207003537) do
+ActiveRecord::Schema.define(version: 20160210233258) do
+
+  create_table "doctor_pictures", force: :cascade do |t|
+    t.string   "picture"
+    t.integer  "doctor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "doctor_pictures", ["doctor_id"], name: "index_doctor_pictures_on_doctor_id"
 
   create_table "doctors", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -203,6 +212,9 @@ ActiveRecord::Schema.define(version: 20160207003537) do
     t.datetime "created_at",                                              null: false
     t.datetime "updated_at",                                              null: false
     t.string   "email"
+    t.integer  "doctor_id"
   end
+
+  add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"
 
 end
