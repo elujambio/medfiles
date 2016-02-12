@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  husband_name: MyString
+  address: MyText
+  telephone: MyString
+  age: 1
+  husband_age: 1
+  marital_status: MyString
+  ocupation: MyString
+  husband_ocupation: MyString
+  reason: MyText
+  mother_background: MyText
+  father_background: MyText
+  grandparents_background: MyText
+  siblings_background: MyText
+  uncles_background: MyText
+  children_background: MyText
+  diet: MyText
+  smoking: MyText
+  alergies: MyText
+  drugs: MyText
+  alcoholism: MyString
+  inmunizations: MyText
+  traumatics: MyText
+  surigicals: MyText
+  transfusions: MyText
+  menarche: MyString
+  rhythm: MyString
+  dysmenorrhea: MyString
+  circumcised_partner: false
+
+two:
+  name: MyString
+  husband_name: MyString
+  address: MyText
+  telephone: MyString
+  age: 1
+  husband_age: 1
+  marital_status: MyString
+  ocupation: MyString
+  husband_ocupation: MyString
+  reason: MyText
+  mother_background: MyText
+  father_background: MyText
+  grandparents_background: MyText
+  siblings_background: MyText
+  uncles_background: MyText
+  children_background: MyText
+  diet: MyText
+  smoking: MyText
+  alergies: MyText
+  drugs: MyText
+  alcoholism: MyString
+  inmunizations: MyText
+  traumatics: MyText
+  surigicals: MyText
+  transfusions: MyText
+  menarche: MyString
+  rhythm: MyString
+  dysmenorrhea: MyString
+  circumcised_partner: false
