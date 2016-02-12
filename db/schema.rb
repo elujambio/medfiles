@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210233258) do
+ActiveRecord::Schema.define(version: 20160211002236) do
 
   create_table "doctor_pictures", force: :cascade do |t|
     t.string   "picture"
@@ -65,7 +65,6 @@ ActiveRecord::Schema.define(version: 20160210233258) do
     t.string   "insurance_company"
     t.string   "insurance_policy"
     t.boolean  "previous_revisions"
-    t.string   "current"
     t.text     "ailments"
     t.string   "family_hypertension"
     t.string   "family_cardiopathy"
