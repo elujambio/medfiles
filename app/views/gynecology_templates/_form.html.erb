@@ -1,0 +1,118 @@
+<%= form_for(@gynecology_template) do |f| %>
+	<% if @gynecology_template.errors.any? %>
+		<div class="flexie row l-12 major-between minor-center" id="error_explanation">
+			<label><%= pluralize(@gynecology_template.errors.count, "error") %></label>
+			<ul>
+				<% @gynecology_template.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<%= f.text_field :register %><br/>
+	<%= f.text_field :name %><br/>
+	<%= f.text_field :husband_name %><br/>
+	<%= f.text_area :address %><br/>
+	<%= f.text_field :telephone %><br/>
+	<%= f.text_field :age %><br/>
+	<%= f.text_field :husband_age %><br/>
+	<%= f.text_field :marital_status %><br/>
+	<%= f.text_field :ocupation %><br/>
+	<%= f.text_field :husband_ocupation %><br/>
+	<%= f.text_area :reason %><br/>
+	<%= f.text_area :mother_background %><br/>
+	<%= f.text_area :father_background %><br/>
+	<%= f.text_area :grandparents_background %><br/>
+	<%= f.text_area :siblings_background %><br/>
+	<%= f.text_area :parents_siblings_background %><br/>
+	<%= f.text_area :children_background %><br/>
+	<%= f.text_area :husband_background %><br/>
+	<%= f.text_area :personal_background %><br/>
+	<%= f.text_area :diet %><br/>
+	<%= f.text_area :smoking %><br/>
+	<%= f.text_area :alergies %><br/>
+	<%= f.text_area :drugs %><br/>
+	<%= f.text_area :alcoholism %><br/>
+	<%= f.text_area :inmunizations %><br/>
+	<%= f.text_area :traumatics %><br/>
+	<%= f.text_area :surgicals %><br/>
+	<%= f.text_area :transfusions %><br/>
+	<%= f.text_field :menarche %><br/>
+	<%= f.text_field :rhythm %><br/>
+	<%= f.text_field :dysmenorrhea, %><br/> 
+	<%= f.check_box :circumcised_partner %><br/>
+	<%= f.text_field :ivsa %><br/>
+	<%= f.text_field :number_of_sexual_partners %><br/>
+	<%= f.check_box :pms  %><br/>
+	<%= f.text_field :pms_duration %><br/>
+	<%= f.text_field :gestate %><br/>
+	<%= f.text_field :gestate_for %><br/>
+	<%= f.text_field :c_section %><br/>
+	<%= f.text_field :abortions %><br/>
+	<%= f.text_field :ee %><br/>
+	<%= f.text_field :induction %><br/>
+	<%= f.text_field :gestational_age %><br/>
+	<%= f.date_field :fum %><br/>
+	<%= f.date_field :fup %><br/>
+	<%= f.date_field :fua %><br/>
+	<%= f.date_field :fuc %><br/>
+	<%= f.date_field :fpp %><br/>
+	<%= f.text_field :doc %><br/>
+	<%= f.text_area :previous_preganancy_complications %><br/>
+	<%= f.text_area :colposcopy %><br/>
+	<%= f.text_area :sexual_habits %><br/>
+	<%= f.check_box :fridigity %><br/>
+	<%= f.text_field :dyspareunia %><br/>
+	<%= f.check_box :menopause %><br/>
+	<%= f.text_field :menopause_symptomatology %><br/>
+	<%= f.check_box :leucorrea %><br/>
+	<%= f.text_field :leucorrea_treatment %><br/>
+	<%= f.text_field :pregnancy_medication %><br/>
+	<%= f.text_field :ta %><br/>
+	<%= f.text_field :weight %><br/>
+	<%= f.text_field :size %><br/>
+	<%= f.text_field :habitus %><br/>
+	<%= f.text_field :head %><br/>
+	<%= f.text_field :neck %><br/>
+	<%= f.text_field :torax %><br/>
+	<%= f.text_field :abdomen %><br/>
+	<%= f.text_field :limbs %><br/>
+	<%= f.text_field :breasts_appearance %><br/>
+	<%= f.check_box :symetry,  %><br/>
+	<%= f.text_field :skin_abnormalities %><br/>
+	<%= f.text_field :nipple %><br/>
+	<%= f.text_field :abnormal_mass %><br/>
+	<%= f.text_field :axillary_region %><br/>
+	<%= f.text_field :ganglion_growth %><br/>
+	<%= f.text_field :abnormal_secretion %><br/>
+	<%= f.text_field :mastalgia %><br/>
+	<%= f.text_field :external_aspect %><br/>
+	<%= f.text_field :clitoris %><br/>
+	<%= f.text_field :vulva %><br/>
+	<%= f.text_field :pubic_hair %><br/>
+	<%= f.text_field :himen %><br/>
+	<%= f.text_field :introito %><br/>
+	<%= f.text_field :perine %><br/>
+	<%= f.text_field :vaginal_walls %><br/>
+	<%= f.text_field :secreation_and_discharge %><br/>
+	<%= f.text_field :cervix %><br/>
+	<%= f.text_field :uterus_position %><br/>
+	<%= f.text_field :uterus_consistency %><br/>
+	<%= f.text_field :uterus_size %><br/>
+	<%= f.text_field :uterus_form %><br/>
+	<%= f.text_field :annexes %><br/>
+	<%= f.text_field :speculoscopy %><br/>
+	<%= f.text_field :internal_and_external_genitalia %><br/>
+	<%= f.text_field :clinic_pelvimetry %><br/>
+	<%= f.text_field :impression_diagnosis %><br/>
+	<%= f.text_field :other_1 %><br/>
+	<%= f.text_field :other_2 %><br/>
+	<%= f.text_field :other_3 %><br/>
+	<%= f.text_field :other_4 %><br/>
+	<%= f.text_field :other_5 %><br/>
+
+
+
+	<%= f.submit, "Guardar" %>
+<% end %>

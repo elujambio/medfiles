@@ -1,0 +1,104 @@
+es: 
+	register: "Registro"
+	name: "Nombre Completo"
+	husband_name: "Nombre Completo del Esposo"
+	address: "Dirección"
+	telephone: "Teléfono"
+	age: "Edad"
+	husband_age: "Edad del Esposo"
+	marital_status: "Estado Civil"
+	ocupation: "Ocupación"
+	husband_ocupation: "Ocupación del Esposo"
+	reason: "Razón de la Visita"
+	mother_background: "Antecedentes de la Madre"
+	father_background: "Antecedentes del Padre"
+	grandparents_background: "Antecedentes de los Abuelos"
+	siblings_background: "Antecedentes de los Hermanos "
+	parents_siblings_background: "Antecedentes de los Tíos"
+	children_background: "Antecedentes de los Hijos"
+	husband_background: "Antecedentes del Esposo"
+	personal_background: "Antecedentes Personales"
+	diet: "Dieta"
+	smoking: "Tabaquismo"
+	alergies: "Alergias"
+	drugs: "Drogas"
+	alcoholism: "Alcoholismo"
+	inmunizations: "Inmunizaciones"
+	traumatics: "Traumáticos"
+	surgicals: "Quirúrgicos"
+	transfusions: "Transfusiones"
+	menarche: "Menarca"
+	rhythm: "Ritmo"
+	dysmenorrhea: "Dismenorrea"
+	circumcised_partner: "Pareja Circuncidada"
+	ivsa: "I.V.S.A"
+	number_of_sexual_partners: "Número de Parejas Sexuakes"
+	pms: "Síndrome Premenstrual"
+	pms_duration: "Duración del Síndrome Premenstrual"
+	gestate: "Gestación"
+	gestate_for: "Gestación Para"
+	c_section: "Césareas"
+	abortions: "Abortions"
+	ee: "Embarazo Ectópico"
+	induction: "Inducción"
+	gestational_age: "Edad Gestacional"
+	fum: "F.U.M"
+	fup: "F.U.P"
+	fua: "F.U.A"
+	fuc: "F.U.C"
+	fpp: "F.P.P"
+	doc: "Detección Oportuna de Cáncer"
+	previous_preganancy_complications: "Complicaciones Previas en el Embarazo"
+	colposcopy: "Colposcopia"
+	sexual_habits: "Hábitos Sexuales"
+	fridigity: "Frigidez"
+	dyspareunia: "Dispaneurea"
+	menopause: "Menopausia"
+	menopause_symptomatology: "Síntomas de la Menopausia"
+	leucorrea: "Leucorrea"
+	leucorrea_treatment: "Tratamiento de la Leucorrea"
+	pregnancy_medication: "Medicamentos en el Embarazo"
+	ta: "Tensión Arteriañ"
+	weight: "Peso"
+	size: "Altura"
+	habitus: "Habitus"
+	head: "Cabeza"
+	neck: "Cuello"
+	torax: "Tórax"
+	abdomen: "Abdomen"
+	limbs: "Extremidades"
+	breasts_appearance: "Apariencia de los senos"
+	symetry: "Simetría"
+	skin_abnormalities: "Abnormalidades en la Piel"
+	nipple: "Pezón"
+	abnormal_mass: "Masas anormales"
+	axillary_region: "Región Axilar"
+	ganglion_growth: "Crecimiento Ganglionar"
+	abnormal_secretion: "Secreciones Anormales"
+	mastalgia: "Mastalgia"
+	external_aspect: "Aspecto Externo"
+	clitoris: "Clitoris"
+	vulva: "Vuva"
+	pubic_hair:
+	himen:
+	introito:
+	perine:
+	vaginal_walls:
+	secreation_and_discharge:
+	cervix:
+	uterus_position:
+	uterus_consistency:
+	uterus_size:
+	uterus_form:
+	annexes:
+	speculoscopy:
+	internal_and_external_genitalia:
+	clinic_pelvimetry:
+	impression_diagnosis:
+	other_1:
+	other_2:
+	other_3:
+	other_4:
+	other_5:
+
+
