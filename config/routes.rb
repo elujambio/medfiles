@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'ophtalmology_templates#index'
+  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -55,5 +55,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :ophtalmology_templates
+  resources :gynecology_templates
   resources :doctors, only: [:show] 
 end

@@ -11,3 +11,10 @@
 <% if doctor_signed_in? and @doctor == current_doctor %>
 	<%= link_to "EDITAR", edit_doctor_registration_path %>
 <% end %>
+
+<% case @doctor.speciality %>
+	<% when "Ginecología" %>
+		<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %>
+	<% when "Oftalmología" %>
+		<%= link_to "Crear Nuevo Expediente", new_ophtalmology_template_path %>
+<% end %>

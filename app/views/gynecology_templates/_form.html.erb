@@ -9,110 +9,120 @@
 			</ul>
 		</div>
 	<% end %>
+	
+	<%= f.text_field :register, placeholder: true %><br/>
+	<%= f.label :name %><%= f.text_field :name, placeholder: true %><br/>
+	<%= f.label :husband_name %><%= f.text_field :husband_name, placeholder: true %><br/>
+	<%= f.label :address %><%= f.text_area :address, placeholder: true %><br/>
+	<%= f.label :telephone %><%= f.text_field :telephone, placeholder: true %><br/>
+	<%= f.label :age %><%= f.text_field :age, placeholder: true %><br/>
+	<%= f.label :husband_age %><%= f.text_field :husband_age, placeholder: true %><br/>
+	<%= f.label :marital_status %><%= f.select :marital_status, ['Casada', 'Soltera', 'Viuda', 'Divorcidad'], {:prompt => 'Seleccione Uno'} %><br/>
+	<%= f.label :ocupation %><%= f.text_field :ocupation, placeholder: true %><br/>
+	<%= f.label :husband_ocupation %><%= f.text_field :husband_ocupation, placeholder: true %><br/>
+	<%= f.label :reason %><%= f.text_area :reason, placeholder: :reason %><br/>
+	
+	<h3>Antecedentes Familiares</h3>
+	<%= f.label :mother_background %><%= f.text_area :mother_background, placeholder: true %><br/>
+	<%= f.label :father_background %><%= f.text_area :father_background, placeholder: true %><br/>
+	<%= f.label :grandparents_background %><%= f.text_area :grandparents_background, placeholder: true %><br/>
+	<%= f.label :siblings_background %><%= f.text_area :siblings_background, placeholder: true %><br/>
+	<%= f.label :parents_siblings_background %><%= f.text_area :parents_siblings_background, placeholder: true %><br/>
+	<%= f.label :children_background %><%= f.text_area :children_background, placeholder: true %><br/>
+	<%= f.label :husband_background %><%= f.text_area :husband_background, placeholder: true %><br/>
+	<%= f.label :personal_background %><%= f.text_area :personal_background, placeholder: true %><br/>
+	<%= f.label :diet %><%= f.text_area :diet, placeholder: true %><br/>
+	<%= f.label :smoking %><%= f.text_area :smoking, placeholder: true %><br/>
+	<%= f.label :alergies %><%= f.text_area :alergies, placeholder: true %><br/>
+	<%= f.label :drugs %><%= f.text_area :drugs, placeholder: true %><br/>
+	<%= f.label :alcoholism %><%= f.text_area :alcoholism, placeholder: true %><br/>
+	<%= f.label :inmunizations %><%= f.text_area :inmunizations, placeholder: true %><br/>
+	<%= f.label :traumatics %><%= f.text_area :traumatics, placeholder: true %><br/>
+	<%= f.label :surgicals %><%= f.text_area :surgicals, placeholder: true %><br/>
+	<%= f.label :transfusions %><%= f.text_area :transfusions, placeholder: true %><br/>
+	
+	<h3>Antecedentes Gineco - Obstetricos</h3>
+	<%= f.label :menarche %><%= f.text_field :menarche, placeholder: true %><br/>
+	<%= f.label :rhythm %><%= f.text_field :rhythm, placeholder: true %><br/>
+	<%= f.label :dysmenorrhea %><%= f.check_box :dysmenorrhea%><br/> 
+	<%= f.label :circumcised_partner %><%= f.check_box :circumcised_partner%><br/>
+	<%= f.label :ivsa %><%= f.text_field :ivsa, placeholder: true %><br/>
+	<%= f.label :number_of_sexual_partners %><%= f.text_field :number_of_sexual_partners, placeholder: true %><br/>
+	<%= f.label :pms %><%= f.check_box :pms  %><br/>
+	<%= f.label :pms_duration %><%= f.text_field :pms_duration, placeholder: true %><br/>
+	<%= f.label :gestate %><%= f.text_field :gestate, placeholder: true %><br/>
+	<%= f.label :gestate_for %><%= f.text_field :gestate_for, placeholder: true %><br/>
+	<%= f.label :c_section %><%= f.text_field :c_section, placeholder: true %><br/>
+	<%= f.label :abortions %><%= f.text_field :abortions, placeholder: true %><br/>
+	<%= f.label :ee %><%= f.text_field :ee, placeholder: true %><br/>
+	<%= f.label :induction %><%= f.text_field :induction, placeholder: true %><br/>
+	<%= f.label :gestational_age %><%= f.text_field :gestational_age, placeholder: true %><br/>
+	<%= f.label :fum %><%= f.date_field :fum %><br/>
+	<%= f.label :fup %><%= f.date_field :fup %><br/>
+	<%= f.label :fua %><%= f.date_field :fua %><br/>
+	<%= f.label :fuc %><%= f.date_field :fuc %><br/>
+	<%= f.label :fpp %><%= f.date_field :fpp %><br/>
+	<%= f.label :doc %><%= f.text_field :doc, placeholder: true %><br/>
+	<%= f.label :previous_preganancy_complications %><%= f.text_area :previous_preganancy_complications, placeholder: true %><br/>
+	<%= f.label :colposcopy %><%= f.text_area :colposcopy, placeholder: true %><br/>
+	<%= f.label :sexual_habits %><%= f.text_area :sexual_habits, placeholder: true %><br/>
+	<%= f.label :fridigity %><%= f.check_box :fridigity, placeholder: true %><br/>
+	<%= f.label :dyspareunia %><%= f.text_field :dyspareunia, placeholder: true %><br/>
+	<%= f.label :menopause %><%= f.check_box :menopause %><br/>
+	<%= f.label :menopause_symptomatology %><%= f.text_field :menopause_symptomatology, placeholder: true %><br/>
+	<%= f.label :leucorrea %><%= f.check_box :leucorrea %><br/>
+	<%= f.label :leucorrea_treatment %><%= f.text_field :leucorrea_treatment, placeholder: true %><br/>
+	<%= f.label :pregnancy_medication %><%= f.text_field :pregnancy_medication, placeholder: true %><br/>
 
-	<%= f.text_field :register %><br/>
-	<%= f.text_field :name %><br/>
-	<%= f.text_field :husband_name %><br/>
-	<%= f.text_area :address %><br/>
-	<%= f.text_field :telephone %><br/>
-	<%= f.text_field :age %><br/>
-	<%= f.text_field :husband_age %><br/>
-	<%= f.text_field :marital_status %><br/>
-	<%= f.text_field :ocupation %><br/>
-	<%= f.text_field :husband_ocupation %><br/>
-	<%= f.text_area :reason %><br/>
-	<%= f.text_area :mother_background %><br/>
-	<%= f.text_area :father_background %><br/>
-	<%= f.text_area :grandparents_background %><br/>
-	<%= f.text_area :siblings_background %><br/>
-	<%= f.text_area :parents_siblings_background %><br/>
-	<%= f.text_area :children_background %><br/>
-	<%= f.text_area :husband_background %><br/>
-	<%= f.text_area :personal_background %><br/>
-	<%= f.text_area :diet %><br/>
-	<%= f.text_area :smoking %><br/>
-	<%= f.text_area :alergies %><br/>
-	<%= f.text_area :drugs %><br/>
-	<%= f.text_area :alcoholism %><br/>
-	<%= f.text_area :inmunizations %><br/>
-	<%= f.text_area :traumatics %><br/>
-	<%= f.text_area :surgicals %><br/>
-	<%= f.text_area :transfusions %><br/>
-	<%= f.text_field :menarche %><br/>
-	<%= f.text_field :rhythm %><br/>
-	<%= f.text_field :dysmenorrhea, %><br/> 
-	<%= f.check_box :circumcised_partner %><br/>
-	<%= f.text_field :ivsa %><br/>
-	<%= f.text_field :number_of_sexual_partners %><br/>
-	<%= f.check_box :pms  %><br/>
-	<%= f.text_field :pms_duration %><br/>
-	<%= f.text_field :gestate %><br/>
-	<%= f.text_field :gestate_for %><br/>
-	<%= f.text_field :c_section %><br/>
-	<%= f.text_field :abortions %><br/>
-	<%= f.text_field :ee %><br/>
-	<%= f.text_field :induction %><br/>
-	<%= f.text_field :gestational_age %><br/>
-	<%= f.date_field :fum %><br/>
-	<%= f.date_field :fup %><br/>
-	<%= f.date_field :fua %><br/>
-	<%= f.date_field :fuc %><br/>
-	<%= f.date_field :fpp %><br/>
-	<%= f.text_field :doc %><br/>
-	<%= f.text_area :previous_preganancy_complications %><br/>
-	<%= f.text_area :colposcopy %><br/>
-	<%= f.text_area :sexual_habits %><br/>
-	<%= f.check_box :fridigity %><br/>
-	<%= f.text_field :dyspareunia %><br/>
-	<%= f.check_box :menopause %><br/>
-	<%= f.text_field :menopause_symptomatology %><br/>
-	<%= f.check_box :leucorrea %><br/>
-	<%= f.text_field :leucorrea_treatment %><br/>
-	<%= f.text_field :pregnancy_medication %><br/>
-	<%= f.text_field :ta %><br/>
-	<%= f.text_field :weight %><br/>
-	<%= f.text_field :size %><br/>
-	<%= f.text_field :habitus %><br/>
-	<%= f.text_field :head %><br/>
-	<%= f.text_field :neck %><br/>
-	<%= f.text_field :torax %><br/>
-	<%= f.text_field :abdomen %><br/>
-	<%= f.text_field :limbs %><br/>
-	<%= f.text_field :breasts_appearance %><br/>
-	<%= f.check_box :symetry,  %><br/>
-	<%= f.text_field :skin_abnormalities %><br/>
-	<%= f.text_field :nipple %><br/>
-	<%= f.text_field :abnormal_mass %><br/>
-	<%= f.text_field :axillary_region %><br/>
-	<%= f.text_field :ganglion_growth %><br/>
-	<%= f.text_field :abnormal_secretion %><br/>
-	<%= f.text_field :mastalgia %><br/>
-	<%= f.text_field :external_aspect %><br/>
-	<%= f.text_field :clitoris %><br/>
-	<%= f.text_field :vulva %><br/>
-	<%= f.text_field :pubic_hair %><br/>
-	<%= f.text_field :himen %><br/>
-	<%= f.text_field :introito %><br/>
-	<%= f.text_field :perine %><br/>
-	<%= f.text_field :vaginal_walls %><br/>
-	<%= f.text_field :secreation_and_discharge %><br/>
-	<%= f.text_field :cervix %><br/>
-	<%= f.text_field :uterus_position %><br/>
-	<%= f.text_field :uterus_consistency %><br/>
-	<%= f.text_field :uterus_size %><br/>
-	<%= f.text_field :uterus_form %><br/>
-	<%= f.text_field :annexes %><br/>
-	<%= f.text_field :speculoscopy %><br/>
-	<%= f.text_field :internal_and_external_genitalia %><br/>
-	<%= f.text_field :clinic_pelvimetry %><br/>
-	<%= f.text_field :impression_diagnosis %><br/>
-	<%= f.text_field :other_1 %><br/>
-	<%= f.text_field :other_2 %><br/>
-	<%= f.text_field :other_3 %><br/>
-	<%= f.text_field :other_4 %><br/>
-	<%= f.text_field :other_5 %><br/>
+	<h3>Exploración Física</h3>
+	<%= f.label :ta %><%= f.text_field :ta, placeholder: true %><br/>
+	<%= f.label :weight %><%= f.text_field :weight, placeholder: true %><br/>
+	<%= f.label :size %><%= f.text_field :size, placeholder: true %><br/>
+	<%= f.label :habitus %><%= f.text_field :habitus, placeholder: true %><br/>
+	<%= f.label :head %><%= f.text_field :head, placeholder: true %><br/>
+	<%= f.label :neck %><%= f.text_field :neck, placeholder: true %><br/>
+	<%= f.label :torax %><%= f.text_field :torax, placeholder: true %><br/>
+	<%= f.label :abdomen %><%= f.text_field :abdomen, placeholder: true %><br/>
+	<%= f.label :limbs %><%= f.text_field :limbs, placeholder: true %><br/>
+
+	<h3>Exploración de Mamas</h3>
+	<%= f.label :breasts_appearance %><%= f.text_field :breasts_appearance, placeholder: true %><br/>
+	<%= f.label :symetry %><%= f.check_box :symetry  %><br/>
+	<%= f.label :skin_abnormalities %><%= f.text_field :skin_abnormalities, placeholder: true %><br/>
+	<%= f.label :nipple %><%= f.text_field :nipple, placeholder: true %><br/>
+	<%= f.label :abnormal_mass %><%= f.text_field :abnormal_mass, placeholder: true %><br/>
+	<%= f.label :axillary_region %><%= f.text_field :axillary_region, placeholder: true %><br/>
+	<%= f.label :ganglion_growth %><%= f.text_field :ganglion_growth, placeholder: true %><br/>
+	<%= f.label :abnormal_secretion %><%= f.text_field :abnormal_secretion, placeholder: true %><br/>
+	<%= f.label :mastalgia %><%= f.text_field :mastalgia, placeholder: true %><br/>
+	
+	<h3>Exploración Ginecológica</h3>
+	<%= f.label :external_aspect %><%= f.text_field :external_aspect, placeholder: true %><br/>
+	<%= f.label :clitoris %><%= f.text_field :clitoris, placeholder: true %><br/>
+	<%= f.label :vulva %><%= f.text_field :vulva, placeholder: true %><br/>
+	<%= f.label :pubic_hair %><%= f.text_field :pubic_hair, placeholder: true %><br/>
+	<%= f.label :himen %><%= f.text_field :himen, placeholder: true %><br/>
+	<%= f.label :introito %><%= f.text_field :introito, placeholder: true %><br/>
+	<%= f.label :perine %><%= f.text_field :perine, placeholder: true %><br/>
+	<%= f.label :vaginal_walls %><%= f.text_field :vaginal_walls, placeholder: true %><br/>
+	<%= f.label :secreation_and_discharge %><%= f.text_field :secreation_and_discharge, placeholder: true %><br/>
+	<%= f.label :cervix %><%= f.text_field :cervix, placeholder: true %><br/>
+	<%= f.label :uterus_position %><%= f.text_field :uterus_position, placeholder: true %><br/>
+	<%= f.label :uterus_consistency %><%= f.text_field :uterus_consistency, placeholder: true %><br/>
+	<%= f.label :uterus_size %><%= f.text_field :uterus_size, placeholder: true %><br/>
+	<%= f.label :uterus_form %><%= f.text_field :uterus_form, placeholder: true %><br/>
+	<%= f.label :annexes %><%= f.text_field :annexes, placeholder: true %><br/>
+	<%= f.label :speculoscopy %><%= f.text_field :speculoscopy, placeholder: true %><br/>
+	<%= f.label :internal_and_external_genitalia %><%= f.text_field :internal_and_external_genitalia, placeholder: true %><br/>
+	<%= f.label :clinic_pelvimetry %><%= f.text_field :clinic_pelvimetry, placeholder: true %><br/>
+	<%= f.label :impression_diagnosis %><%= f.text_field :impression_diagnosis, placeholder: true %><br/>
+	<%= f.label :other_1 %><%= f.text_field :other_1, placeholder: true %><br/>
+	<%= f.label :other_2 %><%= f.text_field :other_2, placeholder: true %><br/>
+	<%= f.label :other_3 %><%= f.text_field :other_3, placeholder: true %><br/>
+	<%= f.label :other_4 %><%= f.text_field :other_4, placeholder: true %><br/>
+	<%= f.label :other_5 %><%= f.text_field :other_5, placeholder: true %><br/>
 
 
 
-	<%= f.submit, "Guardar" %>
+	<%= f.submit "Guardar" %>
 <% end %>

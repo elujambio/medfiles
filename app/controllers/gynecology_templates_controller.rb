@@ -4,15 +4,15 @@ class GynecologyTemplatesController < ApplicationController
 	before_action :authenticate_doctor_for_gynecology_template!, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@gynecology_templates = GynecologyTemplates.where(doctor: current_doctor)
+		@gynecology_templates = GynecologyTemplate.where(doctor: current_doctor)
 	end
 
 	def new
-		@gynecology_template = GynecologyTemplates.new
+		@gynecology_template = GynecologyTemplate.new
 	end
 
 	def create
-		@gynecology_template = GynecologyTemplates.new(gynecology_template_params)
+		@gynecology_template = GynecologyTemplate.new(gynecology_template_params)
 		@gynecology_template.doctor = current_doctor
 		if @gynecology_template.save
 			flash[:notice] = "Expediente guardado."
