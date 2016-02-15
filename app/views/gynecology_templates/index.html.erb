@@ -1,0 +1,7 @@
+<%= link_to "Nuevo Expediente", new_gynecology_template_path %><br/>
+<% @gynecology_templates.each do |expedient| %>
+	<div>
+		<%= expedient.id %>
+		<%= expedient.name %>
+	</div>
+<% end %>
