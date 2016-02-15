@@ -57,11 +57,11 @@
 	<%= f.label :ee %><%= f.text_field :ee, placeholder: true %><br/>
 	<%= f.label :induction %><%= f.text_field :induction, placeholder: true %><br/>
 	<%= f.label :gestational_age %><%= f.text_field :gestational_age, placeholder: true %><br/>
-	<%= f.label :fum %><%= f.date_field :fum %><br/>
-	<%= f.label :fup %><%= f.date_field :fup %><br/>
-	<%= f.label :fua %><%= f.date_field :fua %><br/>
-	<%= f.label :fuc %><%= f.date_field :fuc %><br/>
-	<%= f.label :fpp %><%= f.date_field :fpp %><br/>
+	<%= f.label :fum %><%= f.date_select :fum, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
+	<%= f.label :fup %><%= f.date_select :fup, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
+	<%= f.label :fua %><%= f.date_select :fua, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
+	<%= f.label :fuc %><%= f.date_select :fuc, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
+	<%= f.label :fpp %><%= f.date_select :fpp, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
 	<%= f.label :doc %><%= f.text_field :doc, placeholder: true %><br/>
 	<%= f.label :previous_preganancy_complications %><%= f.text_area :previous_preganancy_complications, placeholder: true %><br/>
 	<%= f.label :colposcopy %><%= f.text_area :colposcopy, placeholder: true %><br/>
