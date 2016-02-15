@@ -1,0 +1,2 @@
+module GynecologyTemplatesHelper
+end
