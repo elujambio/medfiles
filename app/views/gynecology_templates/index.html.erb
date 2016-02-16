@@ -2,6 +2,6 @@
 <% @gynecology_templates.each do |expedient| %>
 	<div>
 		<%= expedient.id %>
-		<%= expedient.name %>
+		<%= link_to expedient.name, expedient %>
 	</div>
 <% end %>

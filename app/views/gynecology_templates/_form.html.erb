@@ -22,7 +22,7 @@
 	<%= f.label :husband_ocupation %><%= f.text_field :husband_ocupation, placeholder: true %><br/>
 	<%= f.label :reason %><%= f.text_area :reason, placeholder: :reason %><br/>
 	
-	<h3>Antecedentes Familiares</h3>
+	<h3><%= t :family_background %></h3>
 	<%= f.label :mother_background %><%= f.text_area :mother_background, placeholder: true %><br/>
 	<%= f.label :father_background %><%= f.text_area :father_background, placeholder: true %><br/>
 	<%= f.label :grandparents_background %><%= f.text_area :grandparents_background, placeholder: true %><br/>
@@ -41,7 +41,7 @@
 	<%= f.label :surgicals %><%= f.text_area :surgicals, placeholder: true %><br/>
 	<%= f.label :transfusions %><%= f.text_area :transfusions, placeholder: true %><br/>
 	
-	<h3>Antecedentes Gineco - Obstetricos</h3>
+	<h3><%= t :gynecological_background %></h3>
 	<%= f.label :menarche %><%= f.text_field :menarche, placeholder: true %><br/>
 	<%= f.label :rhythm %><%= f.text_field :rhythm, placeholder: true %><br/>
 	<%= f.label :dysmenorrhea %><%= f.check_box :dysmenorrhea%><br/> 
@@ -74,7 +74,7 @@
 	<%= f.label :leucorrea_treatment %><%= f.text_field :leucorrea_treatment, placeholder: true %><br/>
 	<%= f.label :pregnancy_medication %><%= f.text_field :pregnancy_medication, placeholder: true %><br/>
 
-	<h3>Exploración Física</h3>
+	<h3><%= t :physical_exploration %></h3>
 	<%= f.label :ta %><%= f.text_field :ta, placeholder: true %><br/>
 	<%= f.label :weight %><%= f.text_field :weight, placeholder: true %><br/>
 	<%= f.label :size %><%= f.text_field :size, placeholder: true %><br/>
@@ -85,7 +85,8 @@
 	<%= f.label :abdomen %><%= f.text_field :abdomen, placeholder: true %><br/>
 	<%= f.label :limbs %><%= f.text_field :limbs, placeholder: true %><br/>
 
-	<h3>Exploración de Mamas</h3>
+	
+	<h3><%= t :breast_exploration%></h3>
 	<%= f.label :breasts_appearance %><%= f.text_field :breasts_appearance, placeholder: true %><br/>
 	<%= f.label :symetry %><%= f.check_box :symetry  %><br/>
 	<%= f.label :skin_abnormalities %><%= f.text_field :skin_abnormalities, placeholder: true %><br/>
@@ -96,7 +97,7 @@
 	<%= f.label :abnormal_secretion %><%= f.text_field :abnormal_secretion, placeholder: true %><br/>
 	<%= f.label :mastalgia %><%= f.text_field :mastalgia, placeholder: true %><br/>
 	
-	<h3>Exploración Ginecológica</h3>
+	<h3><%= t :gynecological_exploration %></h3>
 	<%= f.label :external_aspect %><%= f.text_field :external_aspect, placeholder: true %><br/>
 	<%= f.label :clitoris %><%= f.text_field :clitoris, placeholder: true %><br/>
 	<%= f.label :vulva %><%= f.text_field :vulva, placeholder: true %><br/>

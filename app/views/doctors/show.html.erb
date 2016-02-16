@@ -12,9 +12,11 @@
 	<%= link_to "EDITAR", edit_doctor_registration_path %>
 <% end %>
 
+
 <% case @doctor.speciality %>
 	<% when "Ginecología" %>
-		<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %>
+		<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %><br/>
+		<%= link_to "Ver todos", gynecology_templates_path %><br/>
 	<% when "Oftalmología" %>
 		<%= link_to "Crear Nuevo Expediente", new_ophtalmology_template_path %>
 <% end %>
