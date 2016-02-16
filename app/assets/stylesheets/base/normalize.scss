@@ -1,0 +1,76 @@
+/*	FLEXIE FRAMEWORK	*/
+/*	PABLO E. LUJAMBIO 	*/
+/*  RESET 				*/
+/* This part resets several stylesheet characteristics that are practical to reset. */
+
+*{
+	margin:0 0;
+	padding:0 0;
+	text-decoration:none;
+	font-weight:normal;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    font-weight: normal;
+    text-decoration: none;
+    text-indent: 0;
+    overflow:none;   
+}
+
+section{
+	display:block;
+}
+a{
+	color:#FAFAFA;
+}
+html,
+body{
+	height:100%;
+	width:100%;
+}
+
+title, script{
+	display:none;
+}
+span{
+	margin:0;
+	padding:0;
+}
+/* INPUT FORMS RESET */
+input[type]
+{
+	-webkit-appearance:none;
+}
+textarea, 
+select, 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"]{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-clip:padding-box;
+	-webkit-border-radius:0;
+	        border-radius:0;
+	background-color:none;
+	color:none;
+	outline:0;
+	margin:none;
+	padding:none;
+	text-align: left;
+	font-size:1em;
+	height: auto;
+	vertical-align: middle;
+	border-width:none;
+	font-family:'Sans-Serif';
+}
