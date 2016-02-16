@@ -54,8 +54,9 @@ ActiveRecord::Schema.define(version: 20160212195426) do
   add_index "doctors", ["reset_password_token"], name: "index_doctors_on_reset_password_token", unique: true
 
   create_table "gynecology_templates", force: :cascade do |t|
-    t.integer  "register"
+    t.integer  "register",                          default: 0
     t.string   "name"
+    t.string   "email"
     t.string   "husband_name"
     t.text     "address"
     t.string   "telephone"

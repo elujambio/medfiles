@@ -6,6 +6,7 @@ es:
    gynecological_exploration: "Exploración Ginecológica" 
    register: "Registro"
    name: "Nombre Completo"
+   email: "Correo Electrónico"
    husband_name: "Nombre Completo del Esposo"
    address: "Dirección"
    telephone: "Teléfono"
@@ -110,6 +111,7 @@ es:
          gynecology_template:
             register: "Registro"
             name: "Nombre Completo"
+            email: "Correo Electrónico"
             husband_name: "Nombre Completo del Esposo"
             address: "Dirección"
             telephone: "Teléfono"
@@ -213,6 +215,7 @@ es:
          gynecology_template:
             register: "Registro"
             name: "Nombre Completo"
+            email: "Correo Electrónico"
             husband_name: "Nombre Completo del Esposo"
             address: "Dirección"
             telephone: "Teléfono"

@@ -10,8 +10,9 @@
 		</div>
 	<% end %>
 	
-	<%= f.text_field :register, placeholder: true %><br/>
+	
 	<%= f.label :name %><%= f.text_field :name, placeholder: true %><br/>
+	<%= f.label :email %><%= f.email_field :email, placeholder: true %><br/>
 	<%= f.label :husband_name %><%= f.text_field :husband_name, placeholder: true %><br/>
 	<%= f.label :address %><%= f.text_area :address, placeholder: true %><br/>
 	<%= f.label :telephone %><%= f.text_field :telephone, placeholder: true %><br/>
