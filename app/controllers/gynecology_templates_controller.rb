@@ -9,7 +9,7 @@ class GynecologyTemplatesController < ApplicationController
 
 	def new
 		@gynecology_template = GynecologyTemplate.new
-		3.times { @gynecology_template.contraceptives.build }
+		1.times { @gynecology_template.contraceptives.build }
 	end
 	def create
 		@gynecology_template = GynecologyTemplate.new(gynecology_template_params)
@@ -27,7 +27,7 @@ class GynecologyTemplatesController < ApplicationController
 	end
 
 	def edit
-		3.times { @gynecology_template.contraceptives.build }
+		
 	end
 
 	def update

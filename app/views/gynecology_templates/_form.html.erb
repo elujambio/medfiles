@@ -70,14 +70,16 @@
 	<h3><%= t :contraceptives %></h3>
 	
 	<%= f.fields_for :contraceptives do |builder| %>
-	
-	  <%= builder.label :name %><%= builder.text_field :name, placeholder: true %> 
-		<%= builder.label :time %><%= builder.text_field :time, placeholder: true %>
-		<%= builder.label :tolerance %><%= builder.text_field :tolerance, placeholder: true %>
-		<%= builder.check_box :_destroy %>
-		<%= builder.label :_destroy, 'remove' %><br>
+		<div class="fields">
+		  	<%= builder.label :name %><%= builder.text_field :name, placeholder: true %> 
+			<%= builder.label :time %><%= builder.text_field :time, placeholder: true %>
+			<%= builder.label :tolerance %><%= builder.text_field :tolerance, placeholder: true %>
+			<%= builder.hidden_field :_destroy %>
+	  		<%= link_to_remove_fields "Eliminar", f %>
+  		</div>
+  	<% end %>
 
-  <% end %>
+  	<p><%= link_to_add_fields "Añadir Anticonceptivo", f, :contraceptives, "css-class", "Añadir Anticonceptivo" %></p>
 
 	<%= f.label :sexual_habits %><%= f.text_area :sexual_habits, placeholder: true %><br/>
 	<%= f.label :fridigity %><%= f.check_box :fridigity, placeholder: true %><br/>
