@@ -71,10 +71,11 @@
 	
 	<%= f.fields_for :contraceptives do |builder| %>
 	
-	  <%= builder.label :name %><%= builder.text_field :name, placeholder: true %><br/>
-	<%= builder.label :time %><%= builder.text_field :time, placeholder: true %><br/>
-	<%= builder.label :tolerance %><%= builder.text_field :tolerance, placeholder: true %><br/>
-	 <%= builder.label :_destroy, "Eliminar" %>
+	  <%= builder.label :name %><%= builder.text_field :name, placeholder: true %> 
+		<%= builder.label :time %><%= builder.text_field :time, placeholder: true %>
+		<%= builder.label :tolerance %><%= builder.text_field :tolerance, placeholder: true %>
+		<%= builder.check_box :_destroy %>
+		<%= builder.label :_destroy, 'remove' %><br>
 
   <% end %>
 

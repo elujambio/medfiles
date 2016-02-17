@@ -116,11 +116,11 @@
 
  <% @gynecology_template.contraceptives.each do |contraceptive|  %>
 
-	<label><%= t :contraceptive_name %></label>
+	<label><%= t 'name' %></label>
 	<%= contraceptive.name %><br/>
-	<label><%= t :contraceptive_name %></label>
+	<label><%= t :tiempo %></label>
 	<%= contraceptive.time %><br/>
-	<label><%= t :contraceptive_name%></label>
+	<label><%= t :tolerance %></label>
 	<%= contraceptive.tolerance %><br/>
 <% end %>
 
