@@ -66,6 +66,18 @@
 	<%= f.label :doc %><%= f.text_field :doc, placeholder: true %><br/>
 	<%= f.label :previous_preganancy_complications %><%= f.text_area :previous_preganancy_complications, placeholder: true %><br/>
 	<%= f.label :colposcopy %><%= f.text_area :colposcopy, placeholder: true %><br/>
+
+	<h3><%= t :contraceptives %></h3>
+	
+	<%= f.fields_for :contraceptives do |builder| %>
+	
+	  <%= builder.label :name %><%= builder.text_field :name, placeholder: true %><br/>
+	<%= builder.label :time %><%= builder.text_field :time, placeholder: true %><br/>
+	<%= builder.label :tolerance %><%= builder.text_field :tolerance, placeholder: true %><br/>
+	 <%= builder.label :_destroy, "Eliminar" %>
+
+  <% end %>
+
 	<%= f.label :sexual_habits %><%= f.text_area :sexual_habits, placeholder: true %><br/>
 	<%= f.label :fridigity %><%= f.check_box :fridigity, placeholder: true %><br/>
 	<%= f.label :dyspareunia %><%= f.text_field :dyspareunia, placeholder: true %><br/>

@@ -1,0 +1,12 @@
+<div class="task">
+<% new_or_existing = contraceptive.new_record? ? 'new' : 'existing' %> 
+<% prefix = "gynecology_template[#{new_or_existing}_contraceptive_attributes][]" %>
+<% fields_for prefix, contraceptive do |contraceptive_form| -%>
+<p>
+    <%= contraceptive_form.label :type %><%= contraceptive_form.text_field :type, placeholder: true %><br/>
+	<%= contraceptive_form.label :time %><%= contraceptive_form.text_field :time, placeholder: true %><br/>
+	<%= contraceptive_form.label :tolerance %><%= contraceptive_form.text_field :tolerance, placeholder: true %><br/>
+<%= link_to_function "remove", "$(this).up('.contraceptive').remove()" %>
+</p>
+<% end -%>
+</div>

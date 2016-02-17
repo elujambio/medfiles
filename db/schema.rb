@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160212195426) do
+ActiveRecord::Schema.define(version: 20160216212157) do
+
+  create_table "contraceptives", force: :cascade do |t|
+    t.string   "name"
+    t.string   "time"
+    t.string   "tolerance"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "gynecology_template_id"
+  end
+
+  add_index "contraceptives", ["gynecology_template_id"], name: "index_contraceptives_on_gynecology_template_id"
 
   create_table "doctor_pictures", force: :cascade do |t|
     t.string   "picture"

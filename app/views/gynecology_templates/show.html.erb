@@ -111,6 +111,20 @@
 <%= @gynecology_template.previous_preganancy_complications %><br/>
 <label><%= t :colposcopy %></label>
 <%= @gynecology_template.colposcopy %><br/>
+
+<h3><%= t :contraceptives %></h3>
+
+ <% @gynecology_template.contraceptives.each do |contraceptive|  %>
+
+	<label><%= t :contraceptive_name %></label>
+	<%= contraceptive.name %><br/>
+	<label><%= t :contraceptive_name %></label>
+	<%= contraceptive.time %><br/>
+	<label><%= t :contraceptive_name%></label>
+	<%= contraceptive.tolerance %><br/>
+<% end %>
+
+
 <label><%= t :sexual_habits %></label>
 <%= @gynecology_template.sexual_habits %><br/>
 <label><%= t :frigidity %></label>
