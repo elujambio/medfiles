@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216212157) do
+ActiveRecord::Schema.define(version: 20160217072113) do
 
   create_table "contraceptives", force: :cascade do |t|
     t.string   "name"
@@ -337,5 +337,24 @@ ActiveRecord::Schema.define(version: 20160216212157) do
   end
 
   add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"
+
+  create_table "pregnancies", force: :cascade do |t|
+    t.integer  "pregnancy_number"
+    t.date     "pregnancy_date"
+    t.string   "abortion"
+    t.string   "delivery"
+    t.string   "induction"
+    t.string   "ending"
+    t.string   "rn"
+    t.string   "newborn"
+    t.string   "baby_weight"
+    t.string   "baby_sex"
+    t.string   "puerperium"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "gynecology_template_id"
+  end
+
+  add_index "pregnancies", ["gynecology_template_id"], name: "index_pregnancies_on_gynecology_template_id"
 
 end

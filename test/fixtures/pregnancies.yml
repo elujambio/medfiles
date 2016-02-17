@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pregnancy_number: 1
+  pregnancy_date: 2016-02-17
+  abortion: MyString
+  delivery: MyString
+  induction: MyString
+  ending: MyString
+  rn: MyString
+  newborn: MyString
+  baby_weight: MyString
+  baby_sex: MyString
+  puerperium: MyString
+
+two:
+  pregnancy_number: 1
+  pregnancy_date: 2016-02-17
+  abortion: MyString
+  delivery: MyString
+  induction: MyString
+  ending: MyString
+  rn: MyString
+  newborn: MyString
+  baby_weight: MyString
+  baby_sex: MyString
+  puerperium: MyString
