@@ -56,19 +56,17 @@
 	<%= f.label :c_section %><%= f.text_field :c_section, placeholder: true %><br/>
 	<%= f.label :abortions %><%= f.text_field :abortions, placeholder: true %><br/>
 	<%= f.label :ee %><%= f.text_field :ee, placeholder: true %><br/>
-	<%= f.label :induction %><%= f.text_field :induction, placeholder: true %><br/>
-	<%= f.label :gestational_age %><%= f.text_field :gestational_age, placeholder: true %><br/>
-	<%= f.label :fum %><%= f.date_select :fum, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
-	<%= f.label :fup %><%= f.date_select :fup, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
-	<%= f.label :fua %><%= f.date_select :fua, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
-	<%= f.label :fuc %><%= f.date_select :fuc, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
-	<%= f.label :fpp %><%= f.date_select :fpp, start_year: Date.today.year - 90, end_year: Date.today.year %><br/>
-	<%= f.label :doc %><%= f.text_field :doc, placeholder: true %><br/>
+	
+	<%= f.label :fum %><%= f.date_select :fum, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
+	<%= f.label :fup %><%= f.date_select :fup, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
+	<%= f.label :fua %><%= f.date_select :fua, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
+	<%= f.label :fuc %><%= f.date_select :fuc, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
+	<%= f.label :fpp %><%= f.date_select :fpp, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
+	<%= f.label :doc %><%= f.date_select :doc, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
 	<%= f.label :previous_preganancy_complications %><%= f.text_area :previous_preganancy_complications, placeholder: true %><br/>
 	<%= f.label :colposcopy %><%= f.text_area :colposcopy, placeholder: true %><br/>
 
 	<h3><%= t :contraceptives %></h3>
-	
 	<%= f.fields_for :contraceptives do |builder| %>
 		<div class="fields">
 		  	<%= builder.label :name %><%= builder.text_field :name, placeholder: true %> 
@@ -104,12 +102,12 @@
 
 	<%= f.label :sexual_habits %><%= f.text_area :sexual_habits, placeholder: true %><br/>
 	<%= f.label :fridigity %><%= f.check_box :fridigity, placeholder: true %><br/>
-	<%= f.label :dyspareunia %><%= f.text_field :dyspareunia, placeholder: true %><br/>
+	<%= f.label :dyspareunia %><%= f.check_box :dyspareunia %><br/>
 	<%= f.label :menopause %><%= f.check_box :menopause %><br/>
-	<%= f.label :menopause_symptomatology %><%= f.text_field :menopause_symptomatology, placeholder: true %><br/>
+	<%= f.label :menopause_symptomatology %><%= f.text_area :menopause_symptomatology, placeholder: true %><br/>
 	<%= f.label :leucorrea %><%= f.check_box :leucorrea %><br/>
-	<%= f.label :leucorrea_treatment %><%= f.text_field :leucorrea_treatment, placeholder: true %><br/>
-	<%= f.label :pregnancy_medication %><%= f.text_field :pregnancy_medication, placeholder: true %><br/>
+	<%= f.label :leucorrea_treatment %><%= f.text_area :leucorrea_treatment, placeholder: true %><br/>
+	<%= f.label :pregnancy_medication %><%= f.text_area :pregnancy_medication, placeholder: true %><br/>
 
 	<h3><%= t :physical_exploration %></h3>
 	<%= f.label :ta %><%= f.text_field :ta, placeholder: true %><br/>

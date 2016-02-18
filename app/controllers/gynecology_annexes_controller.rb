@@ -11,7 +11,7 @@ class GynecologyAnnexesController < ApplicationController
 	def create
 		@gynecology_annex = @gynecology_template.gynecology_annexes.build(gynecology_annex_params)
 		if @gynecology_annex.save
-			redirect_to @gynecology_template
+			redirect_to [@gynecology_template, @gynecology_annex]
 		else
 			flash[:error] = "Hubo un error, vuelve a intentar."
 			render action: "new"
@@ -26,7 +26,7 @@ class GynecologyAnnexesController < ApplicationController
 
 	def update
 		if @gynecology_annex.update(gynecology_annex_params)
-			redirect_to @gynecology_template
+			redirect_to [@gynecology_template, @gynecology_annex]
 		else
 			flash[:error] = "Hubo un error, vuelve a intentar."
 			render action: "edit"

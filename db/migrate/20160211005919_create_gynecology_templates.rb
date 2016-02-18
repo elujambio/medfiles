@@ -43,19 +43,17 @@ class CreateGynecologyTemplates < ActiveRecord::Migration
       t.integer :c_section
       t.integer :abortions
       t.integer :ee
-      t.string :induction
-      t.integer :gestational_age
       t.date :fum
       t.date :fup
       t.date :fua
       t.date :fuc
       t.date :fpp
-      t.string :doc
+      t.date :doc
       t.text :previous_preganancy_complications
       t.text :colposcopy
       t.text :sexual_habits
       t.boolean :fridigity, default: false
-      t.string :dyspareunia
+      t.boolean :dyspareunia, default: false
       t.boolean :menopause, default: false
       t.text :menopause_symptomatology
       t.boolean :leucorrea, default: false
