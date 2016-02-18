@@ -4,7 +4,7 @@ class GynecologyTemplate < ActiveRecord::Base
 	accepts_nested_attributes_for :contraceptives, reject_if: proc { |attributes| attributes['name'].blank? }, :allow_destroy => true
 
 	has_many :pregnancies, dependent: :delete_all
-	accepts_nested_attributes_for :pregnancies, :allow_destroy => true
+	accepts_nested_attributes_for :pregnancies, reject_if: proc { |attributes| attributes['pregnancy_number'].blank? }, :allow_destroy => true
 	
 	before_create :set_register_number
 	

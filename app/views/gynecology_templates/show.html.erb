@@ -116,14 +116,41 @@
 
  <% @gynecology_template.contraceptives.each do |contraceptive|  %>
 
-	<label><%= t 'name' %></label>
+	<label><%= t :contraceptive_name %></label>
 	<%= contraceptive.name %><br/>
-	<label><%= t :tiempo %></label>
+	<label><%= t :contraceptive_time %></label>
 	<%= contraceptive.time %><br/>
-	<label><%= t :tolerance %></label>
+	<label><%= t :contraceptive_tolerance %></label>
 	<%= contraceptive.tolerance %><br/>
 <% end %>
 
+<h3><%= t :pregnancies %></h3>
+
+ <% @gynecology_template.pregnancies.each do |pregnancy|  %>
+	<label><%= t :pregnancy_number %></label>
+	<%= pregnancy.pregnancy_number %><br/>
+	<label><%= t :pregnancy_date %></label>
+	<%= pregnancy.pregnancy_date %><br/>
+	<label><%= t :pregnancy_abortion %></label>
+	<%= pregnancy.abortion %><br/>
+	<label><%= t :pregnancy_delivery %></label>
+	<%= pregnancy.delivery %><br/>
+	<label><%= t :pregnancy_induction %></label>
+	<%= pregnancy.induction %><br/>
+	<label><%= t :pregnancy_ending %></label>
+	<%= pregnancy.ending %><br/>
+	<label><%= t :pregnancy_newborn %></label>
+	<%= pregnancy.newborn %><br/>
+	<label><%= t :pregnancy_rn %></label>
+	<%= pregnancy.rn %><br/>
+	<label><%= t :pregnancy_baby_weight %></label>
+	<%= pregnancy.baby_weight %><br/>
+	<label><%= t :pregnancy_baby_sex %></label>
+	<%= pregnancy.baby_sex %><br/>
+	<label><%= t :pregnancy_puerperium %></label>
+	<%= pregnancy.puerperium %><br/>
+<% end %>
+<br>
 
 <label><%= t :sexual_habits %></label>
 <%= @gynecology_template.sexual_habits %><br/>

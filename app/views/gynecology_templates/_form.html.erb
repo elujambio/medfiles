@@ -84,7 +84,7 @@
   	<%= f.fields_for :pregnancies do |builder| %>
 		<div class="fields">
 		  	<%= builder.label :pregnancy_number %><%= builder.text_field :pregnancy_number, placeholder: true %> 
-			<%= builder.label :pregnancy_date %><%= builder.date_field :pregnancy_date, { :discard_day => true} %>
+			<%= builder.label :pregnancy_date %><%= builder.date_select :pregnancy_date, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %>
 			<%= builder.label :abortion %><%= builder.select :abortion, ['Esporádico', 'Provocado'] %>
 			<%= builder.label :delivery %><%= builder.select :delivery, ['Pretérmino', 'Término', 'PostTérmino'] %>
 			<%= builder.label :induction %><%= builder.select :induction, ['Sí', 'No'] %>
