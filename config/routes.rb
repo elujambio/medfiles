@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   #   end
   resources :ophtalmology_templates
   resources :gynecology_templates do
-    resources :contraceptives, except: [:index]
+    resources :gynecology_annexes, except: [:index]
   end
   resources :doctors, only: [:show] 
 end

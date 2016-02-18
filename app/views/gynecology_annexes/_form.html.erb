@@ -1,0 +1,5 @@
+<%= form_for [@gynecology_template, @gynecology_annex] do |f| %>
+	<p><%= @gynecology_template.name %></p>
+	<%= f.text_area :annex, placeholder: true, rows:20 %>
+	<%= f.submit "Guardar" %>
+<% end %>
