@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
     	end
     end  
     def authenticate_doctor_for_ophtalmology_template!
-      if current_doctor != @ophtalmology_template.doctor 
+      if current_doctor != @ophtalmology_template.doctor
         flash[:error] = "No puedes ver el expediente."
         redirect_to root_url
       end
