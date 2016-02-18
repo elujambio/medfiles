@@ -6,6 +6,7 @@
 
 
 <%= link_to "Editar", edit_gynecology_template_path(@gynecology_template) %><br/>
+<%= link_to "Eliminar", gynecology_template_path(@gynecology_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
 
 <label><%= t :email %></label>
 <%= @gynecology_template.email %><br/>
