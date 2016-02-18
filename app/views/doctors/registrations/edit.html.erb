@@ -57,7 +57,7 @@
   </div>    
   <div class="field">
     <%= f.label :speciality %><br />
-    <%= f.text_field :speciality, autofocus: true %>
+    <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
   </div>    
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
