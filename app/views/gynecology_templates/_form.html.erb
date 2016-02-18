@@ -81,6 +81,27 @@
 
   	<p><%= link_to_add_fields "Añadir Anticonceptivo", f, :contraceptives, "css-class", "Añadir Anticonceptivo" %></p>
 
+  	<%= f.fields_for :pregnancies do |builder| %>
+		<div class="fields">
+		  	<%= builder.label :pregnancy_number %><%= builder.text_field :pregnancy_number, placeholder: true %> 
+			<%= builder.label :pregnancy_date %><%= builder.date_field :pregnancy_date, { :discard_day => true} %>
+			<%= builder.label :abortion %><%= builder.select :abortion, ['Esporádico', 'Provocado'] %>
+			<%= builder.label :delivery %><%= builder.select :delivery, ['Pretérmino', 'Término', 'PostTérmino'] %>
+			<%= builder.label :induction %><%= builder.select :induction, ['Sí', 'No'] %>
+			<%= builder.label :ending %><%= builder.select :ending, ['Esporádico', 'Fórceps', 'Césarea'] %>
+			<%= builder.label :newborn %><%= builder.select :newborn, ['Sí', 'No'] %>
+			<%= builder.label :rn %><%= builder.select :rn, ['Neonáto', 'Post-Neo'] %>
+			<%= builder.label :baby_weight %><%= builder.text_field :baby_weight, placeholder: true %>
+			<%= builder.label :baby_sex %><%= builder.select :baby_sex, ['Femenino', 'Masculino'] %>
+			<%= builder.label :puerperium %><%= builder.select :puerperium, ['Fís', 'Pat']%>
+
+			<%= builder.hidden_field :_destroy %>
+	  		<%= link_to_remove_fields "Eliminar", f %>
+  		</div>
+  	<% end %>
+  	<p><%= link_to_add_fields "Añadir Embarazo", f, :pregnancies, "css-class", "Añadir Embarazo" %></p>
+  	
+
 	<%= f.label :sexual_habits %><%= f.text_area :sexual_habits, placeholder: true %><br/>
 	<%= f.label :fridigity %><%= f.check_box :fridigity, placeholder: true %><br/>
 	<%= f.label :dyspareunia %><%= f.text_field :dyspareunia, placeholder: true %><br/>
