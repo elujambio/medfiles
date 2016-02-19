@@ -1,6 +1,11 @@
 <label><%= t :ophtalmology_template %></label>
 <h1><%= @ophtalmology_template.name %></h1>
 
+<%= link_to "Añadir Receta",  new_ophtalmology_template_prescription_path(@ophtalmology_template)%><br/>
+
+<%= render 'prescriptions/prescriptions', prescriptable: @ophtalmology_template %>
+
+
 <label><%= t :email %></label>
 <p><%= @ophtalmology_template.email %></p>
 
