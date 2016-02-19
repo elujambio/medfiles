@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219195124) do
+ActiveRecord::Schema.define(version: 20160219204015) do
 
   create_table "contraceptives", force: :cascade do |t|
     t.string   "name"
@@ -369,6 +369,14 @@ ActiveRecord::Schema.define(version: 20160219195124) do
     t.string   "prescriptable_type"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "template_files", force: :cascade do |t|
+    t.string   "asset"
+    t.integer  "fileable_id"
+    t.string   "fileable_type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "template_photos", force: :cascade do |t|

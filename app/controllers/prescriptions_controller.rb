@@ -4,6 +4,7 @@ class PrescriptionsController < ApplicationController
 	before_action :set_prescription, only: [:show, :edit, :update, :destroy]
 
 	def new	
+		@prescription = @prescriptable.prescriptions.new
 	end
 	def create
 
