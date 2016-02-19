@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160218183818) do
+ActiveRecord::Schema.define(version: 20160219163504) do
 
   create_table "contraceptives", force: :cascade do |t|
     t.string   "name"
@@ -364,14 +364,11 @@ ActiveRecord::Schema.define(version: 20160218183818) do
   add_index "pregnancies", ["gynecology_template_id"], name: "index_pregnancies_on_gynecology_template_id"
 
   create_table "prescriptions", force: :cascade do |t|
-    t.string   "prescription"
-    t.integer  "ophtalmology_template_id"
-    t.integer  "gynecology_template_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.text     "prescription"
+    t.integer  "prescriptable_id"
+    t.string   "prescriptable_type"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
-
-  add_index "prescriptions", ["gynecology_template_id"], name: "index_prescriptions_on_gynecology_template_id"
-  add_index "prescriptions", ["ophtalmology_template_id"], name: "index_prescriptions_on_ophtalmology_template_id"
 
 end

@@ -1,1 +1,4 @@
-<%= render 'form' %>
+<%= form_for [@prescriptable, Prescription.new] do |f|%>
+
+	<%= render 'fields', f:f %>
+<% end %>

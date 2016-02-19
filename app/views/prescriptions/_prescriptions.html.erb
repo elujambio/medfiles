@@ -1,0 +1,9 @@
+<% prescriptable.prescriptions.each do |prescription| %>
+	<%= link_to prescription.created_at.to_date, [prescriptable, prescription] %> | 
+
+	<% case prescription.prescriptable_type %>
+		<% when "GynecologyTemplate" %>
+			<%= link_to "Editar", edit_gynecology_template_prescription_path(prescriptable, prescription) %>
+			<%= link_to "Eliminar", [prescriptable, prescription], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>
+	<% end %> 
+<% end %>

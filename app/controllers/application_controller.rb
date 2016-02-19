@@ -36,18 +36,9 @@ class ApplicationController < ActionController::Base
     helper_method :authenticate_doctor_for_gynecology_template!
 
     def authenticate_doctor_for_template!
-      case current_doctor.speciality
-      
-      when "Ginecología"
-          if !@gynecology_template or current_doctor != @gynecology_template.doctor 
-            flash[:error] = "No puedes ver el expediente."
-            redirect_to root_url
-          end
-      when "Oftalmología"
-         if !@ophtalmology_template or current_doctor != @ophtalmology_template.doctor 
-            flash[:error] = "No puedes ver el expediente."
-            redirect_to root_url
-          end
+     if current_doctor != @prescriptable.doctor 
+        flash[:error] = "No puedes ver el expediente."
+        redirect_to root_url
       end
       
     end

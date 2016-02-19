@@ -1,5 +1,7 @@
 
-		<%= link_to "Editar", edit_prescription_path(@prescription) %> <br/>
-		<%= link_to "Eliminar", prescription_path(@prescription), method: :delete, data: { confirm: "¿Está seguro? Esta acción no se puede deshacer"} %>
-Prescription Template: <%= @prescription.gynecology_template %>
+<% case @prescription.prescriptable_type %>
+		<% when "GynecologyTemplate" %>
+			<%= link_to "Editar", edit_gynecology_template_prescription_path(@prescription.prescriptable, @prescription) %>
+			<%= link_to "Eliminar", [@prescription.prescriptable, @prescription], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>
+	<% end %> 
 <%= @prescription.prescription %>

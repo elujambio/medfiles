@@ -2,7 +2,7 @@ class GynecologyTemplatesController < ApplicationController
 	before_action :authenticate_doctor!
 	before_action :set_gynecology_template, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_doctor_for_gynecology_template!, only: [:show, :edit, :update, :destroy]
-
+	
 	def index
 		@gynecology_templates = GynecologyTemplate.where(doctor: current_doctor)
 	end
