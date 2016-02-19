@@ -35,12 +35,12 @@ class ApplicationController < ActionController::Base
     end
     helper_method :authenticate_doctor_for_gynecology_template!
 
-    def authenticate_doctor_for_template!
-     if current_doctor != @prescriptable.doctor 
+    def authenticate_doctor_for_template(template)
+     if current_doctor != template.doctor 
         flash[:error] = "No puedes ver el expediente."
         redirect_to root_url
       end
       
     end
-    helper_method :authenticate_doctor_for_template! 
+    helper_method :authenticate_doctor_for_template
 end

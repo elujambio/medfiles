@@ -56,10 +56,12 @@ Rails.application.routes.draw do
   #   end
   resources :ophtalmology_templates do
     resources :prescriptions, module: :ophtalmology_templates
+    resources :template_photos, module: :ophtalmology_templates
   end
   resources :gynecology_templates do
     resources :gynecology_annexes, except: [:index]
     resources :prescriptions, module: :gynecology_templates
+    resources :template_photos, module: :gynecology_templates
     
   end
   resources :doctors, only: [:show] 

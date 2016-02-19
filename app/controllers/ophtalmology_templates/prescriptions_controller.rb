@@ -5,5 +5,6 @@ class OphtalmologyTemplates::PrescriptionsController < PrescriptionsController
 
     def set_prescriptable
       @prescriptable = OphtalmologyTemplate.find(params[:ophtalmology_template_id])
+      authenticate_doctor_for_template(@prescriptable)
     end
 end

@@ -13,6 +13,10 @@
 
 <%= render 'prescriptions/prescriptions', prescriptable: @gynecology_template %>
 
+<%= link_to "Añadir Foto",  new_gynecology_template_template_photo_path(@gynecology_template)%><br/>
+
+<%= render 'template_photos/template_photos', photable: @gynecology_template %>
+
 
 
 <h2>Historia Clínica</h2>
