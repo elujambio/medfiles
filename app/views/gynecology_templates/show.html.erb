@@ -9,10 +9,12 @@
 <%= link_to "Eliminar", gynecology_template_path(@gynecology_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
 
 <%= link_to "Añadir Hoja de Evolución", new_gynecology_template_gynecology_annex_path(@gynecology_template) %><br/>
+<%= link_to "Añadir Receta",  new_gynecology_template_prescription_path(@gynecology_template)%><br/>
 
-<% @gynecology_template.gynecology_annexes.each do |annex| %>
-	<%= link_to annex.created_at.to_date, [@gynecology_template,annex] %>
-<% end %>
+<%= render 'prescriptions/prescriptions', prescriptable: @gynecology_template %>
+
+
+
 <h2>Historia Clínica</h2>
 <label><%= t :email %></label>
 <%= @gynecology_template.email %><br/>
@@ -98,10 +100,7 @@
 <%= @gynecology_template.abortions %><br/>
 <label><%= t :ee %></label>
 <%= @gynecology_template.ee %><br/>
-<label><%= t :induction %></label>
-<%= @gynecology_template.induction %><br/>
-<label><%= t :gestational_age %></label>
-<%= @gynecology_template.gestational_age %><br/>
+
 <label><%= t :fum %></label>
 <%= @gynecology_template.fum %><br/>
 <label><%= t :fup %></label>
