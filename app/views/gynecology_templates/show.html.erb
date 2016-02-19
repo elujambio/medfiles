@@ -18,6 +18,11 @@
 <%= render 'template_photos/template_photos', photable: @gynecology_template %>
 
 
+<%= link_to "Añadir Archivo",  new_gynecology_template_template_file_path(@gynecology_template)%><br/>
+
+<%= render 'template_files/template_files', fileable: @gynecology_template %>
+
+
 
 <h2>Historia Clínica</h2>
 <label><%= t :email %></label>

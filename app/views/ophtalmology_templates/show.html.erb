@@ -9,6 +9,10 @@
 
 <%= render 'template_photos/template_photos', photable: @ophtalmology_template %>
 
+<%= link_to "Añadir Archivo",  new_ophtalmology_template_template_file_path(@ophtalmology_template)%><br/>
+
+<%= render 'template_files/template_files', fileable: @ophtalmology_template %>
+
 <label><%= t :email %></label>
 <p><%= @ophtalmology_template.email %></p>
 

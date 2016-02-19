@@ -1,0 +1,5 @@
+<%= form_for [@photable, @template_photo] do |f|%>
+
+	<%= f.text_field :photo, placeholder: true %>
+	<%= f.submit "Guardar" %>
+<% end %>
