@@ -25,6 +25,7 @@ class GynecologyTemplatesController < ApplicationController
 	end
 
 	def show
+		#set_current_gynecology_template(@gynecology_template)
 	end
 
 	def edit
