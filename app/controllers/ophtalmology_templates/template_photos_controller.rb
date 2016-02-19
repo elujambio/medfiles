@@ -5,5 +5,6 @@ class OphtalmologyTemplates::TemplatePhotosController < TemplatePhotosController
 
     def set_photable
       @photable = OphtalmologyTemplate.find(params[:gynecology_template_id])
+      authenticate_doctor_for_template(@photable)
     end
 end

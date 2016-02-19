@@ -1,0 +1,5 @@
+<%= link_to "Editar", [:edit, @template_photo.photable, @template_photo]%>
+	
+<%= link_to "Eliminar", [ @template_photo.photable, @template_photo], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>	
+<%= @template_photo.photo %>
+

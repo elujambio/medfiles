@@ -1,17 +1,16 @@
-class PrescriptionsController < ApplicationController
+class TemplatePhotosController < ApplicationController
 	before_action :authenticate_doctor!
-
 	before_action :set_prescription, only: [:show, :edit, :update, :destroy]
 
 	def new	
 	end
 	def create
 
-		@prescription = @prescriptable.prescriptions.new prescription_params
+		@template_photo = @photable.template_photos.new template_photos_params
 		
-		if @prescription.save
+		if @template_photo.save
 			flash[:notice] = "Receta guardada."
-			redirect_to @prescriptable
+			redirect_to @photable
 		else
 			flash[:alert] = "Receta no guardada. Vuelve a intentar en un rato." 
 			render action: "new"
@@ -26,9 +25,9 @@ class PrescriptionsController < ApplicationController
 	end
 
 	def update
-		if @prescription.update(prescription_params)
+		if @template_photo.update(template_photos_params)
 			flash[:notice] = "Receta no guardada."
-			redirect_to @prescriptable
+			redirect_to @photable
 		else
 			flash[:alert] = "Receta no guardada. Vuelve a intentar en un rato." 
 			render action: "edit"
@@ -36,22 +35,21 @@ class PrescriptionsController < ApplicationController
 	end
 
 	def destroy 
-		@prescription.destroy 
+		@template_photo.destroy 
 		flash[:notice] = "Receta eliminada."
 		redirect_to root_url
 	end
 	private
 		
 		def set_prescription
-			@prescription = Prescription.find(params[:id])
+			@template_photo = TemplatePhoto.find(params[:id])
 			rescue ActiveRecord::RecordNotFound
 			flash[:alert] = "Receta inexistente."
 			redirect_to root_url
 		end
 
-		def prescription_params
-			params.require(:prescription).permit(:prescription)
+		def template_photos_params
+			params.require(:template_photo).permit(:photo)
 		end
-
 
 end

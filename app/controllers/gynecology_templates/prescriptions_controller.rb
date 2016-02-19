@@ -5,5 +5,6 @@ class GynecologyTemplates::PrescriptionsController < PrescriptionsController
 
     def set_prescriptable
       @prescriptable = GynecologyTemplate.find(params[:gynecology_template_id])
+      authenticate_doctor_for_template(@prescriptable)
     end
 end

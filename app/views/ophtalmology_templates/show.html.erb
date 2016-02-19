@@ -5,6 +5,9 @@
 
 <%= render 'prescriptions/prescriptions', prescriptable: @ophtalmology_template %>
 
+<%= link_to "Añadir Foto",  new_ophtalmology_template_template_photo_path(@ophtalmology_template)%><br/>
+
+<%= render 'template_photos/template_photos', photable: @ophtalmology_template %>
 
 <label><%= t :email %></label>
 <p><%= @ophtalmology_template.email %></p>
