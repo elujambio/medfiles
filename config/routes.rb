@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   devise_for :doctors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -66,6 +67,11 @@ Rails.application.routes.draw do
     resources :template_files, module: :gynecology_templates
     
   end
-  resources :doctors, only: [:show] 
+  resources :doctors, only: [:show, :edit, :update, :destroy] 
+  resources :template_plans
 
+  get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
+  get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
+  get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
+  get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
 end

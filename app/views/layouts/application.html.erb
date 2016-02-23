@@ -17,6 +17,13 @@
 	<%= link_to("SIGN IN", new_doctor_session_path) %>
 	<%= link_to("SIGN UP", new_doctor_registration_path) %>
 <% end %>
+
+
+<% if admin_signed_in? %>
+	<%= link_to("ADMIN PANEL", admin_panel_path) %>
+	<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+<% end %>
+
 <%= yield %>
 
 </body>

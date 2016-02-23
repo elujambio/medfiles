@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
         	parameters.permit(:email, :password, :password_confirmation, :name, :practice_address_1, :practice_address_2, :postal_code, :country, :state, :city, :phone, :cellphone, :facebook, :website, :profession, :speciality, :created_at, :updated_at)
         end
         devise_parameter_sanitizer.for(:account_update) do |parameters|
-    		parameters.permit(:email, :password, :password_confirmation, :name, :practice_address_1, :practice_address_2, :postal_code, :country, :state, :city, :phone, :cellphone, :facebook, :website, :profession, :speciality, :created_at, :updated_at, :current_password)
+    		parameters.permit(:email, :password, :password_confirmation, :name, :practice_address_1, :practice_address_2, :postal_code, :country, :state, :city, :phone, :cellphone, :facebook, :website, :profession, :speciality, :created_at, :updated_at, :current_password, :professional_license)
     	end
     end  
     def authenticate_doctor_for_ophtalmology_template!
@@ -43,4 +43,14 @@ class ApplicationController < ActionController::Base
       
     end
     helper_method :authenticate_doctor_for_template
+
+
+     def authenticate_superadmin!
+     if admin_signed_in? and !current_admin.superadmin?
+        flash[:error] = "No puedes ver el expediente."
+        redirect_to root_url
+      end
+      
+    end
+    helper_method :authenticate_superadmin!
 end

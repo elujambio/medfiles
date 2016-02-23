@@ -1,0 +1,54 @@
+<p><%= @doctor.name %></p>
+<%= link_to "EDITAR", edit_doctor_path(@doctor) %><br>
+<p><%= @doctor.country %></p>
+<p><%= @doctor.state %></p>
+<p><%= @doctor.city %></p>
+<p><%= @doctor.phone %></p>
+<p><%= @doctor.facebook %></p>
+<p><%= @doctor.website %></p>
+<p><%= @doctor.profession %></p>
+<p><%= @doctor.speciality %></p>
+
+<h3>  Planes Activos </h3>
+<% if @doctor.site_active? %>
+	<%= link_to "Plan de Sitio Web", root_url %>
+	 Vence el:  <%= @doctor.site_active_from + 1.years %><br/>
+<% end %>
+
+<% if @doctor.templates_active? %>
+	<%= link_to "Plan de Expendientes en Línea Bronce", root_url %>
+	Vence el:  <%= @doctor.templates_active_from + 1.years %><br/>
+<% end %>
+
+<% if @doctor.templates_active_medium? %>
+	<%= link_to "Plan de Expendientes en Línea Plata", root_url %>
+	 Vence el:  <%= @doctor.templates_active_medium_from + 1.years %><br/>
+<% end %>
+
+<% if @doctor.templates_active_big? %>
+	<%= link_to "Plan de Expendientes en Línea Oro", root_url %>
+	Vence el:  <%= @doctor.templates_active_big_from + 1.years %><br/>
+<% end %>
+
+<% if @doctor.templates_active_personalized? %>
+	<%= link_to "Plan de Expendientes en Línea Platino", root_url %>
+ Vence el:  <%= @doctor.templates_active_personalized_from + 1.years %><br/>
+<% end %>
+
+<% case @doctor.speciality %>
+	<% when "Ginecología" %>
+		<% if @doctor.templates_active? or @doctor.templates_active_medium.active? or @doctor.templates_active_big? or @doctor.templates_active_personalized? %>
+			Expendientes máximos: <%= @doctor.max_files  %><br>
+			<%= @doctor.max_files - @doctor.gynecology_templatess.count %>
+		<% end %>
+	<% when "Oftalmología" %>
+	
+		<% if @doctor.templates_active? or @doctor.templates_active_medium.active? or @doctor.templates_active_big? or @doctor.templates_active_personalized? %>
+			Expendientes máximos: <%= @doctor.max_files  %><br>
+			
+		<% end %>
+<% end %>
+
+
+
+ 

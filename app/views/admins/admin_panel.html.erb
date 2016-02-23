@@ -1,0 +1,8 @@
+<h1>Admin Panel</h1>
+
+<%= link_to "Ginecológos", all_gynecologists_path %><br/>
+<%= link_to "Oftalmológos", all_ophthalmologists_path  %><br/>
+
+<% if current_admin.superadmin? %>	
+	<%= link_to "Planes de Expedientes", template_plans_path %><br/>
+<% end %>
