@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160223191245) do
+ActiveRecord::Schema.define(version: 20160224060051) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -58,12 +58,12 @@ ActiveRecord::Schema.define(version: 20160223191245) do
   add_index "doctor_pictures", ["doctor_id"], name: "index_doctor_pictures_on_doctor_id"
 
   create_table "doctors", force: :cascade do |t|
-    t.string   "email",                              default: "",    null: false
-    t.string   "encrypted_password",                 default: "",    null: false
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",                      default: 0,     null: false
+    t.integer  "sign_in_count",          default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -81,20 +81,8 @@ ActiveRecord::Schema.define(version: 20160223191245) do
     t.string   "website"
     t.string   "profession"
     t.string   "speciality"
-    t.datetime "created_at",                                         null: false
-    t.datetime "updated_at",                                         null: false
-    t.boolean  "site_active",                        default: false
-    t.boolean  "templates_active",                   default: false
-    t.string   "professional_license"
-    t.boolean  "templates_active_medium",            default: false
-    t.boolean  "templates_active_big",               default: false
-    t.boolean  "templates_active_personalized",      default: false
-    t.integer  "max_files",                          default: 0
-    t.date     "site_active_from"
-    t.date     "templates_active_from"
-    t.date     "templates_active_medium_from"
-    t.date     "templates_active_big_from"
-    t.date     "templates_active_personalized_from"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_index "doctors", ["email"], name: "index_doctors_on_email", unique: true
@@ -380,6 +368,27 @@ ActiveRecord::Schema.define(version: 20160223191245) do
 
   add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"
 
+  create_table "plan_elements", force: :cascade do |t|
+    t.integer  "plan_id"
+    t.integer  "element_id"
+    t.string   "element_type"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "plan_elements", ["plan_id"], name: "index_plan_elements_on_plan_id"
+
+  create_table "plans", force: :cascade do |t|
+    t.date     "valide_til"
+    t.string   "billing_frequency"
+    t.string   "billing_preference"
+    t.integer  "doctor_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  add_index "plans", ["doctor_id"], name: "index_plans_on_doctor_id"
+
   create_table "pregnancies", force: :cascade do |t|
     t.integer  "pregnancy_number"
     t.date     "pregnancy_date"
@@ -407,6 +416,15 @@ ActiveRecord::Schema.define(version: 20160223191245) do
     t.datetime "updated_at",         null: false
   end
 
+  create_table "site_plans", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.float    "annual_cost"
+    t.integer  "plan_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "template_files", force: :cascade do |t|
     t.string   "asset"
     t.integer  "fileable_id"
@@ -430,6 +448,7 @@ ActiveRecord::Schema.define(version: 20160223191245) do
     t.float    "anual_cost"
     t.text     "description"
     t.integer  "max_files"
+    t.integer  "plan_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

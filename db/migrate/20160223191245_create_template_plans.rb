@@ -7,7 +7,7 @@ class CreateTemplatePlans < ActiveRecord::Migration
       t.float :anual_cost
       t.text :description
       t.integer :max_files
-
+      t.belongs_to :plan
       t.timestamps null: false
     end
   end
