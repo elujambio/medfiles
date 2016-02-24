@@ -69,7 +69,14 @@ Rails.application.routes.draw do
   end
   resources :doctors, only: [:show, :edit, :update, :destroy] 
   resources :template_plans
+  resources :plans do
+    collection do
+      get :save_template_plan
+      post :save_template_plan
+    end
+  end
 
+   get '/add_template_plan', to: "plans#add_template_plan", :as => "add_template_plan"
   get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
   get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
   get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"

@@ -1,0 +1,11 @@
+<%= form_tag(:action => 'save_template_plan') do %>
+	
+	<% if admin_signed_in? %>
+		Doctor: <%= select_tag "doctor_id", options_for_select(Doctor.all.collect{ |u| [u.name, u.id]} ) %><br/>
+	<% end %>
+	Plan: <%= select_tag "template_id", options_for_select(TemplatePlan.all.collect{ |u| [u.name, u.id]} ) %><br/>
+
+	Frecuencia: <%= text_field_tag "billing_frequency" %><br/>
+	Preferencia: <%= text_field_tag "billing_preference" %><br/>
+	<%= submit_tag "Guardar" %>
+<% end %>

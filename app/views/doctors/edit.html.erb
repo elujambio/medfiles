@@ -64,35 +64,7 @@
     <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
   </div>     
 
-  <div class="field">
-    <%= f.label :site_active %><br />
-    <%= f.check_box :site_active %>
-  </div> 
-
-  <div class="field">
-    <%= f.label :templates_active %><br />
-    <%= f.check_box :templates_active %>
-  </div> 
-
-  <div class="field">
-    <%= f.label :templates_active_medium %><br />
-    <%= f.check_box :templates_active_medium %>
-  </div> 
-
-  <div class="field">
-    <%= f.label :templates_active_big %><br />
-    <%= f.check_box :templates_active_big %>
-  </div> 
-
-  <div class="field">
-    <%= f.label :templates_active_personalized %><br />
-    <%= f.check_box :templates_active_personalized %>
-  </div>    
-
-  <div class="field">
-    <%= f.label :max_files %><br />
-    <%= f.text_field :max_files %>
-  </div> 
+  
 
   <div class="actions">
     <%= f.submit "Update" %>
