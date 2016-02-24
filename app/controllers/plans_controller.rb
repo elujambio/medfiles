@@ -25,10 +25,16 @@ class PlansController < ApplicationController
 		else
 			@plan.doctor = current_doctor
 		end
-		
-		@plan.valide_til = Date.today + 1.years
 		@plan.billing_frequency = params[:billing_frequency]
 		@plan.billing_preference = params[:billing_preference]
+		case params[:billing_frequency] 
+			when "Mensual"
+				@plan.valid_til = Date.today + 1.months
+			when "Semestral"
+				@plan.valid_til = Date.today + 6.months
+			when "Anual"
+				@plan.valid_til = Date.today + 1.years
+		end
 		@template_plan = TemplatePlan.find(params[:template_id])
 		
 		if @plan.save
@@ -66,13 +72,13 @@ class PlansController < ApplicationController
 	end
 	private
 		def set_plan
-			@plan = TemplatePlan.find(params[:id])
+			@plan = Plan.find(params[:id])
 			rescue ActiveRecord::RecordNotFound
 			flash[:alert] = "Plan inexistente."
 			redirect_to root_url
 		end
 
 		def plan_params
-			params.require(:plan).permit(:valide_til, :billing_frequency, :billing_preference)
+			params.require(:plan).permit(:valid_til, :billing_frequency, :billing_preference)
 		end
 end

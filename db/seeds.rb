@@ -19,3 +19,14 @@ plan4 = TemplatePlan.create(name: "Plan 7000", description: "Este plan es ideal 
 plan5 = TemplatePlan.create(name: "Plan 10000", description: "Este plan es ideal para usted si tiene entre 7001 y 10000 expedientes", monthly_cost: 5500, anual_discount:30, max_files: 1000 )
 
 
+doctor1 = Doctor.create(name: "Claudia Gutiérrez", email: "claudia@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Ginecología")
+doctor2 = Doctor.create(name: "Miriam Gutiérrez", email: "miriam@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Ginecología")
+doctor3 = Doctor.create(name: "José Gutiérrez", email: "jose@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Ginecología")
+doctor4 = Doctor.create(name: "Pepe Gutiérrez", email: "pepe@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Ginecología")
+doctor5 = Doctor.create(name: "Julián Gutiérrez", email: "julian@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Ginecología")
+doctor6 = Doctor.create(name: "María Gutiérrez", email: "maria@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+doctor7 = Doctor.create(name: "Samuel Gutiérrez", email: "samuel@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+doctor8 = Doctor.create(name: "Carlos Gutiérrez", email: "carlos@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+doctor9 = Doctor.create(name: "César Gutiérrez", email: "cesar@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+doctor10 = Doctor.create(name: "Juan Gutiérrez", email: "juan@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+doctor11 = Doctor.create(name: "Lupita Gutiérrez", email: "lupita@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")

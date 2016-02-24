@@ -1,0 +1,7 @@
+
+<% @plan.plan_elements.each do |element| %>
+		<%= element.element.name %><br/>
+<% end %>
+Vence el: <%= @plan.valid_til %><br/>
+Frecuencia de pago: <%= @plan.billing_frequency %><br/>
+Preferencia de pago: <%= @plan.billing_preference %><br/>
