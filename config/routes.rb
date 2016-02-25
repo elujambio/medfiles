@@ -69,7 +69,7 @@ Rails.application.routes.draw do
   end
   resources :doctors, only: [:show, :edit, :update, :destroy] 
   resources :template_plans
-  resources :plans do
+  resources :plans, only: [:show] do
     collection do
       get :save_template_plan
       post :save_template_plan

@@ -13,7 +13,7 @@ class AdminsController < ApplicationController
 
 	def show_doctor
 		@doctor =  Doctor.find(params[:format])
-
+		@active_plans = Plan.where("doctor_id = ? AND active = ?", @doctor, 1)
 		rescue ActiveRecord::RecordNotFound
 			flash[:alert] = "No encontramos lo que buscabas"
 			redirect_to root_url
