@@ -10,11 +10,14 @@
 <p><%= @doctor.speciality %></p>
 
 <h3>  Planes Activos </h3>
-<%= link_to "Añadir o Cambiar Plan de Expediente", add_template_plan_path %><br/>
+
 <% @active_plans.each do |plan| %>
 	<% plan.plan_elements.each do |element| %>
 		<%= link_to element.element.name, plan %>
 	<% end %>
 <% end %>
 
+<h3>Acciones</h3>
+<%= link_to "Añadir o Cambiar Plan de Expediente", add_template_plan_path %><br/>
+<%= link_to "Ver Historial de Planes de Expediente", template_plan_history_path(@doctor) %><br/>
  

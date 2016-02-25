@@ -76,9 +76,11 @@ Rails.application.routes.draw do
     end
   end
 
-   get '/add_template_plan', to: "plans#add_template_plan", :as => "add_template_plan"
+  get '/add_template_plan', to: "plans#add_template_plan", :as => "add_template_plan"
+  get '/template_plan_history', to: "plans#template_plan_history", :as => "template_plan_history"
   get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
   get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
   get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
   get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
+ 
 end

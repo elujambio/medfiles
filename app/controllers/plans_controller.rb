@@ -45,6 +45,11 @@ class PlansController < ApplicationController
 	def show
 	end
 
+	def template_plan_history
+		@doctor =  Doctor.find(params[:format])
+		@inactive_plans = Plan.where("doctor_id = ? AND active = ?", @doctor, -3)
+	end
+
 	
 	private
 		def set_plan
