@@ -27,9 +27,20 @@ Activo desde: <%= @plan.created_at.to_date %><br/>
 Frecuencia de pago: <%= @plan.billing_frequency %><br/>
 Preferencia de pago: <%= @plan.billing_preference %><br/>
  
-
  <h3>Pagos Pendientes y/o próximos</h3>
 
-	<% @plan.payments.each do |payment| %>
-		El <%= payment.next_payment %> | <%= link_to "Confirmar Pago", root_url %></br>
-	<% end %>
+<% @plan.payments.each do |payment| %>
+	<% if !payment.accepted_payment? %>
+		El <%= payment.next_payment %> | <%= link_to "Confirmar Pago", accept_payments_path(payment) %></br>
+		<% end %>
+<% end %>
+
+<h3>Historial de pagos</h3>
+
+<p>Si cancelas el pago se cancelará también el plan del doctor</p>
+
+<% @plan.payments.each do |payment| %>
+	<% if payment.accepted_payment? %>
+		Pagado el <%= payment.updated_at %>, pago de <%= payment.next_payment %> | <%= link_to "Cancelar Pago", cancel_payments_path(payment) %></br>
+		<% end %>
+<% end %>

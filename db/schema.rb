@@ -371,9 +371,10 @@ ActiveRecord::Schema.define(version: 20160225233513) do
   create_table "payments", force: :cascade do |t|
     t.date     "next_payment"
     t.boolean  "accepted_payment"
+    t.integer  "payment_number",   default: 0
     t.integer  "plan_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   add_index "payments", ["plan_id"], name: "index_payments_on_plan_id"

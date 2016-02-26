@@ -76,6 +76,14 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :payments, except: [:index, :show, :edit, :update, :destroy, :new, :create] do
+    collection do
+      get :accept
+      put :accept
+      get :cancel
+      put :cancel
+    end
+  end
   get '/add_template_plan', to: "plans#add_template_plan", :as => "add_template_plan"
   get '/template_plan_history', to: "plans#template_plan_history", :as => "template_plan_history"
   
@@ -84,5 +92,7 @@ Rails.application.routes.draw do
   get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
   get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
   get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
+
+
  
 end

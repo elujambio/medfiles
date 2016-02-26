@@ -39,14 +39,12 @@ class PlansController < ApplicationController
 
 			case params[:billing_frequency] 
 				when "Mensual"
-					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
-					Payment.create(next_payment: Date.today + 1.months, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false, payment_number: 1)
 				when "Semestral"
-					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
-					Payment.create(next_payment: Date.today + 6.months, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false, payment_number: 1)
 				when "Anual"
-					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
-					Payment.create(next_payment: Date.today + 1.years, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false, payment_number: 1)
+					
 			end
 
 			flash[:notice] = "Plan guardado."
