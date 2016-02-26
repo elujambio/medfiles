@@ -11,16 +11,17 @@ class PlansController < ApplicationController
 		end
 		@plan.billing_frequency = params[:billing_frequency]
 		@plan.billing_preference = params[:billing_preference]
-		@plan.active = 1
-		
-		case params[:billing_frequency] 
-			when "Mensual"
-				@plan.valid_til = Date.today + 1.months
-			when "Semestral"
-				@plan.valid_til = Date.today + 6.months
-			when "Anual"
-				@plan.valid_til = Date.today + 1.years
+		if params[:active] 
+			@plan.active = 1
+
+		else
+			@plan.active = -4
+			@plan.grace_til = Date.today + 15.days
 		end
+		
+		@plan.valid_from = Date.today
+		
+		
 		@template_plan = TemplatePlan.find(params[:template_id])
 		
 
@@ -33,7 +34,21 @@ class PlansController < ApplicationController
 					end
 				end
 			end
+
 			@plan.plan_elements.create(element: @template_plan)
+
+			case params[:billing_frequency] 
+				when "Mensual"
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today + 1.months, plan: @plan, accepted_payment: false)
+				when "Semestral"
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today + 6.months, plan: @plan, accepted_payment: false)
+				when "Anual"
+					Payment.create(next_payment: Date.today, plan: @plan, accepted_payment: false)
+					Payment.create(next_payment: Date.today + 1.years, plan: @plan, accepted_payment: false)
+			end
+
 			flash[:notice] = "Plan guardado."
 			redirect_to @plan
 		else

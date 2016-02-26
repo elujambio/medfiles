@@ -13,7 +13,23 @@
 <% end %>
 <% @plan.plan_elements.each do |element| %>
 		<%= element.element.name %><br/>
+		<% case @plan.billing_frequency %>
+			<% when "Mensual" %>
+				Importe: <%= element.element.monthly_cost %><br/>
+			<% when "Semestral" %>
+				Importe: <%= element.element.anual_cost / 2%><br/>
+			<% when "Anual" %>
+				Importe: <%= element.element.anual_cost %><br/>
+		<% end %>
+		
 <% end %>
-Vence el: <%= @plan.valid_til %><br/>
+Activo desde: <%= @plan.created_at.to_date %><br/>
 Frecuencia de pago: <%= @plan.billing_frequency %><br/>
 Preferencia de pago: <%= @plan.billing_preference %><br/>
+ 
+
+ <h3>Pagos Pendientes y/o próximos</h3>
+
+	<% @plan.payments.each do |payment| %>
+		El <%= payment.next_payment %> | <%= link_to "Confirmar Pago", root_url %></br>
+	<% end %>

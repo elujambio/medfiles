@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224204601) do
+ActiveRecord::Schema.define(version: 20160225233513) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -368,6 +368,16 @@ ActiveRecord::Schema.define(version: 20160224204601) do
 
   add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"
 
+  create_table "payments", force: :cascade do |t|
+    t.date     "next_payment"
+    t.boolean  "accepted_payment"
+    t.integer  "plan_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "payments", ["plan_id"], name: "index_payments_on_plan_id"
+
   create_table "plan_elements", force: :cascade do |t|
     t.integer  "plan_id"
     t.integer  "element_id"
@@ -380,6 +390,8 @@ ActiveRecord::Schema.define(version: 20160224204601) do
 
   create_table "plans", force: :cascade do |t|
     t.date     "valid_til"
+    t.date     "valid_from"
+    t.date     "grace_til"
     t.string   "billing_frequency"
     t.string   "billing_preference"
     t.integer  "doctor_id"

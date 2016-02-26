@@ -6,3 +6,5 @@
 <% if current_admin.superadmin? %>	
 	<%= link_to "Planes de Expedientes", template_plans_path %><br/>
 <% end %>
+
+<%= link_to "Planes de expedientes vencidos (Período de Gracia)", overdue_template_plans_path %><br/>

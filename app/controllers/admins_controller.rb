@@ -18,4 +18,8 @@ class AdminsController < ApplicationController
 			flash[:alert] = "No encontramos lo que buscabas"
 			redirect_to root_url
 	end
+
+	def overdue_template_plans
+		@overdue_plans = Plan.where(valid_til: Date.today)
+	end
 end
