@@ -2,22 +2,27 @@
 <html>
 <head>
   <title>Medfiles</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag "autocomplete-rails.js" %>
+
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-<% if doctor_signed_in? %>
-	<%= link_to("PROFILE", current_doctor) %>
-	<%= link_to("LOG_OUT", destroy_doctor_session_path) %>
-<% else %>
-	<%= link_to("SIGN IN", new_doctor_session_path) %>
-	<%= link_to("SIGN UP", new_doctor_registration_path) %>
-<% end %>
-<%= yield <%></%>
+<div id="navbar">
+
+	<% if doctor_signed_in? %>
+		<%= link_to("PROFILE", current_doctor) %>
+		<%= link_to("LOG OUT", destroy_doctor_session_path) %>
+	<% else %>
+		<%= link_to("SIGN IN", new_doctor_session_path) %>
+		<%= link_to("SIGN UP", new_doctor_registration_path) %>
+	<% end %>
+</div>
+<%= yield %>
 
 </body>
 </html>

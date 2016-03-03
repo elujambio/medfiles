@@ -3,7 +3,13 @@
 /*  RESET 				*/
 /* This part resets several stylesheet characteristics that are practical to reset. */
 
-*{
+// *
+body, html
+{
+	margin:0 0;
+	padding:0 0;
+}
+div, h1, h2, h3, h4, h5, h6, label, p, input, section, a, textarea, span {
 	margin:0 0;
 	padding:0 0;
 	text-decoration:none;
@@ -15,6 +21,9 @@
     text-decoration: none;
     text-indent: 0;
     overflow:none;   
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox */
+    box-sizing: border-box;    
 }
 
 section{
@@ -37,12 +46,13 @@ span{
 	padding:0;
 }
 /* INPUT FORMS RESET */
-input[type]
-{
-	-webkit-appearance:none;
-}
+// input[type]
+// {
+// 	-webkit-appearance:none;
+// }
 textarea, 
 select, 
+input[type="checkbox"], 
 input[type="date"], 
 input[type="datetime"], 
 input[type="datetime-local"], 
