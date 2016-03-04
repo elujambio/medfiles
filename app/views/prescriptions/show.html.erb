@@ -1,0 +1,5 @@
+
+<%= link_to "Editar", [:edit, @prescription.prescriptable, @prescription]%>
+	
+	<%= link_to "Eliminar", [@prescription.prescriptable, @prescription], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>	
+<%= @prescription.prescription %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  annex: MyText
+  gynecology_template_id: 
+
+two:
+  annex: MyText
+  gynecology_template_id: 

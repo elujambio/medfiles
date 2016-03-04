@@ -1,0 +1,278 @@
+
+<label><%= t :register %></label>
+<%= @gynecology_template.register %><br/>
+<label><%= t :name %></label>
+<h1><%= @gynecology_template.name %></h1>
+
+
+<%= link_to "Editar", edit_gynecology_template_path(@gynecology_template) %><br/>
+<%= link_to "Eliminar", gynecology_template_path(@gynecology_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
+
+<%= link_to "Añadir Hoja de Evolución", new_gynecology_template_gynecology_annex_path(@gynecology_template) %><br/>
+<%= link_to "Añadir Receta",  new_gynecology_template_prescription_path(@gynecology_template)%><br/>
+
+<%= render 'prescriptions/prescriptions', prescriptable: @gynecology_template %>
+
+<%= link_to "Añadir Foto",  new_gynecology_template_template_photo_path(@gynecology_template)%><br/>
+
+<%= render 'template_photos/template_photos', photable: @gynecology_template %>
+
+
+<%= link_to "Añadir Archivo",  new_gynecology_template_template_file_path(@gynecology_template)%><br/>
+
+<%= render 'template_files/template_files', fileable: @gynecology_template %>
+
+
+
+<h2>Historia Clínica</h2>
+<label><%= t :email %></label>
+<%= @gynecology_template.email %><br/>
+<label><%= t :husband_name %></label>
+<%= @gynecology_template.husband_name %><br/>
+<label><%= t :address %></label>
+<%= @gynecology_template.address %><br/>
+<label><%= t :telephone %></label>
+<%= @gynecology_template.telephone %><br/>
+<label><%= t :age %></label>
+<%= @gynecology_template.age %><br/>
+<label><%= t :husband_age %></label>
+<%= @gynecology_template.husband_age %><br/>
+<label><%= t :marital_status %></label>
+<%= @gynecology_template.marital_status %><br/>
+<label><%= t :ocupation %></label>
+<%= @gynecology_template.ocupation %><br/>
+<label><%= t :husband_ocupation %></label>
+<%= @gynecology_template.husband_ocupation %><br/>
+<label><%= t :reason%></label>
+<%= @gynecology_template.reason %><br/>
+
+<h3><%= t :family_background %></h3>
+<label><%= t :mother_background %></label>
+<%= @gynecology_template.mother_background %><br/>
+<label><%= t :father_background %></label>
+<%= @gynecology_template.father_background %><br/>
+<label><%= t :grandparents_background %></label>
+<%= @gynecology_template.grandparents_background %><br/>
+<label><%= t :siblings_background %></label>
+<%= @gynecology_template.siblings_background %><br/>
+<label><%= t :parents_siblings_background %></label>
+<%= @gynecology_template.parents_siblings_background %><br/>
+<label><%= t :children_background %></label>
+<%= @gynecology_template.children_background %><br/>
+<label><%= t :husband_background %></label>
+<%= @gynecology_template.husband_background %><br/>
+<label><%= t :personal_background %></label>
+<%= @gynecology_template.personal_background %><br/>
+<label><%= t :diet %></label>
+<%= @gynecology_template.diet %><br/>
+<label><%= t :smoking %></label>
+<%= @gynecology_template.smoking %><br/>
+<label><%= t :alergies %></label>
+<%= @gynecology_template.alergies %><br/>
+<label><%= t :drugs %></label>
+<%= @gynecology_template.drugs %><br/>
+<label><%= t :alcoholism %></label>
+<%= @gynecology_template.alcoholism %><br/>
+<label><%= t :inmunizations %></label>
+<%= @gynecology_template.inmunizations %><br/>
+<label><%= t :traumatics %></label>
+<%= @gynecology_template.traumatics %><br/>
+<label><%= t :surgicals %></label>
+<%= @gynecology_template.surgicals %><br/>
+<label><%= t :transfusions %></label>
+<%= @gynecology_template.transfusions %><br/>
+
+<h3><%= t :gynecological_background %></h3>
+<label><%= t :menarche%></label>
+<%= @gynecology_template.menarche %><br/>
+<label><%= t :rhythm %></label>
+<%= @gynecology_template.rhythm %><br/>
+<label><%= t :dysmenorrhea %></label>
+<%= @gynecology_template.dysmenorrhea %><br/> 
+<label><%= t :circumcised_partner %></label>
+<%= @gynecology_template.circumcised_partner %><br/>
+<label><%= t :ivsa %></label>
+<%= @gynecology_template.ivsa %><br/>
+<label><%= t :number_of_sexual_partners %></label>
+<%= @gynecology_template.number_of_sexual_partners %><br/>
+<label><%= t :pms %></label>
+<%= @gynecology_template.pms  %><br/>
+<label><%= t :pms_duration %></label>
+<%= @gynecology_template.pms_duration %><br/>
+<label><%= t :gestate %></label>
+<%= @gynecology_template.gestate %><br/>
+<label><%= t :gestate_for %></label>
+<%= @gynecology_template.gestate_for %><br/>
+<label><%= t :c_section %></label>
+<%= @gynecology_template.c_section %><br/>
+<label><%= t :abortions %></label>
+<%= @gynecology_template.abortions %><br/>
+<label><%= t :ee %></label>
+<%= @gynecology_template.ee %><br/>
+
+<label><%= t :fum %></label>
+<%= @gynecology_template.fum %><br/>
+<label><%= t :fup %></label>
+<%= @gynecology_template.fup %><br/>
+<label><%= t :fua %></label>
+<%= @gynecology_template.fua %><br/>
+<label><%= t :fuc %></label>
+<%= @gynecology_template.fuc %><br/>
+<label><%= t :fpp %></label>
+<%= @gynecology_template.fpp %><br/>
+<label><%= t :doc %></label>
+<%= @gynecology_template.doc %><br/>
+<label><%= t :previous_preganancy_complications %></label>
+<%= @gynecology_template.previous_preganancy_complications %><br/>
+<label><%= t :colposcopy %></label>
+<%= @gynecology_template.colposcopy %><br/>
+
+<h3><%= t :contraceptives %></h3>
+
+ <% @gynecology_template.contraceptives.each do |contraceptive|  %>
+
+	<label><%= t :contraceptive_name %></label>
+	<%= contraceptive.name %><br/>
+	<label><%= t :contraceptive_time %></label>
+	<%= contraceptive.time %><br/>
+	<label><%= t :contraceptive_tolerance %></label>
+	<%= contraceptive.tolerance %><br/>
+<% end %>
+
+<h3><%= t :pregnancies %></h3>
+
+ <% @gynecology_template.pregnancies.each do |pregnancy|  %>
+	<label><%= t :pregnancy_number %></label>
+	<%= pregnancy.pregnancy_number %><br/>
+	<label><%= t :pregnancy_date %></label>
+	<%= pregnancy.pregnancy_date %><br/>
+	<label><%= t :pregnancy_abortion %></label>
+	<%= pregnancy.abortion %><br/>
+	<label><%= t :pregnancy_delivery %></label>
+	<%= pregnancy.delivery %><br/>
+	<label><%= t :pregnancy_induction %></label>
+	<%= pregnancy.induction %><br/>
+	<label><%= t :pregnancy_ending %></label>
+	<%= pregnancy.ending %><br/>
+	<label><%= t :pregnancy_newborn %></label>
+	<%= pregnancy.newborn %><br/>
+	<label><%= t :pregnancy_rn %></label>
+	<%= pregnancy.rn %><br/>
+	<label><%= t :pregnancy_baby_weight %></label>
+	<%= pregnancy.baby_weight %><br/>
+	<label><%= t :pregnancy_baby_sex %></label>
+	<%= pregnancy.baby_sex %><br/>
+	<label><%= t :pregnancy_puerperium %></label>
+	<%= pregnancy.puerperium %><br/>
+<% end %>
+<br>
+
+<label><%= t :sexual_habits %></label>
+<%= @gynecology_template.sexual_habits %><br/>
+<label><%= t :frigidity %></label>
+<%= @gynecology_template.fridigity %><br/>
+<label><%= t :dyspareunia %></label>
+<%= @gynecology_template.dyspareunia %><br/>
+<label><%= t :menopause %></label>
+<%= @gynecology_template.menopause %><br/>
+<label><%= t :menopause_symptomatology %></label>
+<%= @gynecology_template.menopause_symptomatology %><br/>
+<label><%= t :leucorrea %></label>
+<%= @gynecology_template.leucorrea %><br/>
+<label><%= t :leucorrea_treatment %></label>
+<%= @gynecology_template.leucorrea_treatment %><br/>
+<label><%= t :pregnancy_medication %></label>
+<%= @gynecology_template.pregnancy_medication %><br/>
+
+
+<h3><%= t :physical_exploration %></h3>
+<label><%= t :ta %></label>
+<%= @gynecology_template.ta %><br/>
+<label><%= t :weight %></label>
+<%= @gynecology_template.weight %><br/>
+<label><%= t :size %></label>
+<%= @gynecology_template.size %><br/>
+<label><%= t :habitus %></label>
+<%= @gynecology_template.habitus %><br/>
+<label><%= t :head %></label>
+<%= @gynecology_template.head %><br/>
+<label><%= t :neck %></label>
+<%= @gynecology_template.neck %><br/>
+<label><%= t :torax %></label>
+<%= @gynecology_template.torax %><br/>
+<label><%= t :abdomen %></label>
+<%= @gynecology_template.abdomen %><br/>
+<label><%= t :limbs %></label>
+<%= @gynecology_template.limbs %><br/>
+
+<h3><%= t :breast_exploration%></h3>
+<label><%= t :breasts_appearance %></label>
+<%= @gynecology_template.breasts_appearance %><br/>
+<label><%= t :symetry %></label>
+<%= @gynecology_template.symetry %><br/>
+<label><%= t :skin_abnormalities %></label>
+<%= @gynecology_template.skin_abnormalities %><br/>
+<label><%= t :nipple %></label>
+<%= @gynecology_template.nipple %><br/>
+<label><%= t :abnormal_mass %></label>
+<%= @gynecology_template.abnormal_mass %><br/>
+<label><%= t :axillary_region %></label>
+<%= @gynecology_template.axillary_region %><br/>
+<label><%= t :ganglion_growth %></label>
+<%= @gynecology_template.ganglion_growth %><br/>
+<label><%= t :abnormal_secretion %></label>
+<%= @gynecology_template.abnormal_secretion %><br/>
+<label><%= t :mastalgia %></label>
+<%= @gynecology_template.mastalgia %><br/>
+
+<h3><%= t :gynecological_exploration %></h3>
+<label><%= t :external_aspect %></label>
+<%= @gynecology_template.external_aspect %><br/>
+<label><%= t :clitoris %></label>
+<%= @gynecology_template.clitoris %><br/>
+<label><%= t :vulva %></label>
+<%= @gynecology_template.vulva %><br/>
+<label><%= t :pubic_hair %></label>
+<%= @gynecology_template.pubic_hair %><br/>
+<label><%= t :himen %></label>
+<%= @gynecology_template.himen %><br/>
+<label><%= t :introito %></label>
+<%= @gynecology_template.introito %><br/>
+<label><%= t :perine %></label>
+<%= @gynecology_template.perine %><br/>
+<label><%= t :vaginal_walls %></label>
+<%= @gynecology_template.vaginal_walls %><br/>
+<label><%= t :secreation_and_discharge %></label>
+<%= @gynecology_template.secreation_and_discharge %><br/>
+<label><%= t :cervix %></label>
+<%= @gynecology_template.cervix %><br/>
+<label><%= t :uterus_position %></label>
+<%= @gynecology_template.uterus_position %><br/>
+<label><%= t :uterus_consistency %></label>
+<%= @gynecology_template.uterus_consistency %><br/>
+<label><%= t :uterus_size %></label>
+<%= @gynecology_template.uterus_size %><br/>
+<label><%= t :uterus_form %></label>
+<%= @gynecology_template.uterus_form %><br/>
+<label><%= t :annexes %></label>
+<%= @gynecology_template.annexes %><br/>
+<label><%= t :speculoscopy %></label>
+<%= @gynecology_template.speculoscopy %><br/>
+<label><%= t :internal_and_external_genitalia %></label>
+<%= @gynecology_template.internal_and_external_genitalia %><br/>
+<label><%= t :clinic_pelvimetry %></label>
+<%= @gynecology_template.clinic_pelvimetry %><br/>
+<label><%= t :impression_diagnosis %></label>
+<%= @gynecology_template.impression_diagnosis %><br/>
+<label><%= t :other_1%></label>
+<%= @gynecology_template.other_1 %><br/>
+<label><%= t :other_2 %></label>
+<%= @gynecology_template.other_2 %><br/>
+<label><%= t :other_3 %></label>
+<%= @gynecology_template.other_3 %><br/>
+<label><%= t :other_4 %></label>
+<%= @gynecology_template.other_4 %><br/>
+<label><%= t :other_5 %></label>
+<%= @gynecology_template.other_5 %><br/>
+
+

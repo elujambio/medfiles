@@ -1,0 +1,16 @@
+es:
+   contraceptives: "Anticonceptivos"
+   name: "Tipo" 
+   time: "Tiempo"
+   tolerance: "Tolerancia"
+   helpers:
+      placeholder:
+         contraceptive:
+            name: "Tipo" 
+            time: "Tiempo"
+            tolerance: "Tolerancia"
+      label:
+         contraceptive:
+            name: "Tipo" 
+            time: "Tiempo"
+            tolerance: "Tolerancia"

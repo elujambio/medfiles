@@ -1,0 +1,3 @@
+<%= link_to "Editar", edit_gynecology_template_gynecology_annex_path(@gynecology_template, @gynecology_annex) %> <br/>
+<%= link_to "Eliminar", [@gynecology_template, @gynecology_annex], method: :delete, data: { confirm: "¿Está seguro? Esta acción no se puede deshacer"} %>
+<%= @gynecology_annex.annex %>

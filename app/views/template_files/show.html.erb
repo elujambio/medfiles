@@ -1,0 +1,4 @@
+<%= link_to "Editar", [:edit, @template_file.fileable, @template_file]%>
+	
+<%= link_to "Eliminar", [ @template_file.fileable, @template_file], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>	
+<%= @template_file.asset %>

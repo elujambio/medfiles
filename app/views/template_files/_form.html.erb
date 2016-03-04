@@ -1,0 +1,5 @@
+<%= form_for [@fileable, @template_file] do |f|%>
+
+	<%= f.text_field :asset, placeholder: true %>
+	<%= f.submit "Guardar" %>
+<% end %>
