@@ -2,10 +2,7 @@
 <p>Estos planes entran en un período de gracia de 15 días antes de su cancelación total, contacta a los doctores para que realicen su pago o confirmalo para que no se cancele su cuenta.</p>
 
 
-<% @overdue_plans.each do |plan| %>
-	<% plan.plan_elements.each do |element| %>
-		<% if element.element_type == "TemplatePlan" %>
-			<%= link_to element.element.name, plan %>. Del <%= plan.doctor.name %><br/>
-		<% end %>
-	<% end %>
+<% @overdue_payments.each do |payment| %>
+	Doctor: <%= link_to payment.plan.doctor.name, show_doctor_path(payment.plan.doctor) %> <%= link_to "Ver plan", payment.plan %> <br/>
+
 <% end %>

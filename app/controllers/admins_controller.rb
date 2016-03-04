@@ -20,6 +20,13 @@ class AdminsController < ApplicationController
 	end
 
 	def overdue_template_plans
-		@overdue_plans = Plan.where(valid_til: Date.today)
+		@overdue_payments = Payment.where('next_payment < ? and accepted_payment = ?', Date.today + 3.months, false)
+	end
+
+	def due_template_plans
+		@due_payments = Playment.where('next_payment = ? and accepted_payment = ?', Date.today - 7.days, false)
+	end
+
+	def admin_templates_panel
 	end
 end

@@ -88,6 +88,7 @@ Rails.application.routes.draw do
   get '/template_plan_history', to: "plans#template_plan_history", :as => "template_plan_history"
   
   get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
+  get '/admin_templates_panel', to: "admins#admin_templates_panel", :as => "admin_templates_panel"
   get '/overdue_template_plans', to: "admins#overdue_template_plans", :as => "overdue_template_plans"
   get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
   get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
