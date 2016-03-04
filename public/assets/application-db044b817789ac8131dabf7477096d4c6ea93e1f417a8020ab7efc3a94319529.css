@@ -1,0 +1,224 @@
+/* line 1, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+label {
+  font-size: 14px;
+}
+/*	FLEXIE FRAMEWORK	*/
+/*	PABLO E. LUJAMBIO 	*/
+/*  RESET 				*/
+/* This part resets several stylesheet characteristics that are practical to reset. */
+/* line 7, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  text-decoration: none;
+  font-weight: normal;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  font-weight: normal;
+  text-decoration: none;
+  text-indent: 0;
+  overflow: none;
+}
+
+/* line 21, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+section {
+  display: block;
+}
+
+/* line 24, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+a {
+  color: #FAFAFA;
+}
+
+/* line 27, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 33, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+title, script {
+  display: none;
+}
+
+/* line 36, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+span {
+  margin: 0;
+  padding: 0;
+}
+
+/* INPUT FORMS RESET */
+/* line 41, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+input[type] {
+  -webkit-appearance: none;
+}
+
+/* line 45, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: none;
+  color: none;
+  outline: 0;
+  margin: none;
+  padding: none;
+  text-align: left;
+  font-size: 1em;
+  height: auto;
+  vertical-align: middle;
+  border-width: none;
+  font-family: 'Sans-Serif';
+}
+/* line 1, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+form {
+  background: #FFFFFF;
+  max-width: 720px;
+}
+
+/* line 6, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+form > div > div {
+  border: 1px solid #E5E5E5;
+  padding: 12px;
+}
+
+/* line 11, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.field > div,
+.single-field > div,
+.double-field > div {
+  margin: -1px 0 0 -1px;
+}
+
+/* line 17, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+input:focus + div {
+  background: red;
+}
+
+/* line 25, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+input {
+  width: 100%;
+  padding-top: 12px;
+  font-size: 18px;
+  background: none;
+}
+
+/* line 32, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.field,
+.single-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 51, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.field div,
+.single-field div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 80, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.double-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 98, C:/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.double-field > div {
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+html,
+body
+{
+	background:#F8F8F8;
+}

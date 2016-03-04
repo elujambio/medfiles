@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery-ui/autocomplete
+//= require autocomplete-rails
 
 function add_fields(link, association, content) {  
     var new_id = new Date().getTime();  
@@ -31,3 +33,4 @@ function remove_fields(link) {
         scrollTop: $('.fields').offset().top 
     }, 0);
 }
+

@@ -1,0 +1,1473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mu",
+				"multi"
+			],
+			[
+				"conjuncti",
+				"conjunctiva_left	(ophtalmology_template.es.yml)"
+			],
+			[
+				"weight",
+				"weight_at_birth	(ophtalmology_template.es.yml)"
+			],
+			[
+				"ailments_dir",
+				"ailments_during_pregnancy_treatment	(ophtalmology_template.es.yml)"
+			],
+			[
+				"ophtalmolog",
+				"ophtalmology_templates	(schema.rb)"
+			],
+			[
+				"ophtal",
+				"ophtalmology_templates	(schema.rb)"
+			],
+			[
+				"java",
+				"javascript_include_tag	include javascript src	erb"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"family",
+				"family_diabetic_retinopathy	(en.yml)"
+			],
+			[
+				"fam",
+				"family_other	(en.yml)"
+			],
+			[
+				"famii",
+				"family_thyroid"
+			],
+			[
+				"insura",
+				"insurance_policy	(en.yml)"
+			],
+			[
+				"insurance",
+				"insurance_company	(en.yml)"
+			],
+			[
+				"authenti",
+				"authenticate_doctor_for_ophtalmology_template"
+			],
+			[
+				"redirect",
+				"redirect_to	(ophtalmology_templates_controller.rb)"
+			],
+			[
+				"opht",
+				"ophtalmology_template"
+			],
+			[
+				"redire",
+				"redirect_to	(ophtalmology_templates_controller.rb)"
+			],
+			[
+				"Active",
+				"ActiveRecord	(ophtalmology_templates_controller.rb)"
+			],
+			[
+				"no_right",
+				"no_right_description"
+			],
+			[
+				"no_left",
+				"no_left_description"
+			],
+			[
+				"vitreous",
+				"vitreous_right"
+			],
+			[
+				"vitro",
+				"vitreous_left"
+			],
+			[
+				"fundus",
+				"fundus_left"
+			],
+			[
+				"crysta",
+				"crystaline_right"
+			],
+			[
+				"goinosco",
+				"goinoscopy_right"
+			],
+			[
+				"goinos",
+				"goinoscopy_left"
+			],
+			[
+				"intraocular",
+				"intraocular_pressure_2"
+			],
+			[
+				"intraocu",
+				"intraocular_pressure_left"
+			],
+			[
+				"ac",
+				"ac_bottom_right_value_2"
+			],
+			[
+				"ac_",
+				"ac_bottom_left_value_1"
+			],
+			[
+				"antechamber",
+				"antechamber_right"
+			],
+			[
+				"antecha",
+				"antechamber_left"
+			],
+			[
+				"pinhole",
+				"pinhole_third_value"
+			],
+			[
+				"avcc",
+				"avcc_third_value"
+			],
+			[
+				"avsc",
+				"avsc_third_value"
+			],
+			[
+				"born_of_ter",
+				"born_of_term_description"
+			],
+			[
+				"ailments_during",
+				"ailments_during_pregnancy_treatment"
+			],
+			[
+				"ailments",
+				"ailments_during_pregnancy"
+			],
+			[
+				"eye_sur",
+				"eye_surgery_right"
+			],
+			[
+				"eye",
+				"eye_surgery_left"
+			],
+			[
+				"retinal_deata",
+				"retinal_deatachment_description"
+			],
+			[
+				"retinal_deatach",
+				"retinal_deatachment_treatment"
+			],
+			[
+				"retinal_deat",
+				"retinal_deatachment_right"
+			],
+			[
+				"eyelids",
+				"eyelids_right"
+			],
+			[
+				"ocular",
+				"ocular_movement_version_left"
+			],
+			[
+				"specular",
+				"specular_magnification_right"
+			],
+			[
+				"specular_ma",
+				"specular_magnification_left"
+			],
+			[
+				"cyclople",
+				"cycloplegic_right_value_3"
+			],
+			[
+				"cycloplegic",
+				"cycloplegic_right_value_2"
+			],
+			[
+				"cyclo",
+				"cycloplegic_right_value_1"
+			],
+			[
+				"cyclopleg",
+				"cycloplegic_left_value_2"
+			],
+			[
+				"cycloplegic_left",
+				"cycloplegic_left_value_1"
+			],
+			[
+				"autorefraction_",
+				"autorefraction_right_value_3"
+			],
+			[
+				"autorefraction_ri",
+				"autorefraction_right_value_2"
+			],
+			[
+				"autorefra",
+				"autorefraction_right_value_1"
+			],
+			[
+				"auto",
+				"autorefraction_left_value_3"
+			],
+			[
+				"autorefraction_left_value",
+				"autorefraction_left_value_2"
+			],
+			[
+				"autorefraction_left",
+				"autorefraction_left_value_1"
+			],
+			[
+				"subject",
+				"subjective_right_value_2"
+			],
+			[
+				"subjective_left",
+				"subjective_left_value_3"
+			],
+			[
+				"subjective",
+				"subjective_left_value_2"
+			],
+			[
+				"lensometer_right_value",
+				"lensometer_right_value_2"
+			],
+			[
+				"lensometer_right",
+				"lensometer_right_value_1"
+			],
+			[
+				"lensometer",
+				"lensometer_left_value_3"
+			],
+			[
+				"lensometer_left",
+				"lensometer_left_value_2"
+			],
+			[
+				"patient_glaucoma_",
+				"patient_glaucoma_since"
+			],
+			[
+				"patient_squint",
+				"patient_squint_treatment"
+			],
+			[
+				"patient_hyperopia",
+				"patient_hyperopia_description"
+			],
+			[
+				"patient_my",
+				"patient_myopia_description"
+			],
+			[
+				"patient_trans",
+				"patient_transfution_description"
+			],
+			[
+				"patient_alergies",
+				"patient_alergies_description"
+			],
+			[
+				"patient_ne",
+				"patient_nefropathy_description"
+			],
+			[
+				"patient_arterial",
+				"patient_arterial_hypertension_treatment"
+			],
+			[
+				"patient_diabete",
+				"patient_diabetes_mellitus_treatment"
+			],
+			[
+				"patient_diabe",
+				"patient_diabetes_mellitus_time"
+			],
+			[
+				"family_other",
+				"family_other_ailments_2"
+			],
+			[
+				"family_",
+				"family_other	(schema.rb)"
+			],
+			[
+				"famil",
+				"family_cardiopathy	(schema.rb)"
+			],
+			[
+				"ophta",
+				"ophtalmology_template_params"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"adopt",
+				"adopt_a_dog	(en.yml)"
+			],
+			[
+				"FONT-",
+				"font-family"
+			],
+			[
+				"full",
+				"fullPageWrapper"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"link_",
+				"link_to	create a link	erb"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"lecture",
+				"lecture"
+			],
+			[
+				"getLeme",
+				"getElementsByClassName	(show-challenge.js)"
+			],
+			[
+				"image",
+				"image_tag	(landing.html.erb)"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"edn",
+				"end	only end	erb"
+			],
+			[
+				"label",
+				"label	(new.html.erb)"
+			],
+			[
+				"click",
+				"click_link"
+			],
+			[
+				"g",
+				"grey-50"
+			],
+			[
+				"background",
+				"backgroundHandler"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"lin",
+				"link_to	create a link	erb"
+			],
+			[
+				"IMAGE",
+				"image_tag	create a image	erb"
+			],
+			[
+				"elsif",
+				"elseif	only elseif	erb"
+			],
+			[
+				"li",
+				"link_to	create a link	erb"
+			],
+			[
+				"cha",
+				"challenge"
+			],
+			[
+				"smoothscro",
+				"smoothscroll	(smoothscroll.js)"
+			],
+			[
+				"add",
+				"addEventListener	(show-challenge.js)"
+			],
+			[
+				"clas",
+				"class=\"m	(show.html.erb)"
+			],
+			[
+				"imag",
+				"image_tag	(show.html.erb)"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"else",
+				"else	only else	erb"
+			],
+			[
+				"bg-clubin",
+				"bg-clubin-khaki"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"font-a",
+				"font-family"
+			],
+			[
+				"bacg",
+				"background-size"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"menu",
+				"menuSpritesheet"
+			],
+			[
+				"me",
+				"menuSpritesheet"
+			],
+			[
+				"getEle",
+				"getElementsByTagName"
+			],
+			[
+				"gl",
+				"glyphSmall"
+			],
+			[
+				"img",
+				"border-image"
+			],
+			[
+				"menuButton",
+				"menuButtonSpritesheetLight"
+			],
+			[
+				"menubutton",
+				"menuButtonSpritesheetDark"
+			],
+			[
+				"menuButtonSprite",
+				"menuButtonSpritesheetDark"
+			],
+			[
+				"menuButt",
+				"menuButtonSpritesheetDark"
+			],
+			[
+				"menuButtonSpritesheet",
+				"menuButtonSpritesheetLight"
+			],
+			[
+				"gly",
+				"glyphSmallDark"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"navbar",
+				"navbarMenu"
+			],
+			[
+				"padding",
+				"padding-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "      #Patient Information\n\n      name: \"\"\n      age: \"\" \n      birth_date: \"\"\n      sex: \"\"\n      originary_from: \"\"\n      ocupation: \"\"\n      religion: \"\"\n      address: \"\"\n      telephone: \"\"\n      email: \"\"\n      insurance_company: \"\"\n      insurance_policy: \"\"\n      previous_revisions: \"\"\n      previous_revision_date: \"\"\n\n      #Current Ailments\n\n      current_ailments: \"\"\n\n      #Family Background\n\n      family_diabetes_mellitus: \"\"\n      family_nephropathy: \"\"\n      family_hypertension: \"\"\n      family_cardiopathy: \"\"\n      family_thyroid: \"\"\n      family_cancer: \"\"\n      family_other: \"\"\n\n      #Family Ophtalmological Background\n\n      family_myopia: \"\"\n      family_farsightedness: \"\"\n      family_astigmatism: \"\"\n      family_keratoconus: \"\"\n      family_strabismus: \"\"\n      family_diabetic_retinopathy: \"\"\n      family_eye_surgery: \"\"\n      family_cataract: \"\"\n      family_retinal_deatachment: \"\"\n      family_laser_surgery: \"\"\n      family_glaucoma: \"\"\n      family_other_ailments_2: \"\"\n\n      #Personal Background\n\n      patient_diabetes_mellitus: \"\"\n      patient_diabetes_mellitus_since: \"\"\n      patient_diabetes_mellitus_treatment: \"\"\n\n      patient_arterial_hypertension: \"\"\n      patient_arterial_hypertension_since: \"\"\n      patient_arterial_hypertension_treatment: \"\"\n\n      patient_thyroid: \"\"\n      patient_thyroid_description: \"\"\n\n      patient_nefropathy: \"\"\n      patient_nefropathy_description: \"\"\n\n      patient_alergies: \"\"\n      patient_alergies_description: \"\"\n\n      patient_cardiopathy: \"\"\n      patient_cardiopathy_description: \"\"\n\n      patient_surgery: \"\"\n      patient_surgery_description: \"\"\n\n      patient_cancer: \"\"\n      patient_cancer_description: \"\"\n\n      patient_transfusion: \"\"\n      patient_transfusion_description: \"\"\n\n      patient_smoking: \"\"\n\n      patient_ailments_other: \"\"\n\n      #Patient Ophtalmological Background\n\n      patient_myopia: \"\"\n      patient_myopia_description: \"\"\n\n      patient_hyperopia: \"\"\n      patient_hyperopia_description: \"\"\n\n      patient_astigmatism: \"\"\n      patient_astigmatism_description: \"\"\n\n      patient_keratoconus: \"\"\n      patient_keratoconus_description: \"\"\n\n      patient_presbyopia: \"\"\n      patient_presbyopia_description: \"\"\n\n      patient_uses_glasses: \"\"\n      patient_uses_glasses_since: \"\"\n\n      patient_uses_contact_lenses: \"\"\n      patient_uses_contact_lenses_since: \"\"\n\n      patient_strabismus: \"\"\n      patient_strabismus_treatment: \"\"\n\n      patient_cataracts: \"\"\n      patient_cataracts_since: \"\"\n\n      patient_squint: \"\"\n      patient_squint_treatment: \"\"\n\n      patient_glaucoma: \"\"\n      patient_glaucoma_since: \"\"\n      patient_glaucoma_treatment: \"\"\n\n      patient_diabetic_retinopathy: \"\" \n\n      patient_laser_surgery: \"\"  \n\n      patient_retinal_deatachment_left: \"\"       \n      patient_retinal_deatachment_right: \"\"  \n\n      patient_retinal_deatachment_since: \"\"       \n      patient_retinal_deatachment_treatment: \"\"       \n\n      shocks: \"\"\n      shocks_description: \"\"\n\n      surgery_left_eye: \"\"\n      surgery_left_eye_description: \"\"\n      surgery_right_eye: \"\"\n      surgery_right_eye_description: \"\"\n\n      patient_other_eye_ailments: \"\"\n\n      #Only Women\n\n      patient_is_pregnant: \"\"\n      lactation: \"\"\n\n      #Perinatal History\n\n      gynobstetric_revision_during_pregnancy: \"\"\n\n      ailment_presence_during_pregnancy: \"\"\n      ailments_during_pregnancy: \"\"\n      ailments_during_pregnancy_treatment: \"\"\n\n      weight_at_birth: \"\"\n      size_at_birth: \"\"\n\n      born_of_term: \"\"\n\n      problems_during_birth: \"\"\n\n      #Ophtalmological Exploration\n\n      uncorrected_visual_acuity_left: \"\"\n      uncorrected_visual_acuity_both: \"\"\n      uncorrected_visual_acuity_right: \"\"\n\n      pinhole_left: \"\"\n      pinhole_both: \"\"\n      pinhole_right: \"\"\n\n      visual_acuity_with_correction_left: \"\"\n      visual_acuity_with_correction_both: \"\"\n      visual_acuity_with_correction_right: \"\"\n\n      patient_uses_contact_lenses_current: \"\"\n      patient_uses_glasses_current: \"\"\n\n      corrected_visual_acuity_left: \"\"\n      corrected_visual_acuity_both: \"\"\n      corrected_visual_acuity_right: \"\"\n\n      lensometer_left_value_1: \"\"\n      lensometer_left_value_2: \"\"\n      lensometer_left_value_3: \"\"\n      lensometer_right_value_1: \"\"\n      lensometer_right_value_2: \"\"\n      lensometer_right_value_3: \"\"\n\n      add_1: \"\"\n\n      refraction: \"\"\n\n      manifested_refraction_left_value_1: \"\"\n      manifested_refraction_left_value_2: \"\"\n      manifested_refraction_left_value_3: \"\"\n      manifested_refraction_right_value_1: \"\"\n      manifested_refraction_right_value_2: \"\"\n      manifested_refraction_right_value_3: \"\"\n\n      subjective_refraction_left_value_1: \"\"\n      subjective_refraction_left_value_2: \"\"\n      subjective_refraction_left_value_3: \"\"\n      subjective_refraction_right_value_1: \"\"\n      subjective_refraction_right_value_2: \"\"\n      subjective_refraction_right_value_3: \"\"\n\n      add_2: \"\"\n\n      autorefraction_left_value_1: \"\"\n      autorefraction_left_value_2: \"\"\n      autorefraction_left_value_3: \"\"\n      autorefraction_right_value_1: \"\"\n      autorefraction_right_value_2: \"\"\n      autorefraction_right_value_3: \"\"\n\n      cicloplegic_refraction_left_value_1: \"\"\n      cicloplegic_refraction_left_value_2: \"\"\n      cicloplegic_refraction_left_value_3: \"\"\n      cicloplegic_refraction_right_value_1: \"\"\n      cicloplegic_refraction_right_value_2: \"\"\n      cicloplegic_refraction_right_value_3: \"\"\n\n      better_corrected_visual_acuity_left: \"\"\n      better_corrected_visual_acuity_both: \"\"\n      better_corrected_visual_acuity_right: \"\"      \n\n      keratometry_left: \"\"\n      keratometry_right: \"\"\n\n      paquimetry_left: \"\"\n      paquimetry_right: \"\"\n\n      specular_biomicroscopy_left: \"\"\n      specular_biomicroscopy_right: \"\"\n\n      pupillary_reflexes_left: \"\"\n      pupillary_reflexes_right: \"\"\n\n      ocular_movements: \"\"\n\n      ductions_left: \"\"\n      ductions_right: \"\"\n\n      versions_left: \"\"\n      versions_right: \"\"\n\n      primary_position_of_gaze_left: \"\"\n      primary_position_of_gaze_right: \"\"\n\n      eyelids_left: \"\"\n      eyelids_right: \"\"\n\n      annexes_left: \"\"\n      annexes_right: \"\"\n\n      lachrymal_left: \"\"\n      lachrymal_right: \"\"\n\n      conjunctiva_left: \"\"\n      conjunctiva_right: \"\"\n\n      cornea_left: \"\"\n      cornea_right: \"\"\n\n      antechamber_left: \"\"\n      antechamber_right: \"\"\n\n      intraocular_pressure_left: \"\"\n      intraocular_pressure_right: \"\"\n\n      #HERE GOES X X DIAGRAM THINGY\n\n      iris_left: \"\"\n      iris_right: \"\"\n\n      pupil_left: \"\"\n      pupil_right: \"\"\n\n      crystaline_left: \"\"\n      crystaline_right: \"\"\n\n      fundus_left: \"\"\n      fundus_right: \"\"\n\n      retina_left: \"\"\n      retina_right: \"\"      \n\n      vitreous_left: \"\"\n      vitreous_right: \"\"\n\n      optic_nerve_left: \"\"\n      optic_nerve_right: \"\"\n\n      taint_left: \"\"\n      taint_right: \"\"\n\n      #HERE GOES EYE DIAGRAM THINGY \n\n      observations: \"\"\n      diagnosis: \"\"\n      plan_and_treatment: \"\"",
+			"settings":
+			{
+				"buffer_size": 6980,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!-- #Patient Information -->\n<div id=\"patient-data\">\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :name %></label>\n                  <%= expedient.text_field :name, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :age %></label> \n                  <%= expedient.text_field :age, placeholder: true %> \n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div> \n                  <label><%= t :birth_date %></label>\n                  <%= expedient.text_field :birth_date, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :sex %></label>\n                  <%= expedient.text_field :sex, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :originary_from %></label>\n                  <%= expedient.text_field :originary_from, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :ocupation %></label>\n                  <%= expedient.text_field :ocupation, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :religion %></label>\n                  <%= expedient.text_field :religion, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :address %></label>\n                  <%= expedient.text_field :address, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :telephone %></label>\n                  <%= expedient.text_field :telephone, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :email %></label>\n                  <%= expedient.text_field :email, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :insurance_company %></label>\n                  <%= expedient.text_field :insurance_company, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :insurance_policy %></label>\n                  <%= expedient.text_field :insurance_policy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :previous_revisions %></label>\n                  <%= expedient.text_field :previous_revisions, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :previous_revision_date %></label>\n                  <%= expedient.text_field :previous_revision_date, placeholder: true %>\n            </div>\n      </div>\n</div>\n<!-- #Current Ailments -->\n\n<label><%= t :current_ailments %></label>\n<%= expedient.text_field :current_ailments, placeholder: true %>\n\n<!-- #Family Background -->\n<!-- #Family Ophtalmological Background -->\n<div id=\"family-background\">\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_diabetes_mellitus %></label>\n                  <%= expedient.text_field :family_diabetes_mellitus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_nephropathy %></label>\n                  <%= expedient.text_field :family_nephropathy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_hypertension %></label>\n                  <%= expedient.text_field :family_hypertension, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_cardiopathy %></label>\n                  <%= expedient.text_field :family_cardiopathy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_thyroid %></label>\n                  <%= expedient.text_field :family_thyroid, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_cancer %></label>\n                  <%= expedient.text_field :family_cancer, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_other %></label>\n                  <%= expedient.text_field :family_other, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_myopia %></label>\n                  <%= expedient.text_field :family_myopia, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_farsightedness %></label>\n                  <%= expedient.text_field :family_farsightedness, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_astigmatism %></label>\n                  <%= expedient.text_field :family_astigmatism, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_keratoconus %></label>\n                  <%= expedient.text_field :family_keratoconus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_strabismus %></label>\n                  <%= expedient.text_field :family_strabismus, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_diabetic_retinopathy %></label>\n                  <%= expedient.text_field :family_diabetic_retinopathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_eye_surgery %></label>\n                  <%= expedient.text_field :family_eye_surgery, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_cataract %></label>\n                  <%= expedient.text_field :family_cataract, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_retinal_deatachment %></label>\n                  <%= expedient.text_field :family_retinal_deatachment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_laser_surgery %></label>\n                  <%= expedient.text_field :family_laser_surgery, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_glaucoma %></label>\n                  <%= expedient.text_field :family_glaucoma, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :family_other_ailments_2 %></label>\n                  <%= expedient.text_field :family_other_ailments_2, placeholder: true %>\n            </div>\n      </div>\n</div>\n<!-- #Personal Background -->\n<div id=\"patient-background\">\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_diabetes_mellitus %></label>\n                  <%= expedient.text_field :patient_diabetes_mellitus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_diabetes_mellitus_since %></label>\n                  <%= expedient.text_field :patient_diabetes_mellitus_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_diabetes_mellitus_treatment %></label>\n                  <%= expedient.text_field :patient_diabetes_mellitus_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_arterial_hypertension %></label>\n                  <%= expedient.text_field :patient_arterial_hypertension, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_arterial_hypertension_since %></label>\n                  <%= expedient.text_field :patient_arterial_hypertension_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_arterial_hypertension_treatment %></label>\n                  <%= expedient.text_field :patient_arterial_hypertension_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_thyroid %></label>\n                  <%= expedient.text_field :patient_thyroid, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_thyroid_description %></label>\n                  <%= expedient.text_field :patient_thyroid_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_nefropathy %></label>\n                  <%= expedient.text_field :patient_nefropathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_nefropathy_description %></label>\n                  <%= expedient.text_field :patient_nefropathy_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_alergies %></label>\n                  <%= expedient.text_field :patient_alergies, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_alergies_description %></label>\n                  <%= expedient.text_field :patient_alergies_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cardiopathy %></label>\n                  <%= expedient.text_field :patient_cardiopathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cardiopathy_description %></label>\n                  <%= expedient.text_field :patient_cardiopathy_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_surgery %></label>\n                  <%= expedient.text_field :patient_surgery, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_surgery_description %></label>\n                  <%= expedient.text_field :patient_surgery_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cancer %></label>\n                  <%= expedient.text_field :patient_cancer, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cancer_description %></label>\n                  <%= expedient.text_field :patient_cancer_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_transfusion %></label>\n                  <%= expedient.text_field :patient_transfusion, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_transfusion_description %></label>\n                  <%= expedient.text_field :patient_transfusion_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_smoking %></label>\n                  <%= expedient.text_field :patient_smoking, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_ailments_other %></label>\n                  <%= expedient.text_field :patient_ailments_other, placeholder: true %>\n            </div>\n      </div>\n\n      <!-- #Patient Ophtalmological Background -->\n\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_myopia %></label>\n                  <%= expedient.text_field :patient_myopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_myopia_description %></label>\n                  <%= expedient.text_field :patient_myopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_hyperopia %></label>\n                  <%= expedient.text_field :patient_hyperopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_hyperopia_description %></label>\n                  <%= expedient.text_field :patient_hyperopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_astigmatism %></label>\n                  <%= expedient.text_field :patient_astigmatism, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_astigmatism_description %></label>\n                  <%= expedient.text_field :patient_astigmatism_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_keratoconus %></label>\n                  <%= expedient.text_field :patient_keratoconus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_keratoconus_description %></label>\n                  <%= expedient.text_field :patient_keratoconus_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_presbyopia %></label>\n                  <%= expedient.text_field :patient_presbyopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_presbyopia_description %></label>\n                  <%= expedient.text_field :patient_presbyopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_uses_glasses %></label>\n                  <%= expedient.text_field :patient_uses_glasses, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_uses_glasses_since %></label>\n                  <%= expedient.text_field :patient_uses_glasses_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_uses_contact_lenses %></label>\n                  <%= expedient.text_field :patient_uses_contact_lenses, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_uses_contact_lenses_since %></label>\n                  <%= expedient.text_field :patient_uses_contact_lenses_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_strabismus %></label>\n                  <%= expedient.text_field :patient_strabismus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_strabismus_treatment %></label>\n                  <%= expedient.text_field :patient_strabismus_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cataracts %></label>\n                  <%= expedient.text_field :patient_cataracts, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cataracts_since %></label>\n                  <%= expedient.text_field :patient_cataracts_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_squint %></label>\n                  <%= expedient.text_field :patient_squint, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_squint_treatment %></label>\n                  <%= expedient.text_field :patient_squint_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_glaucoma %></label>\n                  <%= expedient.text_field :patient_glaucoma, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_glaucoma_since %></label>\n                  <%= expedient.text_field :patient_glaucoma_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_glaucoma_treatment %></label>\n                  <%= expedient.text_field :patient_glaucoma_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_diabetic_retinopathy %></label> \n                  <%= expedient.text_field :patient_diabetic_retinopathy, placeholder: true %> \n            </div>\n            <div>\n                  <label><%= t :patient_laser_surgery %></label>  \n                  <%= expedient.text_field :patient_laser_surgery, placeholder: true %>  \n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_left %></label> \n                  <%= expedient.text_field :patient_retinal_deatachment_left, placeholder: true %> \n            </div>\n            <div>\n                  <label><%= t :patient_retinal_deatachment_right %></label>  \n                  <%= expedient.text_field :patient_retinal_deatachment_right, placeholder: true %>  \n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_since %></label> \n                  <%= expedient.text_field :patient_retinal_deatachment_since, placeholder: true %> \n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_treatment %></label> \n                  <%= expedient.text_field :patient_retinal_deatachment_treatment, placeholder: true %> \n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :shocks %></label>\n                  <%= expedient.text_field :shocks, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :shocks_description %></label>\n                  <%= expedient.text_field :shocks_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :surgery_left_eye %></label>\n                  <%= expedient.text_field :surgery_left_eye, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :surgery_left_eye_description %></label>\n                  <%= expedient.text_field :surgery_left_eye_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :surgery_right_eye %></label>\n                  <%= expedient.text_field :surgery_right_eye, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :surgery_right_eye_description %></label>\n                  <%= expedient.text_field :surgery_right_eye_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_other_eye_ailments %></label>\n                  <%= expedient.text_field :patient_other_eye_ailments, placeholder: true %>\n            </div>\n      </div>\n</div>\n<!-- #Only Women -->\n<div class=\"double-field\">\n      <div>\n            <label><%= t :patient_is_pregnant %></label>\n            <%= expedient.check_box :patient_is_pregnant %>\n      </div>\n      <div>\n            <label><%= t :lactation %></label>\n            <%= expedient.check_box :lactation %>\n      </div>\n</div>\n<!-- #Perinatal History -->\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :gynobstetric_revision_during_pregnancy %></label>\n            <%= expedient.check_box :gynobstetric_revision_during_pregnancy, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :ailment_presence_during_pregnancy %></label>\n            <%= expedient.check_box :ailment_presence_during_pregnancy, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :ailments_during_pregnancy %></label>\n            <%= expedient.text_field :ailments_during_pregnancy, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :ailments_during_pregnancy_treatment %></label>\n            <%= expedient.text_field :ailments_during_pregnancy_treatment, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :weight_at_birth %></label>\n            <%= expedient.text_field :weight_at_birth, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :size_at_birth %></label>\n            <%= expedient.text_field :size_at_birth, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :born_of_term %></label>\n            <%= expedient.check_box :born_of_term, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :problems_during_birth %></label>\n            <%= expedient.text_field :problems_during_birth, placeholder: true %>\n      </div>\n</div>\n<!-- #Ophtalmological Exploration -->\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :uncorrected_visual_acuity_left %></label>\n            <%= expedient.text_field :uncorrected_visual_acuity_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :uncorrected_visual_acuity_both %></label>\n            <%= expedient.text_field :uncorrected_visual_acuity_both, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :uncorrected_visual_acuity_right %></label>\n            <%= expedient.text_field :uncorrected_visual_acuity_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :pinhole_left %></label>\n            <%= expedient.text_field :pinhole_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :pinhole_both %></label>\n            <%= expedient.text_field :pinhole_both, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :pinhole_right %></label>\n            <%= expedient.text_field :pinhole_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :visual_acuity_with_correction_left %></label>\n            <%= expedient.text_field :visual_acuity_with_correction_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :visual_acuity_with_correction_both %></label>\n            <%= expedient.text_field :visual_acuity_with_correction_both, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :visual_acuity_with_correction_right %></label>\n            <%= expedient.text_field :visual_acuity_with_correction_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :patient_uses_contact_lenses_current %></label>\n            <%= expedient.check_box :patient_uses_contact_lenses_current, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :patient_uses_glasses_current %></label>\n            <%= expedient.check_box :patient_uses_glasses_current, placeholder: true %>\n      </div>\n</div>\n<div class=\"mulit-field\">\n      <div>\n            <label><%= t :corrected_visual_acuity_left %></label>\n            <%= expedient.text_field :corrected_visual_acuity_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :corrected_visual_acuity_both %></label>\n            <%= expedient.text_field :corrected_visual_acuity_both, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :corrected_visual_acuity_right %></label>\n            <%= expedient.text_field :corrected_visual_acuity_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :lensometer_left_value_1 %></label>\n            <%= expedient.text_field :lensometer_left_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :lensometer_left_value_2 %></label>\n            <%= expedient.text_field :lensometer_left_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :lensometer_left_value_3 %></label>\n            <%= expedient.text_field :lensometer_left_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :lensometer_right_value_1 %></label>\n            <%= expedient.text_field :lensometer_right_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :lensometer_right_value_2 %></label>\n            <%= expedient.text_field :lensometer_right_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :lensometer_right_value_3 %></label>\n            <%= expedient.text_field :lensometer_right_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :add_1 %></label>\n            <%= expedient.text_field :add_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :refraction %></label>\n            <%= expedient.text_field :refraction, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :manifested_refraction_left_value_1 %></label>\n            <%= expedient.text_field :manifested_refraction_left_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :manifested_refraction_left_value_2 %></label>\n            <%= expedient.text_field :manifested_refraction_left_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :manifested_refraction_left_value_3 %></label>\n            <%= expedient.text_field :manifested_refraction_left_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :manifested_refraction_right_value_1 %></label>\n            <%= expedient.text_field :manifested_refraction_right_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :manifested_refraction_right_value_2 %></label>\n            <%= expedient.text_field :manifested_refraction_right_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :manifested_refraction_right_value_3 %></label>\n            <%= expedient.text_field :manifested_refraction_right_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :subjective_refraction_left_value_1 %></label>\n            <%= expedient.text_field :subjective_refraction_left_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :subjective_refraction_left_value_2 %></label>\n            <%= expedient.text_field :subjective_refraction_left_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :subjective_refraction_left_value_3 %></label>\n            <%= expedient.text_field :subjective_refraction_left_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :subjective_refraction_right_value_1 %></label>\n            <%= expedient.text_field :subjective_refraction_right_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :subjective_refraction_right_value_2 %></label>\n            <%= expedient.text_field :subjective_refraction_right_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :subjective_refraction_right_value_3 %></label>\n            <%= expedient.text_field :subjective_refraction_right_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"single-field\">\n      <div>\n            <label><%= t :add_2 %></label>\n            <%= expedient.text_field :add_2, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :autorefraction_left_value_1 %></label>\n            <%= expedient.text_field :autorefraction_left_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :autorefraction_left_value_2 %></label>\n            <%= expedient.text_field :autorefraction_left_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :autorefraction_left_value_3 %></label>\n            <%= expedient.text_field :autorefraction_left_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :autorefraction_right_value_1 %></label>\n            <%= expedient.text_field :autorefraction_right_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :autorefraction_right_value_2 %></label>\n            <%= expedient.text_field :autorefraction_right_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :autorefraction_right_value_3 %></label>\n            <%= expedient.text_field :autorefraction_right_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :cicloplegic_refraction_left_value_1 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_left_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :cicloplegic_refraction_left_value_2 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_left_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :cicloplegic_refraction_left_value_3 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_left_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :cicloplegic_refraction_right_value_1 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_right_value_1, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :cicloplegic_refraction_right_value_2 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_right_value_2, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :cicloplegic_refraction_right_value_3 %></label>\n            <%= expedient.text_field :cicloplegic_refraction_right_value_3, placeholder: true %>\n      </div>\n</div>\n<div class=\"multi-field\">\n      <div>\n            <label><%= t :better_corrected_visual_acuity_left %></label>\n            <%= expedient.text_field :better_corrected_visual_acuity_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :better_corrected_visual_acuity_both %></label>\n            <%= expedient.text_field :better_corrected_visual_acuity_both, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :better_corrected_visual_acuity_right %></label>\n            <%= expedient.text_field :better_corrected_visual_acuity_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :keratometry_left %></label>\n            <%= expedient.text_field :keratometry_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :keratometry_right %></label>\n            <%= expedient.text_field :keratometry_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :paquimetry_left %></label>\n            <%= expedient.text_field :paquimetry_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :paquimetry_right %></label>\n            <%= expedient.text_field :paquimetry_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :specular_biomicroscopy_left %></label>\n            <%= expedient.text_field :specular_biomicroscopy_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :specular_biomicroscopy_right %></label>\n            <%= expedient.text_field :specular_biomicroscopy_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :pupillary_reflexes_left %></label>\n            <%= expedient.text_field :pupillary_reflexes_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :pupillary_reflexes_right %></label>\n            <%= expedient.text_field :pupillary_reflexes_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"single-field\">\n      <div>\n            <label><%= t :ocular_movements %></label>\n            <%= expedient.text_field :ocular_movements, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :ductions_left %></label>\n            <%= expedient.text_field :ductions_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :ductions_right %></label>\n            <%= expedient.text_field :ductions_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :versions_left %></label>\n            <%= expedient.text_field :versions_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :versions_right %></label>\n            <%= expedient.text_field :versions_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :primary_position_of_gaze_left %></label>\n            <%= expedient.text_field :primary_position_of_gaze_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :primary_position_of_gaze_right %></label>\n            <%= expedient.text_field :primary_position_of_gaze_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :eyelids_left %></label>\n            <%= expedient.text_field :eyelids_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :eyelids_right %></label>\n            <%= expedient.text_field :eyelids_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :annexes_left %></label>\n            <%= expedient.text_field :annexes_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :annexes_right %></label>\n            <%= expedient.text_field :annexes_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :lachrymal_left %></label>\n            <%= expedient.text_field :lachrymal_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :lachrymal_right %></label>\n            <%= expedient.text_field :lachrymal_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :conjunctiva_left %></label>\n            <%= expedient.text_field :conjunctiva_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :conjunctiva_right %></label>\n            <%= expedient.text_field :conjunctiva_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :cornea_left %></label>\n            <%= expedient.text_field :cornea_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :cornea_right %></label>\n            <%= expedient.text_field :cornea_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :antechamber_left %></label>\n            <%= expedient.text_field :antechamber_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :antechamber_right %></label>\n            <%= expedient.text_field :antechamber_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :intraocular_pressure_left %></label>\n            <%= expedient.text_field :intraocular_pressure_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :intraocular_pressure_right %></label>\n            <%= expedient.text_field :intraocular_pressure_right, placeholder: true %>\n      </div>\n</div>\n<!-- #HERE GOES X X DIAGRAM THINGY -->\n<div class=\"double-field\">\n      <div>\n            <label><%= t :iris_left %></label>\n            <%= expedient.text_field :iris_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :iris_right %></label>\n            <%= expedient.text_field :iris_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :pupil_left %></label>\n            <%= expedient.text_field :pupil_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :pupil_right %></label>\n            <%= expedient.text_field :pupil_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :crystaline_left %></label>\n            <%= expedient.text_field :crystaline_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :crystaline_right %></label>\n            <%= expedient.text_field :crystaline_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :fundus_left %></label>\n            <%= expedient.text_field :fundus_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :fundus_right %></label>\n            <%= expedient.text_field :fundus_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :retina_left %></label>\n            <%= expedient.text_field :retina_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :retina_right %></label>\n            <%= expedient.text_field :retina_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :vitreous_left %></label>\n            <%= expedient.text_field :vitreous_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :vitreous_right %></label>\n            <%= expedient.text_field :vitreous_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :optic_nerve_left %></label>\n            <%= expedient.text_field :optic_nerve_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :optic_nerve_right %></label>\n            <%= expedient.text_field :optic_nerve_right, placeholder: true %>\n      </div>\n</div>\n<div class=\"double-field\">\n      <div>\n            <label><%= t :taint_left %></label>\n            <%= expedient.text_field :taint_left, placeholder: true %>\n      </div>\n      <div>\n            <label><%= t :taint_right %></label>\n            <%= expedient.text_field :taint_right, placeholder: true %>\n      </div>\n</div>\n<!-- #HERE GOES EYE DIAGRAM THINGY  -->\n<div id=\"conclusion\">\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :observations %></label>\n                  <%= expedient.text_field :observations, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :diagnosis %></label>\n                  <%= expedient.text_field :diagnosis, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :plan_and_treatment %></label>\n                  <%= expedient.text_field :plan_and_treatment, placeholder: true %>\n            </div>\n      </div>\n</div>",
+			"settings":
+			{
+				"buffer_size": 40066,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160206190452_create_ophtalmology_templates.rb",
+			"settings":
+			{
+				"buffer_size": 11382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/ophtalmology_template.es.yml",
+			"settings":
+			{
+				"buffer_size": 19674,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 11658,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts/expedient_form.js",
+			"settings":
+			{
+				"buffer_size": 1373,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<%= form_for(@ophtalmology_template) do |expedient| %>\n<div id=\"patient-data\">\n	<h4><%= t :patient_data %></h4>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :name %></label>\n                  <%= expedient.text_field :name, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :age %></label> \n                  <%= expedient.text_field :age, placeholder: true %> \n            </div>\n		</div>\n		<div class=\"double-field\">\n            <div> \n                  <label><%= t :birth_date %></label>\n                  <%= expedient.text_field :birth_date, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :sex %></label>\n                  <%= expedient.radio_button :sex, :male %>\n                  <%= expedient.radio_button :sex, :female %>\n            </div>\n		</div>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :originary_from %></label>\n                  <%= expedient.text_field :originary_from, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :ocupation %></label>\n                  <%= expedient.text_field :ocupation, placeholder: true %>\n            </div>\n		</div>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :religion %></label>\n                  <%= expedient.text_field :religion, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :address %></label>\n                  <%= expedient.text_field :address, placeholder: true %>\n            </div>\n		ö</div>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :telephone %></label>\n                  <%= expedient.text_field :telephone, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :email %></label>\n                  <%= expedient.text_field :email, placeholder: true %>\n            </div>\n		</div>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :insurance_company %></label>\n                  <%= expedient.text_field :insurance_company, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :insurance_policy %></label>\n                  <%= expedient.text_field :insurance_policy, placeholder: true %>\n            </div>\n		</div>\n		<div class=\"double-field\">\n            <div>\n                  <label><%= t :previous_revisions %></label>\n                  <%= expedient.check_box :previous_revisions, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :previous_revision_date %></label>\n                  <%= expedient.text_field :previous_revision_date, placeholder: true %>\n            </div>\n		</div>\n		<div class=\"single-field\">\n			<div>\n				<label><%= t :current_ailments %></label>\n				<%= expedient.text_field :current_ailments, placeholder: true %>\n			</div>\n		</div>\n</div>\n\n\n<!-- #Family Background -->\n<!-- #Family Ophtalmological Background -->\n<div id=\"family-background\">\n	<h4><%= t :family_background %></h4>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_diabetes_mellitus %></label>\n                  <%= expedient.text_field :family_diabetes_mellitus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_nephropathy %></label>\n                  <%= expedient.text_field :family_nephropathy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_hypertension %></label>\n                  <%= expedient.text_field :family_hypertension, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_cardiopathy %></label>\n                  <%= expedient.text_field :family_cardiopathy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_thyroid %></label>\n                  <%= expedient.text_field :family_thyroid, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_cancer %></label>\n                  <%= expedient.text_field :family_cancer, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_other %></label>\n                  <%= expedient.text_field :family_other, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_myopia %></label>\n                  <%= expedient.text_field :family_myopia, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_farsightedness %></label>\n                  <%= expedient.text_field :family_farsightedness, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_astigmatism %></label>\n                  <%= expedient.text_field :family_astigmatism, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_keratoconus %></label>\n                  <%= expedient.text_field :family_keratoconus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_strabismus %></label>\n                  <%= expedient.text_field :family_strabismus, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_diabetic_retinopathy %></label>\n                  <%= expedient.text_field :family_diabetic_retinopathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_eye_surgery %></label>\n                  <%= expedient.text_field :family_eye_surgery, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n				<label><%= t :family_cataract %></label>\n				<%= expedient.text_field :family_cataract, placeholder: true %>\n            </div>\n            <div>\n				<label><%= t :family_retinal_deatachment %></label>\n				<%= expedient.text_field :family_retinal_deatachment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :family_laser_surgery %></label>\n                  <%= expedient.text_field :family_laser_surgery, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :family_glaucoma %></label>\n                  <%= expedient.text_field :family_glaucoma, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :family_other_ailments_2 %></label>\n                  <%= expedient.text_field :family_other_ailments_2, placeholder: true %>\n            </div>\n      </div>\n</div>\n\n<div id=\"patient-background\">\n	<h4><%= t :patient_background %></h4>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_diabetes_mellitus %></label>\n                  <%= expedient.check_box :patient_diabetes_mellitus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_diabetes_mellitus_since %></label>\n                  <%= expedient.text_field :patient_diabetes_mellitus_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_diabetes_mellitus_treatment %></label>\n                  <%= expedient.text_field :patient_diabetes_mellitus_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_arterial_hypertension %></label>\n                  <%= expedient.check_box :patient_arterial_hypertension, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_arterial_hypertension_since %></label>\n                  <%= expedient.text_field :patient_arterial_hypertension_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_arterial_hypertension_treatment %></label>\n                  <%= expedient.text_field :patient_arterial_hypertension_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_thyroid %></label>\n                  <%= expedient.check_box :patient_thyroid, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_thyroid_description %></label>\n                  <%= expedient.text_field :patient_thyroid_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_nefropathy %></label>\n                  <%= expedient.check_box :patient_nefropathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_nefropathy_description %></label>\n                  <%= expedient.text_field :patient_nefropathy_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_alergies %></label>\n                  <%= expedient.check_box :patient_alergies, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_alergies_description %></label>\n                  <%= expedient.text_field :patient_alergies_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cardiopathy %></label>\n                  <%= expedient.check_box :patient_cardiopathy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cardiopathy_description %></label>\n                  <%= expedient.text_field :patient_cardiopathy_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_surgery %></label>\n                  <%= expedient.check_box :patient_surgery, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_surgery_description %></label>\n                  <%= expedient.text_field :patient_surgery_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cancer %></label>\n                  <%= expedient.check_box :patient_cancer, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cancer_description %></label>\n                  <%= expedient.text_field :patient_cancer_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_transfusion %></label>\n                  <%= expedient.check_box :patient_transfusion, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_transfusion_description %></label>\n                  <%= expedient.text_field :patient_transfusion_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_smoking %></label>\n                  <%= expedient.check_box :patient_smoking, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_ailments_other %></label>\n                  <%= expedient.text_field :patient_ailments_other, placeholder: true %>\n            </div>\n      </div>\n</div>\n<div id=\"patient-ophtalmological-background\">\n      <!-- #Patient Ophtalmological Background -->\n\n      <h4><%= t :patient_ophtalmological_background %></h4>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_myopia %></label>\n                  <%= expedient.check_box :patient_myopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_myopia_description %></label>\n                  <%= expedient.text_field :patient_myopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_hyperopia %></label>\n                  <%= expedient.check_box :patient_hyperopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_hyperopia_description %></label>\n                  <%= expedient.text_field :patient_hyperopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_astigmatism %></label>\n                  <%= expedient.check_box :patient_astigmatism, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_astigmatism_description %></label>\n                  <%= expedient.text_field :patient_astigmatism_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_keratoconus %></label>\n                  <%= expedient.check_box :patient_keratoconus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_keratoconus_description %></label>\n                  <%= expedient.text_field :patient_keratoconus_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_presbyopia %></label>\n                  <%= expedient.check_box :patient_presbyopia, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_presbyopia_description %></label>\n                  <%= expedient.text_field :patient_presbyopia_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_uses_glasses %></label>\n                  <%= expedient.check_box :patient_uses_glasses, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_uses_glasses_since %></label>\n                  <%= expedient.text_field :patient_uses_glasses_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_uses_contact_lenses %></label>\n                  <%= expedient.check_box :patient_uses_contact_lenses, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_uses_contact_lenses_since %></label>\n                  <%= expedient.text_field :patient_uses_contact_lenses_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_strabismus %></label>\n                  <%= expedient.check_box :patient_strabismus, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_strabismus_treatment %></label>\n                  <%= expedient.text_field :patient_strabismus_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_cataracts %></label>\n                  <%= expedient.check_box :patient_cataracts, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_cataracts_since %></label>\n                  <%= expedient.text_field :patient_cataracts_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_glaucoma %></label>\n                  <%= expedient.check_box :patient_glaucoma, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_glaucoma_since %></label>\n                  <%= expedient.text_field :patient_glaucoma_since, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_glaucoma_treatment %></label>\n                  <%= expedient.text_field :patient_glaucoma_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_diabetic_retinopathy %></label> \n                  <%= expedient.check_box :patient_diabetic_retinopathy, placeholder: true %> \n            </div>\n            <div>\n                  <label><%= t :patient_laser_surgery %></label>  \n                  <%= expedient.check_box :patient_laser_surgery, placeholder: true %>  \n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_left %></label> \n                  <%= expedient.check_box :patient_retinal_deatachment_left, placeholder: true %> \n            </div>\n            <div>\n                  <label><%= t :patient_retinal_deatachment_right %></label>  \n                  <%= expedient.check_box :patient_retinal_deatachment_right, placeholder: true %>  \n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_since %></label> \n                  <%= expedient.text_field :patient_retinal_deatachment_since, placeholder: true %> \n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_retinal_deatachment_treatment %></label> \n                  <%= expedient.text_field :patient_retinal_deatachment_treatment, placeholder: true %> \n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :shocks %></label>\n                  <%= expedient.check_box :shocks, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :shocks_description %></label>\n                  <%= expedient.text_field :shocks_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :surgery_left_eye %></label>\n                  <%= expedient.check_box :surgery_left_eye, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :surgery_left_eye_description %></label>\n                  <%= expedient.text_field :surgery_left_eye_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :surgery_right_eye %></label>\n                  <%= expedient.check_box :surgery_right_eye, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :surgery_right_eye_description %></label>\n                  <%= expedient.text_field :surgery_right_eye_description, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :patient_other_eye_ailments %></label>\n                  <%= expedient.text_field :patient_other_eye_ailments, placeholder: true %>\n            </div>\n      </div>\n</div>\n<!-- #Only Women -->\n<div id=\"only-women\">\n      <h4><%= t :only_women %></h4>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_is_pregnant %></label>\n                  <%= expedient.check_box :patient_is_pregnant %>\n            </div>\n            <div>\n                  <label><%= t :lactation %></label>\n                  <%= expedient.check_box :lactation %>\n            </div>\n      </div>\n</div>\n\n<!-- #Perinatal History -->\n<div id=\"perinatal-history\">\n      <h4><%= t :perinatal_history %></h4>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :gynobstetric_revision_during_pregnancy %></label>\n                  <%= expedient.check_box :gynobstetric_revision_during_pregnancy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :ailment_presence_during_pregnancy %></label>\n                  <%= expedient.check_box :ailment_presence_during_pregnancy, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :ailments_during_pregnancy %></label>\n                  <%= expedient.text_field :ailments_during_pregnancy, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :ailments_during_pregnancy_treatment %></label>\n                  <%= expedient.text_field :ailments_during_pregnancy_treatment, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :weight_at_birth %></label>\n                  <%= expedient.text_field :weight_at_birth, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :size_at_birth %></label>\n                  <%= expedient.text_field :size_at_birth, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :born_of_term %></label>\n                  <%= expedient.check_box :born_of_term, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :problems_during_birth %></label>\n                  <%= expedient.text_field :problems_during_birth, placeholder: true %>\n            </div>\n      </div>\n</div>\n<div id=\"ophtalmological-exploration\">\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :uncorrected_visual_acuity_left %></label>\n                  <%= expedient.text_field :uncorrected_visual_acuity_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :uncorrected_visual_acuity_both %></label>\n                  <%= expedient.text_field :uncorrected_visual_acuity_both, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :uncorrected_visual_acuity_right %></label>\n                  <%= expedient.text_field :uncorrected_visual_acuity_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :pinhole_left %></label>\n                  <%= expedient.text_field :pinhole_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :pinhole_both %></label>\n                  <%= expedient.text_field :pinhole_both, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :pinhole_right %></label>\n                  <%= expedient.text_field :pinhole_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :visual_acuity_with_correction_left %></label>\n                  <%= expedient.text_field :visual_acuity_with_correction_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :visual_acuity_with_correction_both %></label>\n                  <%= expedient.text_field :visual_acuity_with_correction_both, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :visual_acuity_with_correction_right %></label>\n                  <%= expedient.text_field :visual_acuity_with_correction_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :patient_uses_contact_lenses_current %></label>\n                  <%= expedient.check_box :patient_uses_contact_lenses_current, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :patient_uses_glasses_current %></label>\n                  <%= expedient.check_box :patient_uses_glasses_current, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :corrected_visual_acuity_left %></label>\n                  <%= expedient.text_field :corrected_visual_acuity_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :corrected_visual_acuity_both %></label>\n                  <%= expedient.text_field :corrected_visual_acuity_both, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :corrected_visual_acuity_right %></label>\n                  <%= expedient.text_field :corrected_visual_acuity_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :lensometer_left_value_1 %></label>\n                  <%= expedient.text_field :lensometer_left_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :lensometer_left_value_2 %></label>\n                  <%= expedient.text_field :lensometer_left_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :lensometer_left_value_3 %></label>\n                  <%= expedient.text_field :lensometer_left_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :lensometer_right_value_1 %></label>\n                  <%= expedient.text_field :lensometer_right_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :lensometer_right_value_2 %></label>\n                  <%= expedient.text_field :lensometer_right_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :lensometer_right_value_3 %></label>\n                  <%= expedient.text_field :lensometer_right_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :add_1 %></label>\n                  <%= expedient.text_field :add_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :refraction %></label>\n                  <%= expedient.text_field :refraction, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :manifested_refraction_left_value_1 %></label>\n                  <%= expedient.text_field :manifested_refraction_left_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :manifested_refraction_left_value_2 %></label>\n                  <%= expedient.text_field :manifested_refraction_left_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :manifested_refraction_left_value_3 %></label>\n                  <%= expedient.text_field :manifested_refraction_left_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :manifested_refraction_right_value_1 %></label>\n                  <%= expedient.text_field :manifested_refraction_right_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :manifested_refraction_right_value_2 %></label>\n                  <%= expedient.text_field :manifested_refraction_right_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :manifested_refraction_right_value_3 %></label>\n                  <%= expedient.text_field :manifested_refraction_right_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :subjective_refraction_left_value_1 %></label>\n                  <%= expedient.text_field :subjective_refraction_left_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :subjective_refraction_left_value_2 %></label>\n                  <%= expedient.text_field :subjective_refraction_left_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :subjective_refraction_left_value_3 %></label>\n                  <%= expedient.text_field :subjective_refraction_left_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :subjective_refraction_right_value_1 %></label>\n                  <%= expedient.text_field :subjective_refraction_right_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :subjective_refraction_right_value_2 %></label>\n                  <%= expedient.text_field :subjective_refraction_right_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :subjective_refraction_right_value_3 %></label>\n                  <%= expedient.text_field :subjective_refraction_right_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :add_2 %></label>\n                  <%= expedient.text_field :add_2, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :autorefraction_left_value_1 %></label>\n                  <%= expedient.text_field :autorefraction_left_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :autorefraction_left_value_2 %></label>\n                  <%= expedient.text_field :autorefraction_left_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :autorefraction_left_value_3 %></label>\n                  <%= expedient.text_field :autorefraction_left_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :autorefraction_right_value_1 %></label>\n                  <%= expedient.text_field :autorefraction_right_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :autorefraction_right_value_2 %></label>\n                  <%= expedient.text_field :autorefraction_right_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :autorefraction_right_value_3 %></label>\n                  <%= expedient.text_field :autorefraction_right_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :cicloplegic_refraction_left_value_1 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_left_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :cicloplegic_refraction_left_value_2 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_left_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :cicloplegic_refraction_left_value_3 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_left_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :cicloplegic_refraction_right_value_1 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_right_value_1, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :cicloplegic_refraction_right_value_2 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_right_value_2, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :cicloplegic_refraction_right_value_3 %></label>\n                  <%= expedient.text_field :cicloplegic_refraction_right_value_3, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"multi-field\">\n            <div>\n                  <label><%= t :better_corrected_visual_acuity_left %></label>\n                  <%= expedient.text_field :better_corrected_visual_acuity_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :better_corrected_visual_acuity_both %></label>\n                  <%= expedient.text_field :better_corrected_visual_acuity_both, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :better_corrected_visual_acuity_right %></label>\n                  <%= expedient.text_field :better_corrected_visual_acuity_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :keratometry_left %></label>\n                  <%= expedient.text_field :keratometry_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :keratometry_right %></label>\n                  <%= expedient.text_field :keratometry_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :paquimetry_left %></label>\n                  <%= expedient.text_field :paquimetry_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :paquimetry_right %></label>\n                  <%= expedient.text_field :paquimetry_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :specular_biomicroscopy_left %></label>\n                  <%= expedient.text_field :specular_biomicroscopy_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :specular_biomicroscopy_right %></label>\n                  <%= expedient.text_field :specular_biomicroscopy_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :pupillary_reflexes_left %></label>\n                  <%= expedient.text_field :pupillary_reflexes_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :pupillary_reflexes_right %></label>\n                  <%= expedient.text_field :pupillary_reflexes_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :ocular_movements %></label>\n                  <%= expedient.text_field :ocular_movements, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :ductions_left %></label>\n                  <%= expedient.text_field :ductions_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :ductions_right %></label>\n                  <%= expedient.text_field :ductions_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :versions_left %></label>\n                  <%= expedient.text_field :versions_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :versions_right %></label>\n                  <%= expedient.text_field :versions_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :primary_position_of_gaze_left %></label>\n                  <%= expedient.text_field :primary_position_of_gaze_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :primary_position_of_gaze_right %></label>\n                  <%= expedient.text_field :primary_position_of_gaze_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :eyelids_left %></label>\n                  <%= expedient.text_field :eyelids_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :eyelids_right %></label>\n                  <%= expedient.text_field :eyelids_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :annexes_left %></label>\n                  <%= expedient.text_field :annexes_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :annexes_right %></label>\n                  <%= expedient.text_field :annexes_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :lachrymal_left %></label>\n                  <%= expedient.text_field :lachrymal_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :lachrymal_right %></label>\n                  <%= expedient.text_field :lachrymal_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :conjunctiva_left %></label>\n                  <%= expedient.text_field :conjunctiva_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :conjunctiva_right %></label>\n                  <%= expedient.text_field :conjunctiva_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :cornea_left %></label>\n                  <%= expedient.text_field :cornea_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :cornea_right %></label>\n                  <%= expedient.text_field :cornea_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :antechamber_left %></label>\n                  <%= expedient.text_field :antechamber_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :antechamber_right %></label>\n                  <%= expedient.text_field :antechamber_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :intraocular_pressure_left %></label>\n                  <%= expedient.text_field :intraocular_pressure_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :intraocular_pressure_right %></label>\n                  <%= expedient.text_field :intraocular_pressure_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :iris_left %></label>\n                  <%= expedient.text_field :iris_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :iris_right %></label>\n                  <%= expedient.text_field :iris_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :pupil_left %></label>\n                  <%= expedient.text_field :pupil_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :pupil_right %></label>\n                  <%= expedient.text_field :pupil_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :crystaline_left %></label>\n                  <%= expedient.text_field :crystaline_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :crystaline_right %></label>\n                  <%= expedient.text_field :crystaline_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :fundus_left %></label>\n                  <%= expedient.text_field :fundus_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :fundus_right %></label>\n                  <%= expedient.text_field :fundus_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :retina_left %></label>\n                  <%= expedient.text_field :retina_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :retina_right %></label>\n                  <%= expedient.text_field :retina_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :vitreous_left %></label>\n                  <%= expedient.text_field :vitreous_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :vitreous_right %></label>\n                  <%= expedient.text_field :vitreous_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :optic_nerve_left %></label>\n                  <%= expedient.text_field :optic_nerve_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :optic_nerve_right %></label>\n                  <%= expedient.text_field :optic_nerve_right, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"double-field\">\n            <div>\n                  <label><%= t :taint_left %></label>\n                  <%= expedient.text_field :taint_left, placeholder: true %>\n            </div>\n            <div>\n                  <label><%= t :taint_right %></label>\n                  <%= expedient.text_field :taint_right, placeholder: true %>\n            </div>\n      </div>\n</div>\n<div id=\"conclusion\">\n      <h4><%= t :conclusion %></h4>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :observations %></label>\n                  <%= expedient.text_field :observations, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :diagnosis %></label>\n                  <%= expedient.text_field :diagnosis, placeholder: true %>\n            </div>\n      </div>\n      <div class=\"single-field\">\n            <div>\n                  <label><%= t :plan_and_treatment %></label>\n                  <%= expedient.text_field :plan_and_treatment, placeholder: true %>\n            </div>\n      </div>\n</div>\n<div>\n      <%= expedient.submit \"GUARDAR\" %>\n</div>\n<% end %>\n<%= javascript_include_tag \"expedient_form\" %>",
+			"file": "_form.html.erb",
+			"file_size": 44137,
+			"file_write_time": 131008066142829363,
+			"settings":
+			{
+				"buffer_size": 43111,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "new.html.erb",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 185.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"math ",
+				"Set Syntax: TeX Math"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"Package Control: Install Package",
+			"Package Manager",
+			"package manager",
+			"Package Control: Install Package Emmet",
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"Package Control: Install Package"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/controllers",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctor_pictures",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctors",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/layouts",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/bin",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/initializers",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate"
+	],
+	"file_history":
+	[
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient/expedient_form.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/font-sizes.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/main.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/layouts/application.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/application.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/normalize.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/flexie/src/flexbox-framework.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/mixins.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/fonts.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/font-styles.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/base/atoms.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/fonts/stylesheet.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/ophtalmology_templates.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates/_form.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts/expedient_form.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/application.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/ophtalmology_template.es.yml",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/en.yml",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160207003537_devise_create_doctors.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/ophtalmology_template.helpers.es.yml",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/ophtalmology_template.en.yml",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/development.sqlite3",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160216200714_add_fields_to_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160216200535_add_fields_from_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts/application.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160211002236_remove_current_from_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160216200253_remove_fields_from_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/initializers/assets.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/routes.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/controllers/ophtalmology_templates_controller.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/stylesheets/expedient_form.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/schema.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/controllers/application_controller.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/views/dogs/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/models/ophtalmology_template.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates/edit.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160210233258_create_doctor_pictures.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160206190452_create_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160207013151_add_doctor_id_to_ophtalmology_templates.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/controllers/doctor_pictures_controller.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/controllers/doctors_controller.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/models/doctor_picture.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/models/doctor.rb",
+		"/C/Users/PabloEugenio/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/Gemfile",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates/index.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctors/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctors/registrations/edit.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/initializers/devise.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/doctors/registrations/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/views/ophtalmology_templates/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/seeds.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/javascripts/cefa.coffee",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/views/cefa/welcome.html.erb.old",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/Gemfile",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/attachment.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/courses.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/reports.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/welcome.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/application.css.erb.original",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/fonts/BentonSans-Book.otf",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/cefa.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/application.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/z.jquery.fileupload.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/welcome/landing.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/challenges/_form.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/layouts/application.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/partials/posts/_landing_posts.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/partials/users/_userProfilePic.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/welcome/index.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/users/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/challenges/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/config/environments/development.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/show-challenge.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/application.css.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/db/development.sqlite3",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/db/schema.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/jquery.upload.widget.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/file-upload-visualization.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/assets/javascripts/landing.js",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/.env",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/partials/posts/_challenges_post.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/db/seeds.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/db/development.sqlite3",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/config/database.yml",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/db/seeds.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/db/seeds.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/db/schema.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/welcome/patrocinados.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/apptrevete/app/views/profiles/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/dogs.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/base/globals.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/base/mixins.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/base/normalize.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/clubin-site/index.html",
+		"/C/Rito Games/League of Legends/RADS/system/locale.cfg",
+		"/C/Rito Games/League of Legends/Config/game.cfg",
+		"/C/Users/PabloEugenio/Documents/GitHub/clubin-site/css/local.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/clubin-site/css/one-page-scroll/onepage-scroll.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/clubin-site/css/frameworker/flexbox-framework.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/users/registrations/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/users/show.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/sessions/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/users/sessions/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/registrations/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/users/shared/_links.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/passwords/edit.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/config/routes.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/gyms/index.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/passwords/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/mailer/unlock_instructions.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/admins/mailer/password_change.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/assets/stylesheets/base/globals.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/assets/stylesheets/base/normalize.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/config/initializers/devise.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/config/initializers/assets.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/Gemfile",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/views/gyms/new.html.erb",
+		"/C/Users/PabloEugenio/Documents/GitHub/gymapp/app/assets/stylesheets/mygyms.scss",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/reset.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/config/initializers/assets.rb",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/flexie/flexbox-reset.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/cefa/app/assets/stylesheets/flexie/flexbox-framework.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/application.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/assets/stylesheets/flexie/elements.css",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/Gemfile",
+		"/C/Users/PabloEugenio/Documents/GitHub/adoptaunperro/app/views/users/show.html.erb"
+	],
+	"find":
+	{
+		"height": 71.0
+	},
+	"find_in_files":
+	{
+		"height": 298.0,
+		"where_history":
+		[
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\adoptaunperro",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\assets\\stylesheets",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\partials\\navbar",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\users",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\partials\\navbar",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\partials\\navbar",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\Clubin\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\welcome",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\assets\\stylesheets",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\assets\\stylesheets\\flexie",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\users",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views\\users	",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\apptrevete\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\Clubin\\app\\controllers",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\Clubin\\app\\models",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views\\Admins",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views				",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views		",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views	",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views\\printers\\passwords",
+			"C:\\Users\\PabloEugenio\\Documents\\GitHub\\prinket\\app\\views"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"*=\"",
+			"url('",
+			"!important",
+			"class=\"check",
+			"check_box",
+			"contact",
+			"avc",
+			"AVC",
+			"avc",
+			"text_field",
+			"check_box",
+			"text_field",
+			"diabetic",
+			"text_field",
+			"lactation",
+			"48",
+			"previous",
+			"boolean",
+			"squint",
+			"<div>\n      <label>",
+			"placeholder :true",
+			":true",
+			"placeholder",
+			"styles",
+			"previous_revision_date",
+			"#",
+			"      ",
+			": \"\"",
+			"/^\\s*\\n",
+			"/^\\s*\\n/gm",
+			".*\\n.*\\n",
+			"keratometry_left",
+			"      ",
+			"^",
+			"*\\n",
+			": \"\"",
+			"\"\n",
+			"squint",
+			"strabismus",
+			"squint",
+			":",
+			", default: false",
+			", default: 0",
+			"t.date ",
+			"t.boolean ",
+			"t.text ",
+			"t.integer ",
+			"t.string ",
+			"uses_glasses",
+			"glasses",
+			"astigmatism",
+			"alergies",
+			"center",
+			"removeClass",
+			"div",
+			"<div class=\"expedient-underline\"></div>",
+			"input",
+			"%>\\n",
+			"crystaline",
+			"cri",
+			"justify",
+			"class=\"field\"",
+			"\"field",
+			"field",
+			"since",
+			"family",
+			".single-field",
+			"double-field",
+			"/div>",
+			"<div",
+			"<label",
+			"<div>",
+			"div",
+			"(?:[div].*+){4}([div])",
+			"<div>=(?:[^\"]*\"){3}",
+			"div.*?(div)",
+			"^\\d*[13579]$",
+			"^\\d[13579]$",
+			"%>\\n",
+			"%>",
+			"<label",
+			"=@",
+			".*\\n.*\\n",
+			"*\\n*\\n",
+			" ",
+			"*\\n*\\n",
+			"diagnosis_treatment",
+			"^",
+			"\\n",
+			"*\\n",
+			",",
+			"\"",
+			"default: 0.0",
+			"default: false",
+			"refraction",
+			"label",
+			".*\\n.*\\n",
+			"<% t",
+			"\"",
+			"\"\"",
+			",",
+			" ",
+			"default: 0.0",
+			"default: false",
+			"age",
+			"email",
+			"Age",
+			"\"",
+			" ",
+			"default: false",
+			"default: 0",
+			",",
+			" \n",
+			"user",
+			"ophtalmology_template",
+			"views",
+			"email",
+			"u",
+			"\n",
+			"\"",
+			"user",
+			"ophtalmology_template",
+			"                ",
+			"\n",
+			"\"",
+			",",
+			"default: false",
+			"default: 0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url('/assets/",
+			"placeholder: true",
+			"true",
+			"placeholder:",
+			"",
+			": \"\"",
+			"",
+			"%>\n			<div class=\"expedient-underline\"></div>\n",
+			"%>\n<div class=\"expedient-underline\"></div>\n",
+			"%>\n<div class=\"expedient-underline\"></div>",
+			"\n<div class=\"expedient-underline\"></div>",
+			"class=\"double-field\"",
+			".field,\n.single-field",
+			"field",
+			"= @",
+			"",
+			"<%= t",
+			"",
+			":",
+			"",
+			", ",
+			"\n, ",
+			"\n",
+			"doctor",
+			"",
+			", placeholder: :name %>\n",
+			"",
+			",",
+			"",
+			"center",
+			"flexie col l-6 m-8 s-10 major-center minor-center\"",
+			"<%= image_path ",
+			"",
+			".",
+			"",
+			"45deg",
+			"6px",
+			"",
+			"bg-amber",
+			"card bg-amber",
+			"h5 class=\"grey-50\"",
+			"services-overlay flexie major-center minor-center",
+			"services-overlay major-center minor-center",
+			"services-overlay l-11 v-l-11",
+			"sliderCounter",
+			"background-size:40%;",
+			"grid-inner flexie major-center minor-center l-12 ",
+			"grid-inner major-center minor-center l-12 ",
+			"flexie col l-4 v-l-4 major-center minor-center text-center",
+			"light-blue-50",
+			"bg-luxuzz-form",
+			"bg-luxuzz-form	",
+			"bg-light-blue-800 light-blue-200",
+			"bg-luxuzz-grey",
+			"h5",
+			"<%= render \"partials/users/userProfilePicNoName\", c: current_user %>",
+			"<%= render \"partials/users/userProfilePic\", c: current_user %>",
+			"c",
+			"",
+			"l-12",
+			"w-48",
+			"major-between",
+			"w-48",
+			"<div class=\"flexie row l-12\">\n	<%= render \"users/shared/links\" %>\n</div>",
+			"",
+			"-400",
+			"grey",
+			"orange",
+			"red",
+			"light-green",
+			"cyan",
+			"orange",
+			"purple",
+			"light-blue",
+			"yellow",
+			"indigo",
+			"yellow",
+			"light-blue",
+			"purple",
+			"orange",
+			"cyan",
+			"amber",
+			"bg-lime-500",
+			"bg-lime",
+			"bg-grey-400",
+			"link_to(landing_path) do",
+			"flexie major-center minor-center button ",
+			"\"flexie major-center minor-center button ",
+			"\"flexie major-center minor-center ",
+			"",
+			"w-48",
+			"p-xxs",
+			"m-y-xxxs",
+			"",
+			"\"",
+			"class=\"flexie col w-48 s-12 p-t-xs\"",
+			"class=>\"bbg3 l-12\"",
+			"class=\"flexie col w-48 s-12 p-t-xs\"",
+			"",
+			"class=\"flexie col w-48 s-12 p-t-xs\"",
+			"translateY",
+			"save!",
+			"user1)\np.save!",
+			".save!",
+			")\nc",
+			"<div id=\"big-image-container\" class=\"big-image-container-off\">\n	<div class=\"flexie l-12 v-l-12 row major-center minor-center\">\n		<img src=\"\" id=\"big-image\">\n	</div>\n</div>\n<%= render 'challenges' %>\n",
+			"c",
+			"c.",
+			"Público	",
+			"h5",
+			"c",
+			"c.challenge",
+			"h5",
+			"h4",
+			"<img data-sr ",
+			"light",
+			"<p class=\"text-justify\">",
+			"",
+			"class=\"semi-bold hint\"",
+			"<div class=\"flexie col w-48 s-12 p-t-xs\">",
+			"",
+			"<div class=\"flexie col l-6 s-12 p-t-xs\">",
+			"<p class=\"regular primary\">",
+			"<p class=\"regular secondary\">",
+			"<p class=\"regular primary\">",
+			"<label class=\"hint\">",
+			"<label class=\"secondary\">",
+			"<p class=\"regular grey-800\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4290.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40066,
+								39378
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1472.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/migrate/20160206190452_create_ophtalmology_templates.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10010,
+								10013
+							],
+							[
+								10045,
+								10048
+							],
+							[
+								10081,
+								10084
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 381.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/config/locales/ophtalmology_template.es.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4665,
+								4665
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5070.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/db/schema.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2703,
+								2710
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5642.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/PabloEugenio/Documents/GitHub/medfiles/app/assets/javascripts/expedient_form.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 546.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43100,
+								43100
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 29284.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "medfiles.sublime-project",
+	"replace":
+	{
+		"height": 116.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

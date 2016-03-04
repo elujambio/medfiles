@@ -1,0 +1,620 @@
+  # Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+  
+es:
+  #Patient Information
+  patient_data: "Datos del Paciente"
+  family_background: "Antecedentes Familiares"
+  patient_background: "Antecedentes Personales" 
+  name: "Nombre"
+  age: "Edad"
+  birth_date: "Fecha de Nacimiento"
+  sex: "Sexo"
+  originary_from: "Originario de"
+  ocupation: "Ocupación"
+  religion: "Religión"
+  address: "Domicilio"
+  telephone: "Teléfono"
+  email: "Email"
+  insurance_company: "Aseguradora"
+  insurance_policy: "Póliza de Seguro"
+  previous_revisions: "Revisiones Previas"
+  previous_revision_date: "Fecha de Última Revisión"
+
+  #Current Ailments
+
+  current_ailments: "Padecimientos Actuales"
+
+  #Family Background
+
+  family_diabetes_mellitus: "Diabetes Mellitus"
+  family_nephropathy: "Nefropatía"
+  family_hypertension: "Hipertensión"
+  family_cardiopathy: "Cardiopatía"
+  family_thyroid: "Tiroides"
+  family_cancer: "Cancer"
+  family_other: "Otros"
+
+  #Family Ophtalmological Background
+
+  family_myopia: "Miopía"
+  family_farsightedness: "Hipermetropía"
+  family_astigmatism: "Astigmatismo"
+  family_keratoconus: "Queratocono"
+  family_strabismus: "Estrabismo"
+  family_diabetic_retinopathy: "Retinopatía Diabetica"
+  family_eye_surgery: "Cirugía Ocular"
+  family_cataract: "Catarata"
+  family_retinal_deatachment: "Desprendimiento de Retina"
+  family_laser_surgery: "Cirugía Laser"
+  family_glaucoma: "Glaucoma"
+  family_other_ailments_2: "Otros Padecimientos"
+
+  #Personal Background
+
+  patient_diabetes_mellitus: "Doanetes Mellitus"
+  patient_diabetes_mellitus_since: "Desde"
+  patient_diabetes_mellitus_treatment: "Tratamiento"
+
+  patient_arterial_hypertension: "Hipertensión"
+  patient_arterial_hypertension_since: "Desde"
+  patient_arterial_hypertension_treatment: "Tratamiento"
+
+  patient_thyroid: "Tiroides"
+  patient_thyroid_description: "Descripción"
+
+  patient_nefropathy: "Nefropatía"
+  patient_nefropathy_description: "Descripción"
+
+  patient_alergies: "Alergias"
+  patient_alergies_description: "Descripción"
+
+  patient_cardiopathy: "Cardiopatía"
+  patient_cardiopathy_description: "Descripción"
+
+  patient_surgery: "Cirugía"
+  patient_surgery_description: "Descripción"
+
+  patient_cancer: "Cancer"
+  patient_cancer_description: "Descripción"
+
+  patient_transfusion: "Transfusión"
+  patient_transfusion_description: "Descripción"
+
+  patient_smoking: "Tabaquismo"
+
+  patient_ailments_other: "Otros Padecimientos"
+
+  #Patient Ophtalmological Background
+
+  patient_myopia: "Miopia"
+  patient_myopia_description: "Descripción"
+
+  patient_hyperopia: "Hypermetropía"
+  patient_hyperopia_description: "Descripción"
+
+  patient_astigmatism: "Astigmatismo"
+  patient_astigmatism_description: "Descripción"
+
+  patient_keratoconus: "Queratocono"
+  patient_keratoconus_description: "Descripción"
+
+  patient_presbyopia: "Presbicia"
+  patient_presbyopia_description: "Descripción"
+
+  patient_uses_glasses: "Usa Gafas"
+  patient_uses_glasses_since: "Desde"
+
+  patient_uses_contact_lenses: "Usa Lentes de Contacto"
+  patient_uses_contact_lenses_since: "Desde"
+
+  patient_strabismus: "Estrabismo"
+  patient_strabismus_treatment: "Tipo de Tratamiento"
+
+  patient_cataracts: "Cataratas"
+  patient_cataracts_since: "Desde"
+
+  patient_glaucoma: "Glaucoma"
+  patient_glaucoma_since: "Desde"
+  patient_glaucoma_treatment: "Tratamiento"
+
+  patient_diabetic_retinopathy: "Retinopatía Diabética" 
+
+  patient_laser_surgery: "Cirugía Laser"  
+
+  patient_retinal_deatachment_left: "Desprendimiento de Retina (OS)"       
+  patient_retinal_deatachment_right: "Desprendimiento de Retina (OD)"  
+
+  patient_retinal_deatachment_since: "Desde"       
+  patient_retinal_deatachment_treatment: "Tratamiento"       
+
+  shocks: "Golpes"
+  shocks_description: "Descripción"
+
+  surgery_left_eye: "Cirugía (OS)"
+  surgery_left_eye_description: "Descripción"
+  surgery_right_eye: "Cirugía (OD)"
+  surgery_right_eye_description: "Descripción"
+
+  patient_other_eye_ailments: "Otros Padecimientos"
+
+  #Only Women
+
+  patient_is_pregnant: "¿Está embarazada?"
+  lactation: "¿Está lactando?"
+
+  #Perinatal History
+  perinatal_history: "Historial Perinatal"
+
+  gynobstetric_revision_during_pregnancy: "Revisión Gineco-Obstétrica"
+
+  ailment_presence_during_pregnancy: "Enfermedad durante el embarazo"
+  ailments_during_pregnancy: "Cuales"
+  ailments_during_pregnancy_treatment: "Tratamiento"
+
+  weight_at_birth: "Peso al Nacer"
+  size_at_birth: "Talla al Nacer"
+
+  born_of_term: "¿Nació de término?"
+
+  problems_during_birth: "Problemas durante el nacimiento"
+
+  #Ophtalmological Exploration
+
+  uncorrected_visual_acuity_left: "AVSC (OS)"
+  uncorrected_visual_acuity_both: "AVSC (AO)"
+  uncorrected_visual_acuity_right: "AVSC (OD)"
+
+  pinhole_left: "Estenopéico (OS)"
+  pinhole_both: "Estenopéico (AO)"
+  pinhole_right: "Estenopéico (OD)"
+
+  visual_acuity_with_correction_left: "AVCC (OS)"
+  visual_acuity_with_correction_both: "AVCC (AO)"
+  visual_acuity_with_correction_right: "AVCC (OD)"
+
+  patient_uses_contact_lenses_current: "Lentes de Contacto"
+  patient_uses_glasses_current: "Gafas"
+
+  corrected_visual_acuity_left: "AVC (OS)"
+  corrected_visual_acuity_both: "AVC (AO)"
+  corrected_visual_acuity_right: "AVC (OD)"
+
+  lensometer_left_value_1: "Lensómetro 1 (OS)"
+  lensometer_left_value_2: "Lensómetro 2 (OS)"
+  lensometer_left_value_3: "Lensómetro 3 (OS)"
+  lensometer_right_value_1: "Lensómetro 1 (OD)"
+  lensometer_right_value_2: "Lensómetro 2 (OD)"
+  lensometer_right_value_3: "Lensómetro 3 (OD)"
+
+  add_1: "ADD"
+
+  refraction: "Refracción"
+
+  manifested_refraction_left_value_1: "Manifiesta 1 (OS)"
+  manifested_refraction_left_value_2: "Manifiesta 2 (OS)"
+  manifested_refraction_left_value_3: "Manifiesta 3 (OS)"
+  manifested_refraction_right_value_1: "Manifiesta 1 (OD)"
+  manifested_refraction_right_value_2: "Manifiesta 2 (OD)"
+  manifested_refraction_right_value_3: "Manifiesta 3 (OD)"
+
+  subjective_refraction_left_value_1: "Subjetiva 1 (OS)"
+  subjective_refraction_left_value_2: "Subjetiva 2 (OS)"
+  subjective_refraction_left_value_3: "Subjetiva 3 (OS)"
+  subjective_refraction_right_value_1: "Subjetiva 1 (OD)"
+  subjective_refraction_right_value_2: "Subjetiva 2 (OD)"
+  subjective_refraction_right_value_3: "Subjetiva 3 (OD)"
+
+  add_2: "ADD"
+
+  autorefraction_left_value_1: "Autorefracción 1 (OS)"
+  autorefraction_left_value_2: "Autorefracción 2 (OS)"
+  autorefraction_left_value_3: "Autorefracción 3 (OS)"
+  autorefraction_right_value_1: "Autorefracción 1 (OD)"
+  autorefraction_right_value_2: "Autorefracción 2 (OD)"
+  autorefraction_right_value_3: "Autorefracción 3 (OD)"
+
+  cicloplegic_refraction_left_value_1: "Ciclopléjica 1 (OS)"
+  cicloplegic_refraction_left_value_2: "Ciclopléjica 2 (OS)"
+  cicloplegic_refraction_left_value_3: "Ciclopléjica 3 (OS)"
+  cicloplegic_refraction_right_value_1: "Ciclopléjica 1 (OD)"
+  cicloplegic_refraction_right_value_2: "Ciclopléjica 2 (OD)"
+  cicloplegic_refraction_right_value_3: "Ciclopléjica 3 (OD)"
+
+  better_corrected_visual_acuity_left: "AVMC (OS)"
+  better_corrected_visual_acuity_both: "AVMC (AO)"
+  better_corrected_visual_acuity_right: "AVMC (OI)"      
+
+  keratometry_left: "Queratometrías (OS)"
+  keratometry_right: "Queratometrías (OD)"
+
+  paquimetry_left: "Paquimetría (OS)"
+  paquimetry_right: "Paquimetría (OD)"
+
+  specular_biomicroscopy_left: "Biomicroscopía Especular (OS)"
+  specular_biomicroscopy_right: "Biomicroscopía Especular (OD)"
+
+  pupillary_reflexes_left: "Reflejos Pupilares (OS)"
+  pupillary_reflexes_right: "Reflejos Pupilares (OD)"
+
+  ocular_movements: "Movimientos Oculares"
+
+  ductions_left: "Ducciones (OS)"
+  ductions_right: "Ducciones (OD)"
+
+  versions_left: "Versiones (OS)"
+  versions_right: "Versiones (OD)"
+
+  primary_position_of_gaze_left: "PPM (OS)"
+  primary_position_of_gaze_right: "PPM (OD)"
+
+  eyelids_left: "Párpados (OS)"
+  eyelids_right: "Párpados (OD)"
+
+  annexes_left: "Anexos (OS)"
+  annexes_right: "Anexos (OD)"
+
+  lachrymal_left: "Vía Lagrimal (OS)"
+  lachrymal_right: "Vía Lagrimal (OD)"
+
+  conjunctiva_left: "Conjuntiva (OS)"
+  conjunctiva_right: "Conjuntiva (OD)"
+
+  cornea_left: "Cornea (OS)"
+  cornea_right: "Cornea (OD)"
+
+  antechamber_left: "Cámara Anterior (OS)"
+  antechamber_right: "Cámara Anterior (OD)"
+
+  intraocular_pressure_left: "Presión Intraocular (OS)"
+  intraocular_pressure_right: "Presión Intraocular (OS)"
+
+  #HERE GOES X X DIAGRAM THINGY
+
+  iris_left: "Iris (OS)"
+  iris_right: "Iris (OD)"
+
+  pupil_left: "Pupila (OS)"
+  pupil_right: "Pupila (OD)"
+
+  crystaline_left: "Cristalino (OS)"
+  crystaline_right: "Cristalino (OD)"
+
+  fundus_left: "Fondo de Ojo (OS)"
+  fundus_right: "Fondo de Ojo (OD)"
+
+  retina_left: "Retina (OS)"
+  retina_right: "Retina (OD)"      
+
+  vitreous_left: "Vítreo (OS)"
+  vitreous_right: "Vítreo (OD)"
+
+  optic_nerve_left: "Nervio Óptico (OS)"
+  optic_nerve_right: "Nervio Óptico (OD)"
+
+  taint_left: "Mácula (OS)"
+  taint_right: "Mácula (OD)"
+
+  #HERE GOES EYE DIAGRAM THINGY 
+
+  observations: "Observaciones"
+  diagnosis: "Diagnóstico"
+  plan_and_treatment: "Plan y Tratamiento"
+
+  helpers:
+    placeholder:
+      ophtalmology_template:
+        
+        #Patient Information
+
+        name: "Nombre"
+        age: "Edad"
+        birth_date: "Fecha de Nacimiento"
+        sex: "Sexo"
+        originary_from: "Originario de"
+        ocupation: "Ocupación"
+        religion: "Religión"
+        address: "Domicilio"
+        telephone: "Teléfono"
+        email: "Email"
+        insurance_company: "Aseguradora"
+        insurance_policy: "Póliza de Seguro"
+        previous_revisions: "Revisiones Previas"
+        previous_revision_date: "Fecha de Última Revisión"
+
+        #Current Ailments
+
+        current_ailments: "Padecimientos Actuales"
+
+        #Family Background
+
+        family_diabetes_mellitus: "Diabetes Mellitus"
+        family_nephropathy: "Nefropatía"
+        family_hypertension: "Hipertensión"
+        family_cardiopathy: "Cardiopatía"
+        family_thyroid: "Tiroides"
+        family_cancer: "Cancer"
+        family_other: "Otros"
+
+        #Family Ophtalmological Background
+
+        family_myopia: "Miopía"
+        family_farsightedness: "Hipermetropía"
+        family_astigmatism: "Astigmatismo"
+        family_keratoconus: "Queratocono"
+        family_strabismus: "Estrabismo"
+        family_diabetic_retinopathy: "Retinopatía Diabetica"
+        family_eye_surgery: "Cirugía Ocular"
+        family_cataract: "Catarata"
+        family_retinal_deatachment: "Desprendimiento de Retina"
+        family_laser_surgery: "Cirugía Laser"
+        family_glaucoma: "Glaucoma"
+        family_other_ailments_2: "Otros Padecimientos"
+
+        #Personal Background
+
+        patient_diabetes_mellitus: "Doanetes Mellitus"
+        patient_diabetes_mellitus_since: "Desde"
+        patient_diabetes_mellitus_treatment: "Tratamiento"
+
+        patient_arterial_hypertension: "Hipertensión"
+        patient_arterial_hypertension_since: "Desde"
+        patient_arterial_hypertension_treatment: "Tratamiento"
+
+        patient_thyroid: "Tiroides"
+        patient_thyroid_description: "Descripción"
+
+        patient_nefropathy: "Nefropatía"
+        patient_nefropathy_description: "Descripción"
+
+        patient_alergies: "Alergias"
+        patient_alergies_description: "Descripción"
+
+        patient_cardiopathy: "Cardiopatía"
+        patient_cardiopathy_description: "Descripción"
+
+        patient_surgery: "Cirugía"
+        patient_surgery_description: "Descripción"
+
+        patient_cancer: "Cancer"
+        patient_cancer_description: "Descripción"
+
+        patient_transfusion: "Transfusión"
+        patient_transfusion_description: "Descripción"
+
+        patient_smoking: "Tabaquismo"
+
+        patient_ailments_other: "Otros Padecimientos"
+
+        #Patient Ophtalmological Background
+
+        patient_myopia: "Miopia"
+        patient_myopia_description: "Descripción"
+
+        patient_hyperopia: "Hypermetropía"
+        patient_hyperopia_description: "Descripción"
+
+        patient_astigmatism: "Astigmatismo"
+        patient_astigmatism_description: "Descripción"
+
+        patient_keratoconus: "Queratocono"
+        patient_keratoconus_description: "Descripción"
+
+        patient_presbyopia: "Presbicia"
+        patient_presbyopia_description: "Descripción"
+
+        patient_uses_glasses: "Usa Gafas"
+        patient_uses_glasses_since: "Desde"
+
+        patient_uses_contact_lenses: "Usa Lentes de Contacto"
+        patient_uses_contact_lenses_since: "Desde"
+
+        patient_strabismus: "Estrabismo"
+        patient_strabismus_treatment: "Tipo de Tratamiento"
+
+        patient_cataracts: "Cataratas"
+        patient_cataracts_since: "Desde"
+
+        patient_glaucoma: "Glaucoma"
+        patient_glaucoma_since: "Desde"
+        patient_glaucoma_treatment: "Tratamiento"
+
+        patient_diabetic_retinopathy: "Retinopatía Diabética" 
+
+        patient_laser_surgery: "Cirugía Laser"  
+
+        patient_retinal_deatachment_left: "Desprendimiento de Retina (OS)"       
+        patient_retinal_deatachment_right: "Desprendimiento de Retina (OD)"  
+
+        patient_retinal_deatachment_since: "Desde"       
+        patient_retinal_deatachment_treatment: "Tratamiento"       
+
+        shocks: "Golpes"
+        shocks_description: "Descripción"
+
+        surgery_left_eye: "Cirugía (OS)"
+        surgery_left_eye_description: "Descripción"
+        surgery_right_eye: "Cirugía (OD)"
+        surgery_right_eye_description: "Descripción"
+
+        patient_other_eye_ailments: "Otros Padecimientos"
+
+        #Only Women
+
+        patient_is_pregnant: "¿Está embarazada?"
+        lactation: "¿Está lactando?"
+
+        #Perinatal History
+
+        gynobstetric_revision_during_pregnancy: "Revisión Gineco-Obstétrica durante el embarazo"
+
+        ailment_presence_during_pregnancy: "Enfermedad durante el embarazo"
+        ailments_during_pregnancy: "Cuales"
+        ailments_during_pregnancy_treatment: "Tratamiento"
+
+        weight_at_birth: "Peso al Nacer"
+        size_at_birth: "Talla al Nacer"
+
+        born_of_term: "¿Nació de término?"
+
+        problems_during_birth: "Problemas durante el nacimiento"
+
+        #Ophtalmological Exploration
+
+        uncorrected_visual_acuity_left: "AVSC (OS)"
+        uncorrected_visual_acuity_both: "AVSC (AO)"
+        uncorrected_visual_acuity_right: "AVSC (OD)"
+
+        pinhole_left: "Estenopéico (OS)"
+        pinhole_both: "Estenopéico (AO)"
+        pinhole_right: "Estenopéico (OD)"
+
+        visual_acuity_with_correction_left: "AVCC (OS)"
+        visual_acuity_with_correction_both: "AVCC (AO)"
+        visual_acuity_with_correction_right: "AVCC (OD)"
+
+        patient_uses_contact_lenses_current: "Lentes de Contacto"
+        patient_uses_glasses_current: "Gafas"
+
+        corrected_visual_acuity_left: "AVC (OS)"
+        corrected_visual_acuity_both: "AVC (AO)"
+        corrected_visual_acuity_right: "AVC (OD)"
+
+        lensometer_left_value_1: "Lensómetro 1 (OS)"
+        lensometer_left_value_2: "Lensómetro 2 (OS)"
+        lensometer_left_value_3: "Lensómetro 3 (OS)"
+        lensometer_right_value_1: "Lensómetro 1 (OD)"
+        lensometer_right_value_2: "Lensómetro 2 (OD)"
+        lensometer_right_value_3: "Lensómetro 3 (OD)"
+
+        add_1: "ADD"
+
+        refraction: "Refracción"
+
+        manifested_refraction_left_value_1: "Manifiesta 1 (OS)"
+        manifested_refraction_left_value_2: "Manifiesta 2 (OS)"
+        manifested_refraction_left_value_3: "Manifiesta 3 (OS)"
+        manifested_refraction_right_value_1: "Manifiesta 1 (OD)"
+        manifested_refraction_right_value_2: "Manifiesta 2 (OD)"
+        manifested_refraction_right_value_3: "Manifiesta 3 (OD)"
+
+        subjective_refraction_left_value_1: "Subjetiva 1 (OS)"
+        subjective_refraction_left_value_2: "Subjetiva 2 (OS)"
+        subjective_refraction_left_value_3: "Subjetiva 3 (OS)"
+        subjective_refraction_right_value_1: "Subjetiva 1 (OD)"
+        subjective_refraction_right_value_2: "Subjetiva 2 (OD)"
+        subjective_refraction_right_value_3: "Subjetiva 3 (OD)"
+
+        add_2: "ADD"
+
+        autorefraction_left_value_1: "Autorefracción 1 (OS)"
+        autorefraction_left_value_2: "Autorefracción 2 (OS)"
+        autorefraction_left_value_3: "Autorefracción 3 (OS)"
+        autorefraction_right_value_1: "Autorefracción 1 (OD)"
+        autorefraction_right_value_2: "Autorefracción 2 (OD)"
+        autorefraction_right_value_3: "Autorefracción 3 (OD)"
+
+        cicloplegic_refraction_left_value_1: "Ciclopléjica 1 (OS)"
+        cicloplegic_refraction_left_value_2: "Ciclopléjica 2 (OS)"
+        cicloplegic_refraction_left_value_3: "Ciclopléjica 3 (OS)"
+        cicloplegic_refraction_right_value_1: "Ciclopléjica 1 (OD)"
+        cicloplegic_refraction_right_value_2: "Ciclopléjica 2 (OD)"
+        cicloplegic_refraction_right_value_3: "Ciclopléjica 3 (OD)"
+
+        better_corrected_visual_acuity_left: "AVMC (OS)"
+        better_corrected_visual_acuity_both: "AVMC (AO)"
+        better_corrected_visual_acuity_right: "AVMC (OI)"      
+
+        keratometry_left: "Queratometrías (OS)"
+        keratometry_right: "Queratometrías (OD)"
+
+        paquimetry_left: "Paquimetría (OS)"
+        paquimetry_right: "Paquimetría (OD)"
+
+        specular_biomicroscopy_left: "Biomicroscopía Especular (OS)"
+        specular_biomicroscopy_right: "Biomicroscopía Especular (OD)"
+
+        pupillary_reflexes_left: "Reflejos Pupilares (OS)"
+        pupillary_reflexes_right: "Reflejos Pupilares (OD)"
+
+        ocular_movements: "Movimientos Oculares"
+
+        ductions_left: "Ducciones (OS)"
+        ductions_right: "Ducciones (OD)"
+
+        versions_left: "Versiones (OS)"
+        versions_right: "Versiones (OD)"
+
+        primary_position_of_gaze_left: "PPM (OS)"
+        primary_position_of_gaze_right: "PPM (OD)"
+
+        eyelids_left: "Párpados (OS)"
+        eyelids_right: "Párpados (OD)"
+
+        annexes_left: "Anexos (OS)"
+        annexes_right: "Anexos (OD)"
+
+        lachrymal_left: "Vía Lagrimal (OS)"
+        lachrymal_right: "Vía Lagrimal (OD)"
+
+        conjunctiva_left: "Conjuntiva (OS)"
+        conjunctiva_right: "Conjuntiva (OD)"
+
+        cornea_left: "Cornea (OS)"
+        cornea_right: "Cornea (OD)"
+
+        antechamber_left: "Cámara Anterior (OS)"
+        antechamber_right: "Cámara Anterior (OD)"
+
+        intraocular_pressure_left: "Presión Intraocular (OS)"
+        intraocular_pressure_right: "Presión Intraocular (OS)"
+
+        #HERE GOES X X DIAGRAM THINGY
+
+        iris_left: "Iris (OS)"
+        iris_right: "Iris (OD)"
+
+        pupil_left: "Pupila (OS)"
+        pupil_right: "Pupila (OD)"
+
+        crystaline_left: "Cristalino (OS)"
+        crystaline_right: "Cristalino (OD)"
+
+        fundus_left: "Fondo de Ojo (OS)"
+        fundus_right: "Fondo de Ojo (OD)"
+
+        retina_left: "Retina (OS)"
+        retina_right: "Retina (OD)"      
+
+        vitreous_left: "Vítreo (OS)"
+        vitreous_right: "Vítreo (OD)"
+
+        optic_nerve_left: "Nervio Óptico (OS)"
+        optic_nerve_right: "Nervio Óptico (OD)"
+
+        taint_left: "Mácula (OS)"
+        taint_right: "Mácula (OD)"
+
+        #HERE GOES EYE DIAGRAM THINGY 
+
+        observations: "Observaciones"
+        diagnosis: "Diagnóstico"
+        plan_and_treatment: "Plan y Tratamiento"  
