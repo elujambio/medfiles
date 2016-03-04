@@ -1,5 +1,20 @@
 <label><%= t :ophtalmology_template %></label>
 <h1><%= @ophtalmology_template.name %></h1>
+
+
+<%= link_to "Añadir Receta",  new_ophtalmology_template_prescription_path(@ophtalmology_template)%><br/>
+
+<%= render 'prescriptions/prescriptions', prescriptable: @ophtalmology_template %>
+
+<%= link_to "Añadir Foto",  new_ophtalmology_template_template_photo_path(@ophtalmology_template)%><br/>
+
+<%= render 'template_photos/template_photos', photable: @ophtalmology_template %>
+
+<%= link_to "Añadir Archivo",  new_ophtalmology_template_template_file_path(@ophtalmology_template)%><br/>
+
+<%= render 'template_files/template_files', fileable: @ophtalmology_template %>
+
+
 <label><%= t :email %></label>
 <p><%= @ophtalmology_template.email %></p>
 <label><%= t :name %></label>

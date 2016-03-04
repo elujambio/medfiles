@@ -31,7 +31,17 @@
       </div>
     <% end %>
 
-    <%= render "doctors/shared/links" %>
+  <div class="field">
+    <%= f.label :speciality %><br />
+    <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
+  </div>    
+
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
 
   </div>
 </div>
