@@ -4,18 +4,7 @@ class CreateOphtalmologyTemplates < ActiveRecord::Migration
 
       #Patient Information
 
-      t.string :name
-      t.integer :age, default: 0 
-      t.date :birth_date
-      t.string :sex
-      t.text :originary_from
-      t.string :ocupation
-      t.string :religion
-      t.text :address
-      t.string :telephone
-      t.string :email
-      t.string :insurance_company
-      t.string :insurance_policy
+
       t.boolean :previous_revisions
       t.string :previous_revision_date
 

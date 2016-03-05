@@ -26,11 +26,6 @@
         <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: true %>
       </div>
 
-      <div class="actions">
-        <%= f.submit "Sign up" %>
-      </div>
-    <% end %>
-
   <div class="field">
     <%= f.label :speciality %><br />
     <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
