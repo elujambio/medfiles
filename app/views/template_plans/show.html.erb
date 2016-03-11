@@ -1,0 +1,10 @@
+<h1><%= @template_plan.name %></h1>
+
+<%= link_to "Editar", edit_template_plan_path(@template_plan) %><br/>
+<%= link_to "Eliminar", template_plan_path(@template_plan), method: :delete, data: {confirm: "¿Estás seguro? Esta acción afectará a todos los usuarios."} %><br/>
+
+<p>Descripción: <%= @template_plan.description %></p>
+<p>Inversión Mensual: <%= @template_plan.monthly_cost %></p>
+<p>Descuento Anual: <%= @template_plan.anual_discount %></p>
+<p>Costo Anual: <%= @template_plan.anual_cost %></p>
+<p>Número máximo de expedientes: <%= @template_plan.max_files %></p>

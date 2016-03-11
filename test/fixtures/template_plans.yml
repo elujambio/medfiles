@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  monthly_cost: 1.5
+  anual_discount: 1.5
+  anual_cost: 1.5
+  description: MyText
+  max_files: 1
+
+two:
+  name: MyString
+  monthly_cost: 1.5
+  anual_discount: 1.5
+  anual_cost: 1.5
+  description: MyText
+  max_files: 1

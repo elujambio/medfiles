@@ -1,0 +1,14 @@
+<% if current_doctor.plans.count == 0 %>
+	<p>Aún no tienes ningún plan </p>
+	
+<% end %>
+
+<% current_doctor.plans.each do |plan| %>
+	
+	<% plan.plan_elements.each do |element| %>
+		<% if plan.active == 1 or plan.active == -4 %>
+			<%= link_to element.element.name, doctor_plan_path(plan) %><%= link_to "Modificar", add_template_plan_path %>
+			Status: <% if plan.active== 1 %> Activo <% else %> Verificando pago. (Puede tomar hasta 15 días). En este tiempo podrás crear expedientes de manera normal. <% end %>
+		<% end %>
+	<% end %>
+<% end %>

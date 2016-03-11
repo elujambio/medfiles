@@ -1,0 +1,10 @@
+ <h1>Planes Inactivos de: <%= @doctor.name %></h1>
+ <% @inactive_plans.each do |plan| %>
+	<% plan.plan_elements.each do |element| %>
+		<% if element.element_type == "TemplatePlan" %>
+			<%= link_to element.element.name, plan %>. Del <%= plan.created_at.to_date %> al <%= plan.valid_til %><br/>
+		<% end %>
+	<% end %>
+<% end %>
+
+

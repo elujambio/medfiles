@@ -1,0 +1,24 @@
+<p><%= @doctor.name %></p>
+<%= link_to "EDITAR", edit_doctor_path(@doctor) %><br>
+<p><%= @doctor.country %></p>
+<p><%= @doctor.state %></p>
+<p><%= @doctor.city %></p>
+<p><%= @doctor.phone %></p>
+<p><%= @doctor.facebook %></p>
+<p><%= @doctor.website %></p>
+<p><%= @doctor.profession %></p>
+<p><%= @doctor.speciality %></p>
+
+<h3>  Planes Activos </h3>
+
+<% @active_plans.each do |plan| %>
+	<% plan.plan_elements.each do |element| %>
+		<%= link_to element.element.name, plan %>
+	<% end %>
+<% end %>
+
+<h3>Acciones</h3>
+
+<%= link_to "Ver Historial de Planes de Expediente", template_plan_history_path(@doctor) %><br/>
+ 
+

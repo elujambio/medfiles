@@ -1,0 +1,6 @@
+<h1>Ginecológos</h1>
+<%= link_to "Registrar Doctor", new_doctor_registration_path %><br/>
+
+<% @gynecologists.each do |doctor| %>
+	<%= render 'doctors', doctor: doctor %>
+<% end %>
