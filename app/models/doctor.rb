@@ -8,4 +8,6 @@ class Doctor < ActiveRecord::Base
   has_many :doctor_pictures, dependent: :delete_all
   has_many :plans
 
+  has_many :invoices, dependent: :delete_all
+
 end

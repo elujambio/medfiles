@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160302225750) do
+ActiveRecord::Schema.define(version: 20160312191907) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -204,6 +204,18 @@ ActiveRecord::Schema.define(version: 20160302225750) do
   end
 
   add_index "gynecology_templates", ["doctor_id"], name: "index_gynecology_templates_on_doctor_id"
+
+  create_table "invoices", force: :cascade do |t|
+    t.string   "name"
+    t.text     "address"
+    t.string   "rfc"
+    t.string   "cp"
+    t.integer  "doctor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "invoices", ["doctor_id"], name: "index_invoices_on_doctor_id"
 
   create_table "ophtalmology_templates", force: :cascade do |t|
     t.string   "name"
