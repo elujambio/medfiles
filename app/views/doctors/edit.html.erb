@@ -1,0 +1,76 @@
+
+<%= form_for(@doctor) do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>  
+  <div class="field">
+    <%= f.label :practice_address_1 %><br />
+    <%= f.text_field :practice_address_1, autofocus: true %>
+  </div>  
+  <div class="field">
+    <%= f.label :practice_address_2 %><br />
+    <%= f.text_field :practice_address_2, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone, autofocus: true %>
+  </div>  
+  <div class="field">
+    <%= f.label :cellphone %><br />
+    <%= f.text_field :cellphone, autofocus: true %>
+  </div>  
+
+  <div class="field">
+    <%= f.label :professional_license %><br />
+    <%= f.text_field :professional_license, autofocus: true %>
+  </div>    
+
+  <div class="field">
+    <%= f.label :facebook %><br />
+    <%= f.text_field :facebook, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website, autofocus: true %>
+  </div>  
+  <div class="field">
+    <%= f.label :profession %><br />
+    <%= f.text_field :profession, autofocus: true %>
+  </div>    
+  <div class="field">
+    <%= f.label :speciality %><br />
+    <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
+  </div>     
+
+  
+
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+
+
+<%= link_to "Back", :back %>

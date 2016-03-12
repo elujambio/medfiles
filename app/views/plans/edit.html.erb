@@ -1,0 +1,17 @@
+<%= form_for(@plan) do |f| %>
+
+	<% @plan.plan_elements.each do |element| %>
+		<% if element.element_type == "TemplatePlan" %>
+			Plan: <%= select_tag "template_id", options_for_select(TemplatePlan.all.collect{ |u| [u.name, u.id]} ) %><br/>
+		<% end %>
+	<% end %>
+	
+
+
+
+	<div>Al escoger el pago semestral o anual se aplica un descuento del 30% </div>
+
+	Frecuencia de Pago: <%= select_tag "billing_frequency", options_for_select([ "Mensual", "Semestral", "Anual" ], "Mensual") %><br/>
+	Preferencia: <%= select_tag "billing_preference", options_for_select([ "Paypal", "Recoger en Consultorio", "Déposito Bancario", "Transferencia Electrónica", "Déposito en OXXO" ], "Paypal") %><br/>
+	<%= submit_tag "Guardar" %>
+<% end %>

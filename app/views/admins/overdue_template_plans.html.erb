@@ -1,0 +1,8 @@
+<h1> Planes de Expedientes que vencieron hoy</h1>
+<p>Estos planes entran en un período de gracia de 15 días antes de su cancelación total, contacta a los doctores para que realicen su pago o confirmalo para que no se cancele su cuenta.</p>
+
+
+<% @overdue_payments.each do |payment| %>
+	Doctor: <%= link_to payment.plan.doctor.name, show_doctor_path(payment.plan.doctor) %> <%= link_to "Ver plan", payment.plan %> <br/>
+
+<% end %>

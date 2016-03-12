@@ -1,5 +1,7 @@
 class GynecologyTemplatesController < ApplicationController
 	before_action :authenticate_doctor!
+	before_action :check_plan_limit, only: [:new, :create]
+	before_action :check_payment_for_templates!
 	before_action :set_gynecology_template, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_doctor_for_gynecology_template!, only: [:show, :edit, :update, :destroy]
 	
@@ -58,6 +60,12 @@ class GynecologyTemplatesController < ApplicationController
 		def gynecology_template_params
 			params.require(:gynecology_template).permit(:register, :name, :email, :husband_name, :address, :telephone, :age, :husband_age, :marital_status, :ocupation, :husband_ocupation, :reason, :mother_background, :father_background, :grandparents_background, :siblings_background, :parents_siblings_background, :children_background,:husband_background,:personal_background,:diet,:smoking,:alergies,:drugs,:alcoholism,:inmunizations,:traumatics,:surgicals,:transfusions,:menarche,:rhythm,:dysmenorrhea,:circumcised_partner,:ivsa,:number_of_sexual_partners,:pms,:pms_duration,:gestate,:gestate_for,:c_section,:abortions,:ee,:induction,:gestational_age,:fum,:fup,:fua,:fuc,:fpp,:doc,:previous_preganancy_complications,:colposcopy,:sexual_habits,:fridigity,:dyspareunia,:menopause,:menopause_symptomatology,:leucorrea ,:leucorrea_treatment,:pregnancy_medication,:ta,:weight,:size,:habitus, :head, :neck, :torax, :abdomen, :limbs, :breasts_appearance, :symetry, :skin_abnormalities, :nipple, :abnormal_mass, :axillary_region, :ganglion_growth, :abnormal_secretion, :mastalgia, :external_aspect, :clitoris, :vulva, :pubic_hair, :himen, :introito, :perine, :vaginal_walls, :secreation_and_discharge, :cervix, :uterus_position, :uterus_consistency, :uterus_size, :uterus_form, :annexes, :speculoscopy, :internal_and_external_genitalia, :clinic_pelvimetry, :impression_diagnosis, :other_1, :other_2, :other_3, :other_4, :other_5, contraceptives_attributes: [:id, :name,:time,:tolerance, :_destroy], pregnancies_attributes: [:id, :pregnancy_number,:pregnancy_date,:abortion, :delivery, :induction, :ending, :newborn, :baby_weight, :baby_sex, :puerperium, :_destroy])
 		end
+
+		def check_plan_limit
+			check_plan_limit_all_templates(current_doctor.gynecology_templates.count)
+		end
+
+
 
 
 end

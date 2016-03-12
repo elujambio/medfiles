@@ -1,0 +1,29 @@
+<%= form_for(@template_plan) do |f| %>
+	<% if @template_plan.errors.any? %>
+			<label><%= pluralize(@template_plan.errors.count, "error") %></label>
+			<ul>
+				<% @template_plan.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+
+	<%= f.label :name %>
+	<%= f.text_field :name, placeholder: true %><br/>
+
+	<%= f.label :description %>
+	<%= f.text_area :description, placeholder: true %><br/>
+
+	<%= f.label :monthly_cost %>
+	<%= f.text_field :monthly_cost, placeholder: true %><br/>
+
+	<%= f.label :anual_discount %>
+	<%= f.text_field :anual_discount, placeholder: true %>%<br/>
+
+	<%= f.label :max_files %>
+	<%= f.text_field :max_files, placeholder: true %><br/>
+
+	<%= f.submit "Guardar" %>
+<% end %>
