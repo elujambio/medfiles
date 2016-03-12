@@ -65,8 +65,10 @@ class ApplicationController < ActionController::Base
     helper_method :authenticate_superadmin!
 
     def check_plan_limit_all_templates(files_count)
+      active = false
       current_doctor.plans.each do |plan| 
         if plan.active == -4 or plan.active == 1
+          active = true
           plan.plan_elements.each do |element| 
             if element.element_type == "TemplatePlan" 
               @max_files = element.element.max_files 
@@ -74,8 +76,8 @@ class ApplicationController < ActionController::Base
           end
         end
       end
-      if files_count >= @max_files
-        flash[:error] = "Haz excedido el límite de expedientes de tu plan."
+      if active == true and files_count >= @max_files
+        flash[:alert] = "Haz excedido el límite de expedientes de tu plan."
         redirect_to root_url
       end
     end
@@ -87,7 +89,7 @@ class ApplicationController < ActionController::Base
         if plan.active == -1
           plan.plan_elements.each do |element| 
             if element.element_type == "TemplatePlan" 
-              flash[:error] = "No hemos recibido tu pago."
+              flash[:alert] = "No hemos recibido tu pago."
               redirect_to root_url
             end
           end

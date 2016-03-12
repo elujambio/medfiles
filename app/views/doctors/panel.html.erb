@@ -25,4 +25,12 @@
 	<% else %>
 		<p>Ya no tienes espacio para más expedientes. <%= link_to "Aumenta Plan", add_template_plan_path %></p>
 	<% end %>
+
+	<% current_doctor.plans.each do |plan| %>
+		<% plan.plan_elements.each do |element| %>
+			<% if plan.active == -1 and element.element_type == "TemplatePlan" %>
+				<p> No hemos recibido tu pago, si crees que esto es un error envía un correo a sipague@medfiles.com.mx, en caso de que no recibamos ningún correo tuyo eliminaremos la información en 15 días</p>
+			<% end %>
+		<% end %>
+	<% end %>
 </div>
