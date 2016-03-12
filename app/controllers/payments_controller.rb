@@ -16,12 +16,14 @@ class PaymentsController < ApplicationController
 				@c= @payment.payment_number
 				Payment.create(next_payment: @payment.plan.valid_from + @c.years, plan: @payment.plan, accepted_payment: false, payment_number: @payment.payment_number + 1)
 		end
+		@payment.plan.update_attributes(active: 1)
 		redirect_to :back
 	end
 
 	def cancel
 		@payment = Payment.find(params[:format])
 		@payment.update_attributes(accepted_payment: false)
+		@payment.plan.update_attributes(active: -1)
 		redirect_to :back
 	end
 end

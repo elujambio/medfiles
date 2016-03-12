@@ -31,7 +31,7 @@ Preferencia de pago: <%= @plan.billing_preference %><br/>
 
 <% @plan.payments.each do |payment| %>
 	<% if !payment.accepted_payment? %>
-		El <%= payment.next_payment %> | <%= link_to "Confirmar Pago", accept_payments_path(payment) %></br>
+		El <%= payment.next_payment %> | <%= link_to "Confirmar Pago", accept_payments_path(payment) %>| <%= link_to "Denegar Pago", cancel_payments_path(payment) %></br>
 		<% end %>
 <% end %>
 

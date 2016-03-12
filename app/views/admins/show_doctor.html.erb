@@ -11,7 +11,7 @@
 
 <h3>  Planes Activos </h3>
 
-<% @active_plans.each do |plan| %>
+<% @doctor.plans.each do |plan| %>
 	<% plan.plan_elements.each do |element| %>
 		<%= link_to element.element.name, plan %>
 	<% end %>

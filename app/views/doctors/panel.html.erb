@@ -7,12 +7,12 @@
 	 
 	Número de Expedientes: <%= @files %> / <%= @max_files %><br/>
 
-	<% if @files > @max_files - 50 and @files <= @max_files %>
+	<% if @hasTemplatePlan == true and @files > @max_files - 50 and @files <= @max_files %>
 		<p>Estás cerca del límite de expedientes, aumenta tu plan para que puedas crear más expedientes </p>
 		<%= link_to "Aumentar Plan", add_template_plan_path %><br/>
 	<% end %>
 
-	<% if @files <= @max_files %>
+	<% if @hasTemplatePlan == true and @files < @max_files %>
 		<% case current_doctor.speciality %>
 			<% when "Ginecología" %>
 				<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %><br/>

@@ -10,5 +10,9 @@
 			<%= link_to element.element.name, doctor_plan_path(plan) %><%= link_to "Modificar", add_template_plan_path %>
 			Status: <% if plan.active== 1 %> Activo <% else %> Verificando pago. (Puede tomar hasta 15 días). En este tiempo podrás crear expedientes de manera normal. <% end %>
 		<% end %>
+
+		<% if plan.active == -1  %>
+			Plan cancelado por falta de pago. Tu información esta segura, reanuda tu pago para poder acceder a las funciones de crear, ver y modificar expediente.
+		<% end %>
 	<% end %>
 <% end %>

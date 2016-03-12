@@ -74,7 +74,7 @@ class ApplicationController < ActionController::Base
           end
         end
       end
-      if files_count > @max_files
+      if files_count >= @max_files
         flash[:error] = "Haz excedido el límite de expedientes de tu plan."
         redirect_to root_url
       end

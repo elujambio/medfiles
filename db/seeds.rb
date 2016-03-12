@@ -30,3 +30,7 @@ doctor8 = Doctor.create(name: "Carlos Gutiérrez", email: "carlos@gmail.com", pa
 doctor9 = Doctor.create(name: "César Gutiérrez", email: "cesar@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
 doctor10 = Doctor.create(name: "Juan Gutiérrez", email: "juan@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
 doctor11 = Doctor.create(name: "Lupita Gutiérrez", email: "lupita@gmail.com", password: "qwerty123", password: "qwerty123", speciality: "Oftalmología")
+
+1.upto(1998) do |i|
+	GynecologyTemplate.create(name: Faker::Name.name, doctor_id: doctor1.id)
+end
