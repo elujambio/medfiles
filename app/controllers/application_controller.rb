@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
     
 
      def authenticate_doctor_for_elements(element)
-      if current_doctor != @element.doctor 
+      if current_doctor != element.doctor 
         flash[:error] = "No puedes ver el expediente."
         redirect_to root_url
       end

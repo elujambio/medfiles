@@ -45,7 +45,7 @@ class InvoicesController < ApplicationController
 	private
 
 		def invoice_params
-			params.require(:invoice).permit(:name, :rfc, :address, :cp, :favorite)
+			params.require(:invoice).permit(:name, :rfc, :address1, :cp, :favorite, :address2, :num_ext, :num_int, :state, :city, :country)
 		end
 
 		def set_invoice

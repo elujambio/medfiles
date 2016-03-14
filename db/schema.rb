@@ -207,12 +207,19 @@ ActiveRecord::Schema.define(version: 20160312191907) do
 
   create_table "invoices", force: :cascade do |t|
     t.string   "name"
-    t.text     "address"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "num_ext"
+    t.string   "num_int"
+    t.string   "state"
+    t.string   "city"
+    t.string   "country"
     t.string   "rfc"
     t.string   "cp"
+    t.boolean  "favorite",   default: false
     t.integer  "doctor_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
   add_index "invoices", ["doctor_id"], name: "index_invoices_on_doctor_id"

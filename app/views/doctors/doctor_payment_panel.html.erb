@@ -1,6 +1,6 @@
 <% if current_doctor.plans.count == 0 %>
 	<p>Aún no tienes ningún plan </p>
-	
+	<%= link_to "Añadir Plan", add_template_plan_path %><br/>
 <% end %>
 
 <% current_doctor.plans.each do |plan| %>
@@ -16,3 +16,6 @@
 		<% end %>
 	<% end %>
 <% end %>
+
+<%= link_to "Ver Datos de Facturación", invoices_path %><br/>
+<%= link_to "Configurar Información de Facturación", new_invoice_path %><br/>

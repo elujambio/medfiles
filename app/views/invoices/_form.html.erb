@@ -1,8 +1,16 @@
 <%= form_for(@invoice) do |f| %>
-	<%= f.text_field :name %><br/>
-	<%= f.text_area :address %><br/>
-	<%= f.text_field :cp %><br/>
-	<%= f.text_field :rfc %><br/>
-	<%= f.check_box :favorite %><br/>
+	<%= f.text_field :name, placeholder: "Razón Social" %><br/>
+	<%= f.text_field :rfc, placeholder: "R.F.C"  %><br/>
+	<%= f.text_field :address1, placeholder: "Calle"  %><br/>
+	<%= f.text_field :num_int, placeholder: "Número Interior"  %><br/>
+	<%= f.text_field :num_ext, placeholder: "Número Exterior"  %><br/>
+	<%= f.text_field :address2, placeholder: "Colonia"  %><br/>
+	<%= f.text_field :city, placeholder: "Ciudad"  %><br/>
+	<%= f.text_field :state, placeholder: "Estado" %><br/>
+	<%= f.text_field :country, placeholder: "País" %><br/>
+	<%= f.text_field :cp, placeholder: "Código Postal"  %><br/>
+
+	<div><p>Si marcas estos datos como favoritos, todas las facturas se harán con estos datos.</p></div>
+	<%= f.check_box :favorite %>¿Favoritos? <br/>
 	<%= f.submit "Guardar" %>
 <% end %>

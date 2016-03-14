@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :ophtalmology_templates
   resources :doctors, only: [:show]   
   resources :patients, only: [:show]
-
+  resources :invoices
 
 
   # Example of regular route:
