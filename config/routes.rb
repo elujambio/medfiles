@@ -103,5 +103,6 @@ Rails.application.routes.draw do
   get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
   get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
   get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
+  get '/show_invoice_data', to: "admins#show_invoice_data", :as => "show_invoice_data"
 
 end

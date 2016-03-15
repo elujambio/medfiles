@@ -29,4 +29,8 @@ class AdminsController < ApplicationController
 
 	def admin_templates_panel
 	end
+
+	def show_invoice_data
+		@invoice =  Doctor.find(params[:format])
+	end
 end
