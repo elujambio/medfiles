@@ -2,15 +2,12 @@ class CreateGynecologyTemplates < ActiveRecord::Migration
   def change
     create_table :gynecology_templates do |t|
       t.integer :register, default: 0
-      t.string :name
-      t.string :email
+      
       t.string :husband_name
-      t.text :address
-      t.string :telephone
-      t.integer :age
+     
       t.integer :husband_age
       t.string :marital_status
-      t.string :ocupation
+      
       t.string :husband_ocupation
       t.text :reason
       t.text :mother_background

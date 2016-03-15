@@ -10,11 +10,11 @@ class GynecologyTemplate < ActiveRecord::Base
 	has_many :prescriptions, :as => :prescriptable, dependent: :delete_all
 	has_many :template_photos, :as => :photable, dependent: :delete_all
 	has_many :template_files, :as => :fileable, dependent: :delete_all
-	
+	has_many :patients, as: :templatable, dependent: :delete_all
 
 	before_create :set_register_number
 	
-	validates :name, presence: true
+	
 
 	def to_s
 		name

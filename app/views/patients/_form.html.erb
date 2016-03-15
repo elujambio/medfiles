@@ -1,0 +1,71 @@
+<%= form_for(@patient) do |expedient|%>
+	<div id="patient-data">
+	<h4><%= t :patient_data %></h4>
+		<div class="double-field">
+            <div>
+                  <label><%= t :name %></label>
+                  <%= expedient.text_field :name, placeholder: true %>
+            </div>
+		</div>
+		<div class="double-field">
+            <div> 
+                  <label><%= t :birth_date %></label>
+                  <%= expedient.date_select :birth_date, placeholder: true  %>
+            </div>
+            <div>
+                  <label><%= t :sex %></label>
+                  <span>
+                        <label><%= t :male %></label>
+                        <%= expedient.radio_button :sex, :male %>
+                  </span>
+                  <span>
+                        <label><%= t :female %></label>
+                        <%= expedient.radio_button :sex, :female %>
+                  </span>
+            </div>
+		</div>
+		<div class="double-field">
+            <div>
+                  <label><%= t :originary_from %></label>
+                  <%= expedient.text_field :originary_from, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :ocupation %></label>
+                  <%= expedient.text_field :ocupation, placeholder: true %>
+            </div>
+		</div>
+		<div class="double-field">
+            <div>
+                  <label><%= t :religion %></label>
+                  <%= expedient.text_field :religion, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :address %></label>
+                  <%= expedient.text_field :address, placeholder: true %>
+            </div>
+		</div>
+		<div class="double-field">
+            <div>
+                  <label><%= t :telephone %></label>
+                  <%= expedient.text_field :telephone, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :email %></label>
+                  <%= expedient.text_field :email, placeholder: true %>
+            </div>
+		</div>
+		<div class="double-field">
+            <div>
+                  <label><%= t :insurance_company %></label>
+                  <%= expedient.text_field :insurance_company, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :insurance_policy %></label>
+                  <%= expedient.text_field :insurance_policy, placeholder: true %>
+            </div>
+		</div>
+		<div>
+      		<%= expedient.submit "GUARDAR" %>
+		</div>
+<% end %>
+<%= javascript_include_tag "expedient_form" %>
