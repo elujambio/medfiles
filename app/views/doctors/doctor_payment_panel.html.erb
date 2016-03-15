@@ -1,0 +1,21 @@
+<% if current_doctor.plans.count == 0 %>
+	<p>Aún no tienes ningún plan </p>
+	<%= link_to "Añadir Plan", add_template_plan_path %><br/>
+<% end %>
+
+<% current_doctor.plans.each do |plan| %>
+	
+	<% plan.plan_elements.each do |element| %>
+		<% if plan.active == 1 or plan.active == -4 %>
+			<%= link_to element.element.name, doctor_plan_path(plan) %><%= link_to "Modificar", add_template_plan_path %>
+			Status: <% if plan.active== 1 %> Activo <% else %> Verificando pago. (Puede tomar hasta 15 días). En este tiempo podrás crear expedientes de manera normal. <% end %>
+		<% end %>
+
+		<% if plan.active == -1  %>
+			Plan cancelado por falta de pago. Tu información esta segura, reanuda tu pago para poder acceder a las funciones de crear, ver y modificar expediente.
+		<% end %>
+	<% end %>
+<% end %>
+
+<%= link_to "Ver Datos de Facturación", invoices_path %><br/>
+<%= link_to "Configurar Información de Facturación", new_invoice_path %><br/>

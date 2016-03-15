@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   devise_for :doctors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,7 +9,13 @@ Rails.application.routes.draw do
   root 'doctors#panel'
  
   resources :doctors, only: [:show]   
+<<<<<<< HEAD
   #resources :patients
+=======
+  resources :patients, only: [:show]
+  resources :invoices
+
+>>>>>>> master
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -73,5 +80,37 @@ Rails.application.routes.draw do
     resources :patients, module: :gynecology_templates
     
   end
+
+  resources :doctors, only: [:show, :edit, :update, :destroy] 
+  resources :template_plans
+  resources :plans, only: [:show] do
+    collection do
+      get :save_template_plan
+      post :save_template_plan
+    end
+  end
+
+  resources :payments, except: [:index, :show, :edit, :update, :destroy, :new, :create] do
+    collection do
+      get :accept
+      put :accept
+      get :cancel
+      put :cancel
+    end
+  end
+  get '/add_template_plan', to: "plans#add_template_plan", :as => "add_template_plan"
+  get '/doctor_plan', to: "plans#doctor_plan", :as => "doctor_plan"
+  get '/template_plan_history', to: "plans#template_plan_history", :as => "template_plan_history"
+
+  get '/doctor_payment_panel', to: "doctors#doctor_payment_panel", :as => "doctor_payment_panel"
+  
+  get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
+  get '/admin_templates_panel', to: "admins#admin_templates_panel", :as => "admin_templates_panel"
+  get '/overdue_template_plans', to: "admins#overdue_template_plans", :as => "overdue_template_plans"
+  get '/all_gynecologists', to: "admins#all_gynecologists", :as => "all_gynecologists"
+  get '/all_ophthalmologists', to: "admins#all_ophthalmologists", :as => "all_ophthalmologists"
+  get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
+  get '/show_invoice_data', to: "admins#show_invoice_data", :as => "show_invoice_data"
+
 
 end

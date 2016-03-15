@@ -12,6 +12,14 @@
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+
+
+
+<% if admin_signed_in? %>
+	<%= link_to("ADMIN PANEL", admin_panel_path) %>
+	<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+<% end %>
+
 <div id="navbar">
 
 	<% if doctor_signed_in? %>
@@ -22,6 +30,7 @@
 		<%= link_to("SIGN UP", new_doctor_registration_path) %>
 	<% end %>
 </div>
+
 <%= yield %>
 
 </body>
