@@ -37,13 +37,13 @@ class ApplicationController < ActionController::Base
     helper_method :authenticate_doctor_for_patient!
     
 
-     def authenticate_doctor_for_gynecology_template!
-      if current_doctor != @gynecology_template.doctor 
+     def authenticate_doctor_for_elements(element)
+      if current_doctor != element.doctor 
         flash[:error] = "No puedes ver el expediente."
         redirect_to root_url
       end
     end
-    helper_method :authenticate_doctor_for_gynecology_template!
+    helper_method :authenticate_doctor_for_element
 
     def authenticate_doctor_for_template(template)
      if current_doctor != template.doctor 

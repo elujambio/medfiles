@@ -1,5 +1,6 @@
 <p><%= @doctor.name %></p>
 <%= link_to "EDITAR", edit_doctor_path(@doctor) %><br>
+<p><%= @doctor.email %></p>
 <p><%= @doctor.country %></p>
 <p><%= @doctor.state %></p>
 <p><%= @doctor.city %></p>
@@ -22,3 +23,18 @@
 <%= link_to "Ver Historial de Planes de Expediente", template_plan_history_path(@doctor) %><br/>
  
 
+<h6>Datos de Facturación</h6>
+
+<% @doctor.invoices.each do |invoice| %>
+	<% if invoice.favorite? %>
+		<%= invoice.rfc %><br/>
+		<%= invoice.name %><br/>
+		<%= invoice.address1 %><br/>
+		<%= invoice.num_ext %><br/>
+		<%= invoice.num_int %><br/>
+		<%= invoice.address2 %><br/>
+		<%= invoice.city %><br/>
+		<%= invoice.state %><br/>
+		<%= invoice.country %><br/>
+	<% end %>
+<% end %>
