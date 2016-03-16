@@ -1,10 +1,9 @@
 
 <label><%= t :register %></label>
 <%= @gynecology_template.register %><br/>
-<label><%= t :name %></label>
-<h1><%= @gynecology_template.name %></h1>
 
-<% @gynecology_template.patients.each do |patient|  %>
+
+<%= @gynecology_template.patients.each do |patient|  %>
 
 	<h1><%= patient.name %></h1>
 	<label><%= t :email %></label>
@@ -50,7 +49,7 @@
 
 <h2>Historia Clínica</h2>
 
-<%= @gynecology_template.email %><br/>
+
 <label><%= t :husband_name %></label>
 <%= @gynecology_template.husband_name %><br/>
 <label><%= t :husband_age %></label>

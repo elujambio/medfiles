@@ -33,4 +33,12 @@
 			<% end %>
 		<% end %>
 	<% end %>
+
+
+	<%= form_tag(action: "search_patient") do %>
+		<%= autocomplete_field_tag(:patient, params[:patient], autocomplete_patient_name_doctors_path, :id_element => '#patient_id', class: "search-query", placeholder: "Busca por nombre del paciente.", type: "search" ) %>
+		<div class="bg-charcoal-pink input-underline"></div>
+		<%= hidden_field_tag :patient_id, :id => "patient_id" %>
+		<%= submit_tag "Buscar", class: "ui-autocomplete-submit" %>
+	<% end %>
 </div>

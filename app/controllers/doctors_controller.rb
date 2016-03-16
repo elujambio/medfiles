@@ -2,6 +2,7 @@ class DoctorsController < ApplicationController
 
 	before_action :authenticate_doctor!
 	before_action :set_doctor, only: [:show, :edit, :update, :destroy]
+	autocomplete :patient, :name
 
 	def panel
 		@hasTemplatePlan = false
@@ -44,6 +45,11 @@ class DoctorsController < ApplicationController
 	end
 
 	def destroy 
+	end
+
+	def search_patient
+		@patient = Patient.find(params[:patient_id])
+		redirect_to gynecology_template_path(@patient.templatable)
 	end
 
 	private
