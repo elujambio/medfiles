@@ -3,7 +3,7 @@ class GynecologyTemplatesController < ApplicationController
 	before_action :check_plan_limit, only: [:new, :create]
 	before_action :check_payment_for_templates!
 	before_action :set_gynecology_template, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_doctor_for_gynecology_template!, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_doctor_for_gynecology_template, only: [:show, :edit, :update, :destroy]
 	before_action :find_patient, only: [:edit, :update]
 	
 	def index
@@ -68,12 +68,12 @@ class GynecologyTemplatesController < ApplicationController
 			@patient = Patient.find_by(templatable_id: @gynecology_template.id, templatable_type: "GynecologyTemplate")
 		end	
 
-
 		def check_plan_limit
 			check_plan_limit_all_templates(current_doctor.gynecology_templates.count)
 		end
 
-
-
+		def authenticate_doctor_for_gynecology_template
+			authenticate_doctor_for_elements(@gynecology_template)
+		end
 
 end

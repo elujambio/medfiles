@@ -9,13 +9,11 @@ Rails.application.routes.draw do
   root 'doctors#panel'
  
   resources :doctors, only: [:show]   
-<<<<<<< HEAD
-  #resources :patients
-=======
+
   resources :patients, only: [:show]
   resources :invoices
 
->>>>>>> master
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
