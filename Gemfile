@@ -32,6 +32,7 @@ gem 'will_paginate', '~> 3.0.6'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'jquery-ui-rails'
+
 gem 'rails-jquery-autocomplete'
 
 group :development, :test do

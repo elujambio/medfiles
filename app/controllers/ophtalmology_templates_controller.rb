@@ -1,7 +1,7 @@
 class OphtalmologyTemplatesController < ApplicationController
 	before_action :authenticate_doctor!
 	before_action :set_ophtalmology_template, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_doctor_for_ophtalmology_template!, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_doctor_for_ophtalmology_template, only: [:show, :edit, :update, :destroy]
 	before_action :find_patient, only: [:edit, :update]
 	def index
 		@ophtalmology_templates = OphtalmologyTemplate.where(doctor: current_doctor)
@@ -60,4 +60,8 @@ class OphtalmologyTemplatesController < ApplicationController
 		def find_patient
 			@patient = Patient.find_by(templatable_id: @ophtalmology_template.id, templatable_type: "OphtalmologyTemplate")
 		end	
+
+		def authenticate_doctor_for_ophtalmology_template
+			authenticate_doctor_for_elements(@ophtalmology_template)
+		end
 end

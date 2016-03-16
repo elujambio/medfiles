@@ -8,11 +8,14 @@ Rails.application.routes.draw do
 
   root 'doctors#panel'
  
-  resources :doctors, only: [:show]   
+  resources :doctors, only: [:show] do
+    get :autocomplete_patient_name, :on => :collection
+  end   
 
   resources :patients, only: [:show]
   resources :invoices
-
+  get 'search_patient'  => 'doctors#search_patient'
+  post 'search_patient'  => 'doctors#search_patient'
 
 
   # Example of regular route:
