@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: 2016-03-17
+  weeks_with_amenorrhea: 1
+  blood_pressure: MyString
+  edema: MyString
+  uterus_bottom: MyString
+  fetal_heartbeat: MyString
+  fetal_movements: MyString
+  presentation: MyString
+  pain: MyString
+  genital_bleeding: MyString
+  headache: MyString
+  visual_hearing: MyString
+  vomit: MyString
+  urinales: MyString
+  intestinal: MyString
+  hb_htc: MyString
+  glycemia: MyString
+  albuminuria: MyString
+  genital_exp: MyString
+  treatment: MyString
+
+two:
+  day: 2016-03-17
+  weeks_with_amenorrhea: 1
+  blood_pressure: MyString
+  edema: MyString
+  uterus_bottom: MyString
+  fetal_heartbeat: MyString
+  fetal_movements: MyString
+  presentation: MyString
+  pain: MyString
+  genital_bleeding: MyString
+  headache: MyString
+  visual_hearing: MyString
+  vomit: MyString
+  urinales: MyString
+  intestinal: MyString
+  hb_htc: MyString
+  glycemia: MyString
+  albuminuria: MyString
+  genital_exp: MyString
+  treatment: MyString

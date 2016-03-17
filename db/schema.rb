@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160312191907) do
+ActiveRecord::Schema.define(version: 20160317184510) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -487,6 +487,34 @@ ActiveRecord::Schema.define(version: 20160312191907) do
   end
 
   add_index "pregnancies", ["gynecology_template_id"], name: "index_pregnancies_on_gynecology_template_id"
+
+  create_table "pregnancy_evolutions", force: :cascade do |t|
+    t.date     "day"
+    t.integer  "weeks_with_amenorrhea"
+    t.string   "blood_pressure"
+    t.string   "edema"
+    t.string   "uterus_bottom"
+    t.string   "fetal_heartbeat"
+    t.string   "fetal_movements"
+    t.string   "presentation"
+    t.string   "pain"
+    t.string   "genital_bleeding"
+    t.string   "headache"
+    t.string   "visual_hearing"
+    t.string   "vomit"
+    t.string   "urinales"
+    t.string   "intestinal"
+    t.string   "hb_htc"
+    t.string   "glycemia"
+    t.string   "albuminuria"
+    t.string   "genital_exp"
+    t.text     "treatment"
+    t.integer  "gynecology_template_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "pregnancy_evolutions", ["gynecology_template_id"], name: "index_pregnancy_evolutions_on_gynecology_template_id"
 
   create_table "prescriptions", force: :cascade do |t|
     t.text     "prescription"
