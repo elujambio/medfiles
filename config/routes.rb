@@ -79,6 +79,7 @@ Rails.application.routes.draw do
     resources :template_photos, module: :gynecology_templates
     resources :template_files, module: :gynecology_templates
     resources :patients, module: :gynecology_templates
+    resources :pregnancy_evolutions
     
   end
 

@@ -10,11 +10,11 @@ class GynecologyTemplate < ActiveRecord::Base
 	has_many :prescriptions, :as => :prescriptable, dependent: :delete_all
 	has_many :template_photos, :as => :photable, dependent: :delete_all
 	has_many :template_files, :as => :fileable, dependent: :delete_all
-	has_many :patients, as: :templatable, dependent: :delete_all
+	has_one :patient, as: :templatable, dependent: :delete
 	#accepts_nested_attributes_for :patients, reject_if: proc { |attributes| attributes['name'].blank? }, :allow_destroy => true
 	
 	before_create :set_register_number
-	
+	has_many :pregnancy_evolutions
 	
 
 	def to_s
