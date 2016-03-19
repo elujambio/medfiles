@@ -1,0 +1,6 @@
+<%= link_to @gynecology_template.patient.name, @gynecology_template %><br/>
+
+<%= link_to "Editar", edit_gynecology_template_pregnancy_note_path(@gynecology_template, @note) %><br/>
+<%= link_to "Eliminar", [@gynecology_template, @note], method: :delete, data: {confirm: "¿Esta seguro? Esta acción no se puede deshacer" }	%><br/>
+
+<%= @note.note %>

@@ -15,6 +15,7 @@ class GynecologyTemplate < ActiveRecord::Base
 	
 	before_create :set_register_number
 	has_many :pregnancy_evolutions
+	has_many :pregnancy_notes
 	
 
 	def to_s

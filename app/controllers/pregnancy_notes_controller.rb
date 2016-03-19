@@ -1,4 +1,4 @@
-class noteNotesController < ApplicationController
+class PregnancyNotesController < ApplicationController
 	before_action :authenticate_doctor!
 	before_action :set_gynecology_template
 	before_action :authenticate_doctor_for_gynecology_template

@@ -47,6 +47,8 @@
 
 <%= link_to "Añadir Hoja de Evolución de Embarazo",   new_gynecology_template_pregnancy_evolution_path(@gynecology_template)%><br/>
 
+<%= link_to "Añadir Nota Especial de Evolución",   new_gynecology_template_pregnancy_note_path(@gynecology_template)%><br/>
+
 <h2>Historia Clínica</h2>
 
 
@@ -290,7 +292,15 @@
 <label><%= t :other_5 %></label>
 <%= @gynecology_template.other_5 %><br/>
 
+<h3> Evolución de embarazo </h3>
 <% @gynecology_template.pregnancy_evolutions.each do |pregnancy| %>
 	Registro del día: <%= link_to pregnancy.created_at.to_date, [@gynecology_template, pregnancy] %><br/>
 <% end %>
+
+
+<h3> Notas especiales de evolución de embarazo </h3>
+<% @gynecology_template.pregnancy_notes.each do |note| %>
+	Nota del día: <%= link_to note.created_at.to_date, [@gynecology_template, note] %><br/>
+<% end %>
+
 
