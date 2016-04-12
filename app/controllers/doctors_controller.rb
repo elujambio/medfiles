@@ -1,5 +1,5 @@
 class DoctorsController < ApplicationController
-<<<<<<< HEAD
+
 
 	before_action :authenticate_doctor!
 	before_action :set_doctor, only: [:show, :edit, :update, :destroy]
@@ -8,7 +8,7 @@ class DoctorsController < ApplicationController
 	def panel
 		@hasTemplatePlan = false
 		current_doctor.plans.each do |plan| 
-			if plan.active == -4 or plan.active == 1
+			if plan.active == -4 or plan.active == 1 or plan.active == -5
 				plan.plan_elements.each do |element| 
 					if element.element_type == "TemplatePlan" 
 					 	@max_files = element.element.max_files 
@@ -28,8 +28,7 @@ class DoctorsController < ApplicationController
 
 	end
 
-=======
->>>>>>> 51c9c59dafd65ea78c8beaea6371a03d73808bb4
+
 	def show
 	end
 
