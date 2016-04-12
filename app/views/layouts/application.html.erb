@@ -9,10 +9,6 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-
-
-
-
 <% flash.each do |key, value| %>
 	<% if flash or alert %>
 		<div class="notices">
@@ -47,9 +43,10 @@
 		<%= link_to("SIGN UP", new_doctor_registration_path) %>
 	<% end %>
 	<% if admin_signed_in? %>
-	<%= link_to("ADMIN PANEL", admin_panel_path) %>
-	<%= link_to("LOG_OUT", destroy_admin_session_path) %>
-<% end %>
+		<%= link_to("ADMIN PANEL", admin_panel_path) %>
+		<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+	<% end %>
+
 </div>
 
 <%= yield %>

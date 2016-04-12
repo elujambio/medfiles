@@ -6,7 +6,13 @@ class Doctor < ActiveRecord::Base
   has_many :ophtalmology_templates, dependent: :delete_all
   has_many :gynecology_templates, dependent: :delete_all
   has_many :doctor_pictures, dependent: :delete_all
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+  has_many :patients
+=======
+>>>>>>> master
 
   has_many :patients, dependent: :delete_all
 
@@ -14,5 +20,9 @@ class Doctor < ActiveRecord::Base
 
   has_many :invoices, dependent: :delete_all
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
+>>>>>>> master
 end
