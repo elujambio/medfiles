@@ -1,9 +1,10 @@
 @import "base/mixins.scss";
 @import "base/normalize.scss";
 // @import "base/globals.scss";
-@import " base/atoms.scss";
-@import " base/font-sizes.scss";
-@import " base/font-styles.scss";
-@import " base/fonts.scss";
+@import "base/atoms.scss";
+@import "base/font-sizes.scss";
+@import "base/font-styles.scss";
+@import "base/fonts.scss";
 // @import " expedient/expedient_form.scss";
-@import " logins/logins.scss";
+@import "logins/logins.scss";
+@import "layouts/notices.scss";
