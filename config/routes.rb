@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  devise_for :doctors
+  devise_for :doctors, controllers: {registrations: "doctors/registrations"} 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -84,7 +84,7 @@ Rails.application.routes.draw do
     
   end
 
-  resources :doctors, only: [:show, :edit, :update, :destroy] 
+  resources :doctors, only: [:show, :edit, :update, :destroy]
   resources :template_plans
   resources :plans, only: [:show] do
     collection do

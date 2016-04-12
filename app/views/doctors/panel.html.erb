@@ -1,8 +1,16 @@
 <div id="">
-	
-	<% if current_doctor.created_at <= current_doctor.created_at + 15.days and current_doctor.plans.count == 0 %>
-		<p>Tienes hasta el <%= current_doctor.created_at.to_date + 15.days %> para agregar un plan de expedientes, <%= link_to "¡Agrega un plan!", add_template_plan_path %></p>
+	<% current_doctor.plans.each do |plan| %>
+		<% if plan.active == -5 %>
+			<p>Tu prueba termina el <%= plan.valid_til %></p>
+			<%= link_to "¡Agrega un plan!", add_template_plan_path %></p>
+		<% end %>
+		dsfs<% plan.plan_elements.each do |plan| %>
+			<%= plan.element.name %>
+			<%= plan.element.max_files %>
+			jsoiwhsio
+		<% end %>
 	<% end %>
+	
 	<%= link_to "Panel de Pagos", doctor_payment_panel_path %>
 	 
 	Número de Expedientes: <%= @files %> / <%= @max_files %><br/>
