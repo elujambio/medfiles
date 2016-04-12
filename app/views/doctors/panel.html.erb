@@ -1,3 +1,4 @@
+
 <div id="">
 	<% current_doctor.plans.each do |plan| %>
 		<% if plan.active == -5 %>
@@ -49,4 +50,13 @@
 		<%= hidden_field_tag :patient_id, :id => "patient_id" %>
 		<%= submit_tag "Buscar", class: "ui-autocomplete-submit" %>
 	<% end %>
+
+<div id="expedients">
+	<div id="searchbox">
+		
+	</div>
+	<div id="listing">
+		
+	</div>
+
 </div>

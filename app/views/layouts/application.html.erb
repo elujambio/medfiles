@@ -10,18 +10,35 @@
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
 
 
 
-<% if admin_signed_in? %>
-	<%= link_to("ADMIN PANEL", admin_panel_path) %>
-	<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+<% flash.each do |key, value| %>
+	<% if flash or alert %>
+		<div class="notices">
+			<% if notice %>
+				<div class="notice">
+					<div class="close-button">
+						<div></div>
+						<div></div>
+					</div>	
+					<p><%= notice %></p>
+				</div>
+			<% end %>
+			<% if alert %> 
+				<div class="alert">
+					<div class="close-button">
+						<div></div>
+						<div></div>
+					</div>
+					<p><%= alert %></p>
+				</div>
+			<% end %>
+		</div>
+	<% end %>
 <% end %>
 
 <div id="navbar">
-
 	<% if doctor_signed_in? %>
 		<%= link_to("PROFILE", current_doctor) %>
 		<%= link_to("LOG OUT", destroy_doctor_session_path) %>
@@ -29,9 +46,14 @@
 		<%= link_to("SIGN IN", new_doctor_session_path) %>
 		<%= link_to("SIGN UP", new_doctor_registration_path) %>
 	<% end %>
+	<% if admin_signed_in? %>
+	<%= link_to("ADMIN PANEL", admin_panel_path) %>
+	<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+<% end %>
 </div>
 
 <%= yield %>
 <%= javascript_include_tag "autocomplete-rails.js" %>
 </body>
 </html>
+<%= javascript_include_tag "/assets/notices.js" %>

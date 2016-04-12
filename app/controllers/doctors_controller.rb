@@ -1,4 +1,5 @@
 class DoctorsController < ApplicationController
+<<<<<<< HEAD
 
 	before_action :authenticate_doctor!
 	before_action :set_doctor, only: [:show, :edit, :update, :destroy]
@@ -27,6 +28,8 @@ class DoctorsController < ApplicationController
 
 	end
 
+=======
+>>>>>>> 51c9c59dafd65ea78c8beaea6371a03d73808bb4
 	def show
 	end
 
