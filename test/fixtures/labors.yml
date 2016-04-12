@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  labor_init: 2016-03-21
+  labor_init_at: MyString
+  fetal_labor: 2016-03-21
+  fetal_labor_at: MyString
+  delivery: MyString
+  first_period_duration: MyString
+  expulsive: MyString
+  third_period_duration: MyString
+  type_of_labor: MyString
+  rupture_of_membranes: MyString
+  meds: MyText
+  presentation_and_position: MyString
+  type_of_labor: MyString
+  forceps: false
+  obstetric_indications: MyString
+  perineal_tear: false
+  cervical_tear: false
+  steamimmediate_postpartum_period: MyString
+  sex: MyString
+  weight: MyString
+  complications: MyString
+  anesthetist: MyString
+  pediatrician: MyString
+
+two:
+  labor_init: 2016-03-21
+  labor_init_at: MyString
+  fetal_labor: 2016-03-21
+  fetal_labor_at: MyString
+  delivery: MyString
+  first_period_duration: MyString
+  expulsive: MyString
+  third_period_duration: MyString
+  type_of_labor: MyString
+  rupture_of_membranes: MyString
+  meds: MyText
+  presentation_and_position: MyString
+  type_of_labor: MyString
+  forceps: false
+  obstetric_indications: MyString
+  perineal_tear: false
+  cervical_tear: false
+  steamimmediate_postpartum_period: MyString
+  sex: MyString
+  weight: MyString
+  complications: MyString
+  anesthetist: MyString
+  pediatrician: MyString

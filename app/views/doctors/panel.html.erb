@@ -1,8 +1,12 @@
 <div id="">
-	
-	<% if current_doctor.created_at <= current_doctor.created_at + 15.days and current_doctor.plans.count == 0 %>
-		<p>Tienes hasta el <%= current_doctor.created_at.to_date + 15.days %> para agregar un plan de expedientes, <%= link_to "¡Agrega un plan!", add_template_plan_path %></p>
+	<% current_doctor.plans.each do |plan| %>
+		<% if plan.active == -5 %>
+			<p>Tu prueba termina el <%= plan.valid_til %></p>
+			<%= link_to "¡Agrega un plan!", add_template_plan_path %></p>
+		<% end %>
+		
 	<% end %>
+	
 	<%= link_to "Panel de Pagos", doctor_payment_panel_path %>
 	 
 	Número de Expedientes: <%= @files %> / <%= @max_files %><br/>
@@ -41,5 +45,3 @@
 		<%= hidden_field_tag :patient_id, :id => "patient_id" %>
 		<%= submit_tag "Buscar", class: "ui-autocomplete-submit" %>
 	<% end %>
-
-</div>

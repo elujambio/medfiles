@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :configure_devise_params, if: :devise_controller?
 
-  autocomplete :patient, :name
+
   before_action :set_locale
 
   

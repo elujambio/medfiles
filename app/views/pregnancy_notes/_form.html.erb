@@ -1,0 +1,14 @@
+<%= form_for [@gynecology_template, @note] do |f| %>
+	<% if @note.errors.any? %>
+		<div id="error_explanation">
+			<h4><%= pluralize(@note.errors.count, "errores") %> impidió que la propuesta se guardara:</h4>
+			<ul>
+				<% @note.errors.full_messages.each do |msg| %>
+					<li> <%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<%= f.text_area :note, placeholder: true %>
+	<%= f.submit "Guardar" %>
+<% end %>

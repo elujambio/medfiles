@@ -1,0 +1,33 @@
+<%= form_for [@gynecology_template, @pregnancy] do |f| %>
+	<% if @pregnancy.errors.any? %>
+		<div id="error_explanation">
+			<h4><%= pluralize(@pregnancy.errors.count, "errores") %> impidió que la propuesta se guardara:</h4>
+			<ul>
+				<% @pregnancy.errors.full_messages.each do |msg| %>
+					<li> <%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<%= f.text_field :weeks_with_amenorrhea, placeholder: true %><br/>
+	<%= f.text_field :blood_pressure, placeholder: true %><br/>
+	<%= f.text_field :edema, placeholder: true %><br/>
+	<%= f.text_field :uterus_bottom, placeholder: true %><br/>
+	<%= f.text_field :fetal_heartbeat, placeholder: true %><br/>
+	<%= f.text_field :fetal_movements, placeholder: true %><br/>
+	<%= f.text_field :presentation, placeholder: true %><br/>
+	<%= f.text_field :pain, placeholder: true %><br/>
+	<%= f.text_field :genital_bleeding, placeholder: true %><br/>
+	<%= f.text_field :headache, placeholder: true %><br/>
+	<%= f.text_field :visual_hearing, placeholder: true %><br/>
+	<%= f.text_field :vomit, placeholder: true %><br/>
+	<%= f.text_field :urinales, placeholder: true %><br/>
+	<%= f.text_field :intestinal, placeholder: true %><br/>
+	<%= f.text_field :hb_htc, placeholder: true %><br/>
+	<%= f.text_field :glycemia, placeholder: true %><br/>
+	<%= f.text_field :albuminuria, placeholder: true %><br/>
+	<%= f.text_field :genital_exp, placeholder: true %><br/>
+	<%= f.text_area :treatment, placeholder: true %><br/>
+
+	<%= f.submit "Guardar" %>
+<% end %>

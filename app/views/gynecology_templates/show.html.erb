@@ -3,30 +3,30 @@
 <%= @gynecology_template.register %><br/>
 
 
-<%= @gynecology_template.patients.each do |patient|  %>
 
-	<h1><%= patient.name %></h1>
+
+	<h1><%= @gynecology_template.patient.name %></h1>
 	<label><%= t :email %></label>
-	<p><%= patient.email %></p>
+	<p><%= @gynecology_template.patient.email %></p>
 	<label><%= t :name %></label>
-	<p><%= patient.name %></p>
+	<p><%= @gynecology_template.patient.name %></p>
 	<label><%= t :birth_date %></label>
-	<p><%= patient.birth_date %></p>
+	<p><%= @gynecology_template.patient.birth_date %></p>
 	<label><%= t :sex %></label>
-	<p><%= patient.sex %></p>
+	<p><%= @gynecology_template.patient.sex %></p>
 	<label><%= t :ocupation %></label>
-	<p><%= patient.ocupation %></p>
+	<p><%= @gynecology_template.patient.ocupation %></p>
 	<label><%= t :religion %></label>
-	<p><%= patient.religion %></p>
+	<p><%= @gynecology_template.patient.religion %></p>
 	<label><%= t :address %></label>
-	<p><%= patient.address %></p>
+	<p><%= @gynecology_template.patient.address %></p>
 	<label><%= t :telephone %></label>
-	<p><%= patient.telephone %></p>
+	<p><%= @gynecology_template.patient.telephone %></p>
 	<label><%= t :insurance_company %></label>
-	<p><%= patient.insurance_company %></p>
+	<p><%= @gynecology_template.patient.insurance_company %></p>
 	<label><%= t :insurance_policy %></label>
-	<p><%= patient.insurance_policy %></p>
-<% end %>
+	<p><%= @gynecology_template.patient.insurance_policy %></p>
+
 
 <%= link_to "Editar", edit_gynecology_template_path(@gynecology_template) %><br/>
 <%= link_to "Eliminar", gynecology_template_path(@gynecology_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
@@ -45,7 +45,9 @@
 
 <%= render 'template_files/template_files', fileable: @gynecology_template %>
 
+<%= link_to "Añadir Hoja de Evolución de Embarazo",   new_gynecology_template_pregnancy_evolution_path(@gynecology_template)%><br/>
 
+<%= link_to "Añadir Nota Especial de Evolución",   new_gynecology_template_pregnancy_note_path(@gynecology_template)%><br/>
 
 <h2>Historia Clínica</h2>
 
@@ -289,5 +291,16 @@
 <%= @gynecology_template.other_4 %><br/>
 <label><%= t :other_5 %></label>
 <%= @gynecology_template.other_5 %><br/>
+
+<h3> Evolución de embarazo </h3>
+<% @gynecology_template.pregnancy_evolutions.each do |pregnancy| %>
+	Registro del día: <%= link_to pregnancy.created_at.to_date, [@gynecology_template, pregnancy] %><br/>
+<% end %>
+
+
+<h3> Notas especiales de evolución de embarazo </h3>
+<% @gynecology_template.pregnancy_notes.each do |note| %>
+	Nota del día: <%= link_to note.created_at.to_date, [@gynecology_template, note] %><br/>
+<% end %>
 
 

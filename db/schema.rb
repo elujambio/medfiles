@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160312191907) do
+ActiveRecord::Schema.define(version: 20160321224037) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -217,6 +217,33 @@ ActiveRecord::Schema.define(version: 20160312191907) do
   end
 
   add_index "invoices", ["doctor_id"], name: "index_invoices_on_doctor_id"
+
+  create_table "labors", force: :cascade do |t|
+    t.date     "labor_init"
+    t.string   "labor_init_at"
+    t.date     "fetal_labor"
+    t.string   "fetal_labor_at"
+    t.string   "delivery"
+    t.string   "first_period_duration"
+    t.string   "expulsive"
+    t.string   "third_period_duration"
+    t.string   "type_of_labor"
+    t.string   "rupture_of_membranes"
+    t.text     "meds"
+    t.string   "presentation_and_position"
+    t.boolean  "forceps",                          default: false
+    t.text     "obstetric_indications"
+    t.boolean  "perineal_tear",                    default: false
+    t.boolean  "cervical_tear",                    default: false
+    t.string   "steamimmediate_postpartum_period"
+    t.string   "sex"
+    t.string   "weight"
+    t.string   "complications"
+    t.string   "anesthetist"
+    t.string   "pediatrician"
+    t.datetime "created_at",                                       null: false
+    t.datetime "updated_at",                                       null: false
+  end
 
   create_table "ophtalmology_templates", force: :cascade do |t|
     t.boolean  "previous_revisions"
@@ -487,6 +514,43 @@ ActiveRecord::Schema.define(version: 20160312191907) do
   end
 
   add_index "pregnancies", ["gynecology_template_id"], name: "index_pregnancies_on_gynecology_template_id"
+
+  create_table "pregnancy_evolutions", force: :cascade do |t|
+    t.date     "day"
+    t.integer  "weeks_with_amenorrhea"
+    t.string   "blood_pressure"
+    t.string   "edema"
+    t.string   "uterus_bottom"
+    t.string   "fetal_heartbeat"
+    t.string   "fetal_movements"
+    t.string   "presentation"
+    t.string   "pain"
+    t.string   "genital_bleeding"
+    t.string   "headache"
+    t.string   "visual_hearing"
+    t.string   "vomit"
+    t.string   "urinales"
+    t.string   "intestinal"
+    t.string   "hb_htc"
+    t.string   "glycemia"
+    t.string   "albuminuria"
+    t.string   "genital_exp"
+    t.text     "treatment"
+    t.integer  "gynecology_template_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "pregnancy_evolutions", ["gynecology_template_id"], name: "index_pregnancy_evolutions_on_gynecology_template_id"
+
+  create_table "pregnancy_notes", force: :cascade do |t|
+    t.text     "note"
+    t.integer  "gynecology_template_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "pregnancy_notes", ["gynecology_template_id"], name: "index_pregnancy_notes_on_gynecology_template_id"
 
   create_table "prescriptions", force: :cascade do |t|
     t.text     "prescription"
