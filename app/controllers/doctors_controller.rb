@@ -1,5 +1,4 @@
 class DoctorsController < ApplicationController
-	has_many :patients
 	def show
 		@doctor =  Doctor.find(params[:id])
 
