@@ -1,5 +1,7 @@
-<%= link_to "Editar", [:edit, @template_photo.photable, @template_photo]%>
+
 	
 <%= link_to "Eliminar", [ @template_photo.photable, @template_photo], method: :delete, data: {confirm: "Está seguro? Esta acción"} %>	
-<%= @template_photo.photo %>
+<%= link_to "Descargar Archivo", URI.encode(@template_photo.photo), class: "" %>
+
+<%= image_tag @template_photo.photo %>
 

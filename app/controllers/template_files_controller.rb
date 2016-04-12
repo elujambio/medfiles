@@ -1,6 +1,7 @@
 class TemplateFilesController < ApplicationController
 	before_action :authenticate_doctor!
 	before_action :set_template_file, only: [:show, :edit, :update, :destroy]
+	before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
 
 	def new	
 		@template_file = @fileable.template_files.new
@@ -52,4 +53,8 @@ class TemplateFilesController < ApplicationController
 		def template_files_params
 			params.require(:template_file).permit(:asset)
 		end
+
+		def set_s3_direct_post
+    		@s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
+  		end
 end

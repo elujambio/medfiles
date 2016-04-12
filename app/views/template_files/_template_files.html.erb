@@ -1,3 +1,3 @@
 <% fileable.template_files.each do |file| %>
-	<%= link_to file.asset, [fileable, file] %> <br>
+	<%= link_to file.asset[86..file.asset.length], [fileable, file] %> <br>
 <% end %>
