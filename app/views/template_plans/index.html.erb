@@ -1,0 +1,5 @@
+<h1>Planes Actuales </h1>
+<%= link_to "Agregar Plan", new_template_plan_path %><br/>
+<% @template_plans.each do |plan| %>
+	<%= link_to plan.name, plan %>
+<% end %>

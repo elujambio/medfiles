@@ -1,9 +1,32 @@
 
 <label><%= t :register %></label>
 <%= @gynecology_template.register %><br/>
-<label><%= t :name %></label>
-<h1><%= @gynecology_template.name %></h1>
 
+
+<%= @gynecology_template.patients.each do |patient|  %>
+
+	<h1><%= patient.name %></h1>
+	<label><%= t :email %></label>
+	<p><%= patient.email %></p>
+	<label><%= t :name %></label>
+	<p><%= patient.name %></p>
+	<label><%= t :birth_date %></label>
+	<p><%= patient.birth_date %></p>
+	<label><%= t :sex %></label>
+	<p><%= patient.sex %></p>
+	<label><%= t :ocupation %></label>
+	<p><%= patient.ocupation %></p>
+	<label><%= t :religion %></label>
+	<p><%= patient.religion %></p>
+	<label><%= t :address %></label>
+	<p><%= patient.address %></p>
+	<label><%= t :telephone %></label>
+	<p><%= patient.telephone %></p>
+	<label><%= t :insurance_company %></label>
+	<p><%= patient.insurance_company %></p>
+	<label><%= t :insurance_policy %></label>
+	<p><%= patient.insurance_policy %></p>
+<% end %>
 
 <%= link_to "Editar", edit_gynecology_template_path(@gynecology_template) %><br/>
 <%= link_to "Eliminar", gynecology_template_path(@gynecology_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
@@ -25,22 +48,14 @@
 
 
 <h2>Historia Clínica</h2>
-<label><%= t :email %></label>
-<%= @gynecology_template.email %><br/>
+
+
 <label><%= t :husband_name %></label>
 <%= @gynecology_template.husband_name %><br/>
-<label><%= t :address %></label>
-<%= @gynecology_template.address %><br/>
-<label><%= t :telephone %></label>
-<%= @gynecology_template.telephone %><br/>
-<label><%= t :age %></label>
-<%= @gynecology_template.age %><br/>
 <label><%= t :husband_age %></label>
 <%= @gynecology_template.husband_age %><br/>
 <label><%= t :marital_status %></label>
 <%= @gynecology_template.marital_status %><br/>
-<label><%= t :ocupation %></label>
-<%= @gynecology_template.ocupation %><br/>
 <label><%= t :husband_ocupation %></label>
 <%= @gynecology_template.husband_ocupation %><br/>
 <label><%= t :reason%></label>

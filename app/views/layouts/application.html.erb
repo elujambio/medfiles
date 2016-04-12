@@ -9,37 +9,7 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-		<div class="notices">
-				<div class="notice">
-					<div class="close-button">
-						<div></div>
-						<div></div>
-					</div>	
-					<p>Lalala</p>
-				</div>
-				<div class="alert">
-					<div class="close-button">
-						<div></div>
-						<div></div>
-					</div>
-					<p>Lalala</p>
-				</div>
-				<div class="notice">
-					<div class="close-button">
-						<div></div>
-						<div></div>
-					</div>	
-					<p>Lalala</p>
-				</div>
-				<div class="alert">
-					<div class="close-button">
-						<div></div>
-						<div></div>
-					</div>
-					<p>Lalala</p>
-				</div>
-		</div>
-
+	
 <% flash.each do |key, value| %>
 	<% if flash or alert %>
 		<div class="notices">
@@ -64,6 +34,10 @@
 		</div>
 	<% end %>
 <% end %>
+
+
+
+
 <div id="navbar">
 	<% if doctor_signed_in? %>
 		<%= link_to("PROFILE", current_doctor) %>
@@ -72,9 +46,14 @@
 		<%= link_to("SIGN IN", new_doctor_session_path) %>
 		<%= link_to("SIGN UP", new_doctor_registration_path) %>
 	<% end %>
+	<% if admin_signed_in? %>
+		<%= link_to("ADMIN PANEL", admin_panel_path) %>
+		<%= link_to("LOG_OUT", destroy_admin_session_path) %>
+	<% end %>
 </div>
-<%= yield %>
 
+<%= yield %>
+<%= javascript_include_tag "autocomplete-rails.js" %>
 </body>
 </html>
 <%= javascript_include_tag "/assets/notices.js" %>

@@ -1,6 +1,8 @@
 <% @ophtalmology_templates.each do |expedient| %>
 	<div>
 		<%= expedient.id %>
-		<%= link_to expedient.name, expedient %>
+		<% expedient.patients.each do |patient| %>
+			<%= link_to patient.name, expedient %>
+		<% end %>
 	</div>
 <% end %>

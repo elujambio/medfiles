@@ -1,8 +1,45 @@
-<div id="expedients">
-	<div id="searchbox">
+<div id="">
+	
+	<% if current_doctor.created_at <= current_doctor.created_at + 15.days and current_doctor.plans.count == 0 %>
+		<p>Tienes hasta el <%= current_doctor.created_at.to_date + 15.days %> para agregar un plan de expedientes, <%= link_to "¡Agrega un plan!", add_template_plan_path %></p>
+	<% end %>
+	<%= link_to "Panel de Pagos", doctor_payment_panel_path %>
+	 
+	Número de Expedientes: <%= @files %> / <%= @max_files %><br/>
+
+	<% if @hasTemplatePlan == true and @files > @max_files - 50 and @files <= @max_files %>
+		<p>Estás cerca del límite de expedientes, aumenta tu plan para que puedas crear más expedientes </p>
+		<%= link_to "Aumentar Plan", add_template_plan_path %><br/>
+	<% end %>
+
+	<% if @hasTemplatePlan == true and @files < @max_files %>
+		<% case current_doctor.speciality %>
+			<% when "Ginecología" %>
+				<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %><br/>
+				<%= link_to "Ver todos", gynecology_templates_path %><br/>
 		
-	</div>
-	<div id="listing">
-		
-	</div>
+			<% when "Oftalmología" %>
+				<%= link_to "Crear Nuevo Expediente", new_ophtalmology_template_path %>
+				<%= link_to "Ver todos", ophtalmology_templates_path %><br/>
+		<% end %>
+	<% else %>
+		<p>Ya no tienes espacio para más expedientes. <%= link_to "Aumenta Plan", add_template_plan_path %></p>
+	<% end %>
+
+	<% current_doctor.plans.each do |plan| %>
+		<% plan.plan_elements.each do |element| %>
+			<% if plan.active == -1 and element.element_type == "TemplatePlan" %>
+				<p> No hemos recibido tu pago, si crees que esto es un error envía un correo a sipague@medfiles.com.mx, en caso de que no recibamos ningún correo tuyo eliminaremos la información en 15 días</p>
+			<% end %>
+		<% end %>
+	<% end %>
+
+
+	<%= form_tag(action: "search_patient") do %>
+		<%= autocomplete_field_tag(:patient, params[:patient], autocomplete_patient_name_doctors_path, :id_element => '#patient_id', class: "search-query", placeholder: "Busca por nombre del paciente.", type: "search" ) %>
+		<div class="bg-charcoal-pink input-underline"></div>
+		<%= hidden_field_tag :patient_id, :id => "patient_id" %>
+		<%= submit_tag "Buscar", class: "ui-autocomplete-submit" %>
+	<% end %>
+
 </div>

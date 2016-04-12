@@ -1,0 +1,17 @@
+<h1><%= @invoice.rfc %> </h1>
+
+<%= link_to "Editar", edit_invoice_path(@invoice) %><br/>
+<%= link_to "Eliminar", invoice_path(@invoice), method: :delete, data: {confirm: "¿Esta seguro? Esta acción no se puede deshacer"} %><br/>
+
+<% if @invoice.favorite? %>
+	<p>Estos son los datos de facturación favoritos, lo que quiere decir que todas las facturas se van a crear usando estos datos.</p>
+<% end %>
+<p><%= @invoice.name %></p>
+<p><%= @invoice.address1 %></p>
+<p><%= @invoice.address2 %></p>
+<p><%= @invoice.num_ext %></p>
+<p><%= @invoice.num_int %></p>
+<p><%= @invoice.cp %></p>
+<p><%= @invoice.state %></p>
+<p><%= @invoice.city %></p>
+<p><%= @invoice.country %></p>

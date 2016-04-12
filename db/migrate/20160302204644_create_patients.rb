@@ -12,8 +12,10 @@ class CreatePatients < ActiveRecord::Migration
       t.string :email
       t.string :insurance_company
       t.string :insurance_policy
-
+      t.integer :templatable_id
+      t.string  :templatable_type
       t.timestamps null: false
     end
+    add_index :patients, :templatable_id
   end
 end
