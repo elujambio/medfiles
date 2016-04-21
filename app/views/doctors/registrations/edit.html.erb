@@ -59,10 +59,7 @@
     <%= f.label :professional_license %><br />
     <%= f.text_field :professional_license, autofocus: true %>
   </div>    
-  <div class="field">
-    <%= f.label :speciality %><br />
-    <%= f.select :speciality, ['Ginecología', 'Oftalmología'], {:prompt => 'Seleccione su Especialidad'}  %>
-  </div>    
+ 
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>

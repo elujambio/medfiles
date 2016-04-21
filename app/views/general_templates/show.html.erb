@@ -1,0 +1,183 @@
+
+<label><%= t :register %></label>
+<%= @general_template.register %><br/>
+
+	<h1><%= @general_template.patient.name %></h1>
+	<label><%= t :email %></label>
+	<p><%= @general_template.patient.email %></p>
+	<label><%= t :name %></label>
+	<p><%= @general_template.patient.name %></p>
+	<label><%= t :birth_date %></label>
+	<p><%= @general_template.patient.birth_date %></p>
+	<label><%= t :sex %></label>
+	<p><%= @general_template.patient.sex %></p>
+	<label><%= t :ocupation %></label>
+	<p><%= @general_template.patient.ocupation %></p>
+	<label><%= t :religion %></label>
+	<p><%= @general_template.patient.religion %></p>
+	<label><%= t :address %></label>
+	<p><%= @general_template.patient.address %></p>
+	<label><%= t :telephone %></label>
+	<p><%= @general_template.patient.telephone %></p>
+	<label><%= t :insurance_company %></label>
+	<p><%= @general_template.patient.insurance_company %></p>
+	<label><%= t :insurance_policy %></label>
+	<p><%= @general_template.patient.insurance_policy %></p>
+
+
+<%= link_to "Editar", edit_general_template_path(@general_template) %><br/>
+<%= link_to "Eliminar", general_template_path(@general_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
+
+<%= link_to "Añadir Hoja de Evolución", new_gynecology_template_gynecology_annex_path(@general_template) %><br/>
+<%= link_to "Añadir Receta",  new_general_template_prescription_path(@general_template)%><br/>
+
+<%= render 'prescriptions/prescriptions', prescriptable: @general_template %>
+
+<%= link_to "Añadir Foto",  new_general_template_template_photo_path(@general_template)%><br/>
+
+<%= render 'template_photos/template_photos', photable: @general_template %>
+
+
+<%= link_to "Añadir Archivo",  new_general_template_template_file_path(@general_template)%><br/>
+
+<%= render 'template_files/template_files', fileable: @general_template %>
+
+
+<h2>Historia Clínica</h2>
+
+
+
+<label><%= t :marital_status %></label>
+<%= @general_template.marital_status %><br/>
+
+<label><%= t :reason%></label>
+<%= @general_template.reason %><br/>
+
+<h3><%= t :family_background %></h3>
+<label><%= t :mother_background %></label>
+<%= @general_template.mother_background %><br/>
+<label><%= t :father_background %></label>
+<%= @general_template.father_background %><br/>
+<label><%= t :grandparents_background %></label>
+<%= @general_template.grandparents_background %><br/>
+<label><%= t :siblings_background %></label>
+<%= @general_template.siblings_background %><br/>
+<label><%= t :parents_siblings_background %></label>
+<%= @general_template.parents_siblings_background %><br/>
+<label><%= t :children_background %></label>
+<%= @general_template.children_background %><br/>
+<label><%= t :husband_background %></label>
+<%= @general_template.husband_background %><br/>
+<label><%= t :personal_background %></label>
+<%= @general_template.personal_background %><br/>
+
+<h3>Antecedentes Personales no Patólogicos</h3>
+<label><%= t :diet %></label>
+<%= @general_template.diet %><br/>
+<label><%= t :smoking %></label>
+<%= @general_template.smoking %><br/>
+<label><%= t :alergies %></label>
+<%= @general_template.alergies %><br/>
+<label><%= t :drugs %></label>
+<%= @general_template.drugs %><br/>
+<label><%= t :alcoholism %></label>
+<%= @general_template.alcoholism %><br/>
+<label><%= t :inmunizations %></label>
+<%= @general_template.inmunizations %><br/>
+
+<h3>Antecedentes Personales Patólogicos</h3>
+<label><%= t :traumatics %></label>
+<%= @general_template.traumatics %><br/>
+<label><%= t :surgicals %></label>
+<%= @general_template.surgicals %><br/>
+<label><%= t :transfusions %></label>
+<%= @general_template.transfusions %><br/>
+
+<h3><%= t :physical_exploration %></h3>
+<label><%= t :ta %></label>
+<%= @general_template.ta %><br/>
+<label><%= t :fc %></label>
+<%= @general_template.fc %><br/>
+<label><%= t :fr %></label>
+<%= @general_template.fr %><br/>
+<label><%= t :temperature %></label>
+<%= @general_template.temperature %><br/>
+<label><%= t :weight %></label>
+<%= @general_template.weight %><br/>
+<label><%= t :size %></label>
+<%= @general_template.size %><br/>
+<label><%= t :habitus %></label>
+<%= @general_template.habitus %><br/>
+<label><%= t :head %></label>
+<%= @general_template.head %><br/>
+<label><%= t :neck %></label>
+<%= @general_template.neck %><br/>
+<label><%= t :torax %></label>
+<%= @general_template.torax %><br/>
+<label><%= t :abdomen %></label>
+<%= @general_template.abdomen %><br/>
+<label><%= t :limbs %></label>
+<%= @general_template.limbs %><br/>
+     
+
+<h3><%= t :gynecological_background %></h3>
+<label><%= t :menarche%></label>
+<%= @general_template.menarche %><br/>
+<label><%= t :rhythm %></label>
+<%= @general_template.rhythm %><br/>
+<label><%= t :pregnancies %></label>
+<%= @general_template.pregnancies %><br/> 
+<label><%= t :gesta %></label>
+<%= @general_template.gesta %><br/> 
+<label><%= t :abortions %></label>
+<%= @general_template.abortions %><br/> 
+<label><%= t :contraceptives %></label>
+<%= @general_template.contraceptives %><br/> 
+<label><%= t :ivsa %></label>
+<%= @general_template.ivsa %><br/>
+<label><%= t :last_period_date %></label>
+<%= @general_template.last_period_date %><br/>
+
+<h3><%= t :current_ailment %></h3>
+<%= @general_template.current_ailment %><br/>
+
+<h3>Interrogatorio por aparatos y sistemas</h3>
+<label><%= t :cardio %></label>
+<%= @general_template.cardio %><br/>
+<label><%= t :neuro %></label>
+<%= @general_template.neuro %><br/>
+<label><%= t :gastro %></label>
+<%= @general_template.gastro %><br/>
+<label><%= t :respiratory %></label>
+<%= @general_template.respiratory %><br/>
+<label><%= t :derma %></label>
+<%= @general_template.derma %><br/>
+<label><%= t :muscle %></label>
+<%= @general_template.muscle %><br/>
+<label><%= t :urinary %></label>
+<%= @general_template.urinary %><br/>
+
+
+<h3><%= t :lab_results %></h3>
+<%= @general_template.lab_results %><br/>
+
+<h3><%= t :diagnosis %></h3>
+<%= @general_template.diagnosis %><br/>
+
+<h3><%= t :treatment %></h3>
+<%= @general_template.treatment %><br/>
+
+<label><%= t :other_1%></label>
+<%= @general_template.other_1 %><br/>
+<label><%= t :other_2 %></label>
+<%= @general_template.other_2 %><br/>
+<label><%= t :other_3 %></label>
+<%= @general_template.other_3 %><br/>
+<label><%= t :other_4 %></label>
+<%= @general_template.other_4 %><br/>
+<label><%= t :other_5 %></label>
+<%= @general_template.other_5 %><br/>
+
+
+
+

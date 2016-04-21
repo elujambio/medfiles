@@ -5,6 +5,8 @@ class Doctor < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :ophtalmology_templates, dependent: :delete_all
   has_many :gynecology_templates, dependent: :delete_all
+  has_many :general_templates, dependent: :delete_all
+
   has_many :doctor_pictures, dependent: :delete_all
   has_many :patients, dependent: :delete_all
   has_many :plans
