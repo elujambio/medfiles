@@ -26,18 +26,6 @@ class CreateGeneralTemplates < ActiveRecord::Migration
       t.text :traumatics
       t.text :surgicals
       t.text :transfusions
-      t.string :ta
-      t.string :fc
-      t.string :fr
-      t.string :temperature
-      t.decimal :weight
-      t.decimal :size
-      t.text  :habitus
-      t.text :head
-      t.text :neck
-      t.text :torax
-      t.text :abdomen
-      t.text :limbs
       t.string :menarche
       t.string :gesta
       t.text :abortions
@@ -54,6 +42,21 @@ class CreateGeneralTemplates < ActiveRecord::Migration
       t.text :derma
       t.text :muscle
       t.text :urinary
+      t.string :ta
+      t.string :fc
+      t.string :fr
+      t.string :temperature
+      t.decimal :weight
+      t.decimal :size
+      t.text  :habitus
+      t.text :head
+      t.text :neck
+      t.text :torax
+      t.text :abdomen
+      t.text :limbs
+     
+     
+    
       t.text :lab_results
       t.text :diagnosis
       t.text :treatment
