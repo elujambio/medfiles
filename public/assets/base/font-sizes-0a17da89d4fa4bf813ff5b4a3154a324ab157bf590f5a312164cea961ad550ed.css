@@ -1,0 +1,44 @@
+/* line 4, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h1 {
+  font-size: 72px;
+}
+
+/* line 5, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h2 {
+  font-size: 56px;
+}
+
+/* line 6, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h3 {
+  font-size: 48px;
+}
+
+/* line 7, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h4 {
+  font-size: 36px;
+}
+
+/* line 8, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h5 {
+  font-size: 28px;
+}
+
+/* line 9, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h6 {
+  font-size: 24px;
+}
+
+/* line 10, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 11, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+label {
+  font-size: 14px;
+}
+
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+input[type] {
+  font-size: 18px;
+}

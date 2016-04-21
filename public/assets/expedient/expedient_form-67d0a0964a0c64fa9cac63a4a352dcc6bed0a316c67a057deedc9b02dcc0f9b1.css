@@ -1,0 +1,226 @@
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container {
+  width: 822px;
+  padding: 144px 0px;
+}
+/* line 25, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form {
+  width: 100%;
+}
+/* line 32, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form h4 {
+  padding: 12px;
+  margin: 12px 0;
+}
+/* line 37, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form input[type] {
+  padding-top: 12px;
+}
+/* line 41, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form input[type="submit"] {
+  background: #DDEBD7;
+  border-radius: 2px;
+  margin: 14px;
+}
+/* line 47, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div {
+  display: inline-block;
+  width: 820px;
+  background: #F8F8F8;
+}
+/* line 55, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div > div {
+  background: #FFFFFF;
+}
+/* line 60, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div > div > div {
+  border: 1px solid #E5E5E5;
+  padding: 12px;
+  transition: all .3s ease;
+}
+/* line 66, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container div[data-state=active] {
+  background: #DCEAF1;
+  border-color: #BBCED8;
+  z-index: 100;
+}
+/* line 72, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container div[data-state=filled] {
+  background: #EAF2F7;
+  border-color: #D6E2E8;
+  z-index: 50;
+}
+/* line 78, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container div[data-state=checked] {
+  background: #DDEBD7;
+  border-color: #B7CEAA;
+  z-index: 50;
+}
+/* line 83, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .field > div,
+.form-container .single-field > div,
+.form-container .double-field > div,
+.form-container .multi-field > div,
+.form-container form input[type="submit"] {
+  margin: -1px 0 0 -1px;
+}
+/* line 91, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container input:focus + div {
+  background: red;
+}
+/* line 99, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container input {
+  width: 100%;
+  padding-top: 12px;
+  font-size: 18px;
+  background: none;
+}
+/* line 106, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .field,
+.form-container .single-field {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+/* line 126, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .field div,
+.form-container .single-field div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+/* line 158, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .double-field,
+.form-container .multi-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+/* line 177, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .double-field > div {
+  width: 25%;
+}
+/* line 181, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container .double-field > div,
+.form-container .multi-field > div {
+  flex-basis: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+/* line 213, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div > div > .checkbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* line 233, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div > div > div > span {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 8px;
+}
+/* line 255, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form > div > div > div > span > label,
+.form-container form > div > div > div > span > input {
+  width: auto;
+}
+/* line 260, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form input[type="submit"] {
+  padding: 18px;
+  background-color: #58BEF1;
+  color: white;
+  margin-top: 36px;
+  transition: color .1s ease, background-color .1s ease-in;
+}
+/* line 268, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/expedient/expedient_form.scss */
+.form-container form input[type="submit"]:hover {
+  padding: 18px;
+  color: #58BEF1;
+  background-color: white;
+  margin-top: 36px;
+}
