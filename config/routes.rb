@@ -75,6 +75,7 @@ Rails.application.routes.draw do
   end
 
   resources :general_templates do
+    resources :general_annexes, except: [:index]
     resources :prescriptions, module: :general_templates
     resources :template_photos, module: :general_templates
     resources :template_files, module: :general_templates

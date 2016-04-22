@@ -1,0 +1,9 @@
+<%= link_to "Nuevo Expediente", new_gyeneral_template_path %><br/>
+<% @general_templates.each do |expedient| %>
+	<div>
+		<%= expedient.id %>
+		
+		<%= link_to expedient.patient.name, expedient %>
+	
+	</div>
+<% end %>
