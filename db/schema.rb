@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160421180337) do
+ActiveRecord::Schema.define(version: 20160422001236) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -88,6 +88,15 @@ ActiveRecord::Schema.define(version: 20160421180337) do
   add_index "doctors", ["email"], name: "index_doctors_on_email", unique: true
   add_index "doctors", ["reset_password_token"], name: "index_doctors_on_reset_password_token", unique: true
 
+  create_table "general_annexes", force: :cascade do |t|
+    t.text     "annex"
+    t.integer  "general_template_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "general_annexes", ["general_template_id"], name: "index_general_annexes_on_general_template_id"
+
   create_table "general_templates", force: :cascade do |t|
     t.integer  "register",                    default: 0
     t.string   "marital_status"
@@ -111,18 +120,6 @@ ActiveRecord::Schema.define(version: 20160421180337) do
     t.text     "traumatics"
     t.text     "surgicals"
     t.text     "transfusions"
-    t.string   "ta"
-    t.string   "fc"
-    t.string   "fr"
-    t.string   "temperature"
-    t.decimal  "weight"
-    t.decimal  "size"
-    t.text     "habitus"
-    t.text     "head"
-    t.text     "neck"
-    t.text     "torax"
-    t.text     "abdomen"
-    t.text     "limbs"
     t.string   "menarche"
     t.string   "gesta"
     t.text     "abortions"
@@ -139,6 +136,18 @@ ActiveRecord::Schema.define(version: 20160421180337) do
     t.text     "derma"
     t.text     "muscle"
     t.text     "urinary"
+    t.string   "ta"
+    t.string   "fc"
+    t.string   "fr"
+    t.string   "temperature"
+    t.decimal  "weight"
+    t.decimal  "size"
+    t.text     "habitus"
+    t.text     "head"
+    t.text     "neck"
+    t.text     "torax"
+    t.text     "abdomen"
+    t.text     "limbs"
     t.text     "lab_results"
     t.text     "diagnosis"
     t.text     "treatment"
