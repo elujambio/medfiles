@@ -1,0 +1,485 @@
+/*	FLEXIE FRAMEWORK	*/
+/*	PABLO E. LUJAMBIO 	*/
+/*  RESET 				*/
+/* This part resets several stylesheet characteristics that are practical to reset. */
+/* line 7, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+body, html {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+div, h1, h2, h3, h4, h5, h6, label, p, input, section, a, textarea, span {
+  margin: 0 0;
+  padding: 0 0;
+  text-decoration: none;
+  font-weight: normal;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  font-weight: normal;
+  text-decoration: none;
+  text-indent: 0;
+  overflow: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  box-sizing: border-box;
+}
+
+/* line 29, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+section {
+  display: block;
+}
+
+/* line 32, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+a {
+  color: #FAFAFA;
+}
+
+/* line 35, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 41, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+title, script {
+  display: none;
+}
+
+/* line 44, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+span {
+  margin: 0;
+  padding: 0;
+}
+
+/* INPUT FORMS RESET */
+/* line 53, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/normalize.scss */
+textarea,
+select,
+input[type="checkbox"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: none;
+  color: none;
+  outline: 0;
+  margin: none;
+  padding: none;
+  text-align: left;
+  font-size: 1em;
+  height: auto;
+  vertical-align: middle;
+  border-width: none;
+  font-family: 'Sans-Serif';
+}
+
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+}
+
+/* line 6, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+a {
+  padding: 8px;
+  background-color: #7F9CAA;
+  border-radius: 2px;
+}
+
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+label {
+  color: #616161;
+}
+
+/* line 16, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+input[type="radio"] {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+/* line 21, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+.center-content {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0;
+  padding: 0 0;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 47, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/atoms.scss */
+.center-content > h4 {
+  margin-top: 144px;
+}
+
+/* line 4, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h1 {
+  font-size: 72px;
+}
+
+/* line 5, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h2 {
+  font-size: 56px;
+}
+
+/* line 6, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h3 {
+  font-size: 48px;
+}
+
+/* line 7, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h4 {
+  font-size: 36px;
+}
+
+/* line 8, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h5 {
+  font-size: 28px;
+}
+
+/* line 9, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+h6 {
+  font-size: 24px;
+}
+
+/* line 10, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+p {
+  font-size: 18px;
+}
+
+/* line 11, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+label {
+  font-size: 14px;
+}
+
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-sizes.scss */
+input[type] {
+  font-size: 18px;
+}
+
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-styles.scss */
+html,
+body {
+  background: #F8F8F8;
+  font-family: 'Atlas Grotesk';
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* line 9, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-styles.scss */
+input[type] {
+  font-family: 'Atlas Grotesk';
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This stylesheet generated by Transfonter (http://transfonter.org) on February 23, 2016 11:51 PM */
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-ThinItalic.eot");
+  src: url("/assets/AtlasGrotesk-ThinItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-ThinItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-ThinItalic.woff") format("woff"), url("/assets/AtlasGrotesk-ThinItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-ThinItalic.svg#AtlasGrotesk-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-LightItalic.eot");
+  src: url("/assets/AtlasGrotesk-LightItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-LightItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-LightItalic.woff") format("woff"), url("/assets/AtlasGrotesk-LightItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-LightItalic.svg#AtlasGrotesk-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-RegularItalic.eot");
+  src: url("/assets/AtlasGrotesk-RegularItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-RegularItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-RegularItalic.woff") format("woff"), url("/assets/AtlasGrotesk-RegularItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-RegularItalic.svg#AtlasGrotesk-RegularItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Medium.eot");
+  src: url("/assets/AtlasGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Medium.woff2") format("woff2"), url("/assets/AtlasGrotesk-Medium.woff") format("woff"), url("/assets/AtlasGrotesk-Medium.ttf") format("truetype"), url("/assets/AtlasGrotesk-Medium.svg#AtlasGrotesk-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-BlackItalic.eot");
+  src: url("/assets/AtlasGrotesk-BlackItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-BlackItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-BlackItalic.woff") format("woff"), url("/assets/AtlasGrotesk-BlackItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-BlackItalic.svg#AtlasGrotesk-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Thin.eot");
+  src: url("/assets/AtlasGrotesk-Thin.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Thin.woff2") format("woff2"), url("/assets/AtlasGrotesk-Thin.woff") format("woff"), url("/assets/AtlasGrotesk-Thin.ttf") format("truetype"), url("/assets/AtlasGrotesk-Thin.svg#AtlasGrotesk-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Bold.eot");
+  src: url("/assets/AtlasGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Bold.woff2") format("woff2"), url("/assets/AtlasGrotesk-Bold.woff") format("woff"), url("/assets/AtlasGrotesk-Bold.ttf") format("truetype"), url("/assets/AtlasGrotesk-Bold.svg#AtlasGrotesk-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-BoldItalic.eot");
+  src: url("/assets/AtlasGrotesk-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-BoldItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-BoldItalic.woff") format("woff"), url("/assets/AtlasGrotesk-BoldItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-BoldItalic.svg#AtlasGrotesk-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Regular.eot");
+  src: url("/assets/AtlasGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Regular.woff2") format("woff2"), url("/assets/AtlasGrotesk-Regular.woff") format("woff"), url("/assets/AtlasGrotesk-Regular.ttf") format("truetype"), url("/assets/AtlasGrotesk-Regular.svg#AtlasGrotesk-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Light.eot");
+  src: url("/assets/AtlasGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Light.woff2") format("woff2"), url("/assets/AtlasGrotesk-Light.woff") format("woff"), url("/assets/AtlasGrotesk-Light.ttf") format("truetype"), url("/assets/AtlasGrotesk-Light.svg#AtlasGrotesk-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-MediumItalic.eot");
+  src: url("/assets/AtlasGrotesk-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-MediumItalic.woff2") format("woff2"), url("/assets/AtlasGrotesk-MediumItalic.woff") format("woff"), url("/assets/AtlasGrotesk-MediumItalic.ttf") format("truetype"), url("/assets/AtlasGrotesk-MediumItalic.svg#AtlasGrotesk-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Atlas Grotesk';
+  src: url("/assets/AtlasGrotesk-Black.eot");
+  src: url("/assets/AtlasGrotesk-Black.eot?#iefix") format("embedded-opentype"), url("/assets/AtlasGrotesk-Black.woff2") format("woff2"), url("/assets/AtlasGrotesk-Black.woff") format("woff"), url("/assets/AtlasGrotesk-Black.ttf") format("truetype"), url("/assets/AtlasGrotesk-Black.svg#AtlasGrotesk-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container {
+  width: auto;
+  margin-top: 144px;
+  margin-bottom: 144px;
+  padding: 96px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #E5E5E5;
+  transition: all .3s ease;
+  z-index: 100;
+  border-radius: 3px;
+}
+/* line 30, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container h4 {
+  color: #58BEF1;
+}
+/* line 34, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form {
+  width: 380px;
+}
+/* line 38, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input:not([type="checkbox"]) {
+  width: 100%;
+}
+/* line 42, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 18px;
+  font-size: 18px;
+  background: #F8F8F8;
+  border-color: #F8F8F8;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  transition: border-color 0.2s cubic-bezier(0.32, 0.05, 0.385, 0.925);
+}
+/* line 55, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #58BEF1;
+}
+/* line 61, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container label {
+  opacity: .66;
+  margin: 18px 0;
+}
+/* line 66, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form input[type="submit"] {
+  padding: 18px;
+  background-color: #58BEF1;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  transform: translate3d(0, 0, 0);
+  transition: color .1s ease, background-color .1s ease-in;
+  border-radius: 3px;
+}
+/* line 77, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form input[type="submit"]:hover {
+  color: #58BEF1;
+  background-color: #F8f8f8;
+}
+/* line 82, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 103, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container div:nth-of-type(3) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice,
+.notices .alert {
+  margin: 12px;
+  padding-left: 24px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+/* line 24, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice p,
+.notices .alert p {
+  color: #888888;
+  position: relative;
+  padding-left: 12px;
+  font-size: 18px;
+}
+/* line 31, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button,
+.notices .alert .close-button {
+  position: relative;
+  background: #e8e8e8;
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+/* line 39, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div,
+.notices .alert .close-button div {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  background: #888888;
+}
+/* line 47, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div:nth-of-type(1),
+.notices .alert .close-button div:nth-of-type(1) {
+  transform: rotateZ(45deg);
+}
+/* line 51, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div:nth-of-type(2),
+.notices .alert .close-button div:nth-of-type(2) {
+  transform: rotateZ(-45deg);
+}

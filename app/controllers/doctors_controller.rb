@@ -22,6 +22,8 @@ class DoctorsController < ApplicationController
 				@files = current_doctor.gynecology_templates.count
 			when "Oftalmología" 
 				@files = current_doctor.ophtalmology_templates.count
+			when "General" 
+				@files = current_doctor.general_templates.count
 		end
 				 		 
 
@@ -49,7 +51,17 @@ class DoctorsController < ApplicationController
 
 	def search_patient
 		@patient = Patient.find(params[:patient_id])
-		redirect_to gynecology_template_path(@patient.templatable)
+		case current_doctor.speciality
+			when "Ginecología"
+				redirect_to gynecology_template_path(@patient.templatable)
+			when "Oftalmología" 
+				redirect_to ophtalmology_template_path(@patient.templatable)
+			when "General" 
+				redirect_to general_template_path(@patient.templatable)
+				
+		end
+		
+		
 	end
 
 	private

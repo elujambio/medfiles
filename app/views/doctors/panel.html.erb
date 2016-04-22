@@ -25,6 +25,9 @@
 			<% when "Oftalmología" %>
 				<%= link_to "Crear Nuevo Expediente", new_ophtalmology_template_path %>
 				<%= link_to "Ver todos", ophtalmology_templates_path %><br/>
+			<% when "General" %>
+				<%= link_to "Crear Nuevo Expediente", new_general_template_path %>
+				<%= link_to "Ver todos", general_templates_path %><br/>
 		<% end %>
 	<% else %>
 		<p>Ya no tienes espacio para más expedientes. <%= link_to "Aumenta Plan", add_template_plan_path %></p>

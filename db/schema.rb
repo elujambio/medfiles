@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160321224037) do
+ActiveRecord::Schema.define(version: 20160422001236) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -87,6 +87,81 @@ ActiveRecord::Schema.define(version: 20160321224037) do
 
   add_index "doctors", ["email"], name: "index_doctors_on_email", unique: true
   add_index "doctors", ["reset_password_token"], name: "index_doctors_on_reset_password_token", unique: true
+
+  create_table "general_annexes", force: :cascade do |t|
+    t.text     "annex"
+    t.integer  "general_template_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "general_annexes", ["general_template_id"], name: "index_general_annexes_on_general_template_id"
+
+  create_table "general_templates", force: :cascade do |t|
+    t.integer  "register",                    default: 0
+    t.string   "marital_status"
+    t.text     "reason"
+    t.text     "mother_background"
+    t.text     "father_background"
+    t.text     "grandparents_background"
+    t.text     "siblings_background"
+    t.text     "parents_siblings_background"
+    t.text     "children_background"
+    t.text     "husband_background"
+    t.text     "personal_background"
+    t.text     "diet"
+    t.text     "physical_exercise"
+    t.text     "housing_perks"
+    t.boolean  "smoking",                     default: false
+    t.text     "alergies"
+    t.text     "drugs"
+    t.string   "alcoholism"
+    t.text     "inmunizations"
+    t.text     "traumatics"
+    t.text     "surgicals"
+    t.text     "transfusions"
+    t.string   "menarche"
+    t.string   "gesta"
+    t.text     "abortions"
+    t.string   "rhythm"
+    t.text     "pregnancies"
+    t.text     "contraceptives"
+    t.date     "last_period_date"
+    t.string   "ivsa"
+    t.text     "current_ailment"
+    t.text     "cardio"
+    t.text     "neuro"
+    t.text     "gastro"
+    t.text     "respiratory"
+    t.text     "derma"
+    t.text     "muscle"
+    t.text     "urinary"
+    t.string   "ta"
+    t.string   "fc"
+    t.string   "fr"
+    t.string   "temperature"
+    t.decimal  "weight"
+    t.decimal  "size"
+    t.text     "habitus"
+    t.text     "head"
+    t.text     "neck"
+    t.text     "torax"
+    t.text     "abdomen"
+    t.text     "limbs"
+    t.text     "lab_results"
+    t.text     "diagnosis"
+    t.text     "treatment"
+    t.text     "other_1"
+    t.text     "other_2"
+    t.text     "other_3"
+    t.text     "other_4"
+    t.text     "other_5"
+    t.datetime "created_at",                                  null: false
+    t.datetime "updated_at",                                  null: false
+    t.integer  "doctor_id"
+  end
+
+  add_index "general_templates", ["doctor_id"], name: "index_general_templates_on_doctor_id"
 
   create_table "gynecology_annexes", force: :cascade do |t|
     t.text     "annex"

@@ -1,0 +1,63 @@
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+/* line 12, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice,
+.notices .alert {
+  margin: 12px;
+  padding-left: 24px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+/* line 24, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice p,
+.notices .alert p {
+  color: #888888;
+  position: relative;
+  padding-left: 12px;
+  font-size: 18px;
+}
+/* line 31, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button,
+.notices .alert .close-button {
+  position: relative;
+  background: #e8e8e8;
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+/* line 39, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div,
+.notices .alert .close-button div {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  background: #888888;
+}
+/* line 47, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div:nth-of-type(1),
+.notices .alert .close-button div:nth-of-type(1) {
+  transform: rotateZ(45deg);
+}
+/* line 51, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/layouts/notices.scss */
+.notices .notice .close-button div:nth-of-type(2),
+.notices .alert .close-button div:nth-of-type(2) {
+  transform: rotateZ(-45deg);
+}
