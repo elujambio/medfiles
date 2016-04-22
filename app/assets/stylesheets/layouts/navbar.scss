@@ -1,0 +1,82 @@
+#navbar
+{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	margin:0 0;
+	padding:0 0;
+	top:48px;
+	right:48px;
+	position:absolute;
+	pointer-events:none; 
+	z-index:100;
+	*
+	{
+		z-index:100;
+		pointer-events:all;
+	}
+	a
+	{
+		margin-left:24px;
+		padding:12px;
+		display:flex;
+		flex-direction:column; 
+		align-items:center; 
+		justify-content:center;
+	}
+	form
+	{
+		display:flex; 
+		flex-direction:row; 
+		align-items:center; 
+		justify-content:center;
+		#patient
+		{
+			padding:12px;
+			width:320px;
+			background:#e8e8e8;
+			border-radius:3px 0px 0px 3px;
+		}
+		input[type="submit"]
+		{
+			background:#58BEF1;
+			padding:12px;
+			color:white;
+			border-radius:0px 3px 3px 0px;
+			text-transform:uppercase;
+		}
+		
+	}
+}
+ul.ui-autocomplete 
+{
+	padding:0;
+	width:420px !important; 
+	display:flex; 
+	flex-direction:column;
+	list-style-type: none;
+	li
+	{
+		background:#888888; 
+		color:#e8e8e8;
+		list-style-type: none;
+		padding:12px; 
+		// max-width:420px;
+		border-radius:3px;
+	}
+}
+.ui-helper-hidden-accessible,
+.ui-helper-visible-accessible
+{
+	display:none !important;
+	div
+	{
+		display:none !important;
+	}
+}
+a
+{
+	position:relative;
+}

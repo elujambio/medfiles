@@ -15,7 +15,8 @@ class OphtalmologyTemplatesController < ApplicationController
 
 		@ophtalmology_template.doctor = current_doctor
 		if @ophtalmology_template.save 
-			Patient.create name: params[:ophtalmology_template][:patients][:name], birth_date: params[:ophtalmology_template][:patients][:birth_date], sex: params[:ophtalmology_template][:patients][:sex], originary_from: params[:ophtalmology_template][:patients][:originary_from], ocupation: params[:ophtalmology_template][:patients][:ocupation], religion: params[:ophtalmology_template][:patients][:religion], address: params[:ophtalmology_template][:patients][:address], telephone: params[:ophtalmology_template][:patients][:telephone], email: params[:ophtalmology_template][:patients][:email], insurance_company: params[:ophtalmology_template][:patients][:insurance_company], insurance_policy: params[:ophtalmology_template][:patients][:insurance_policy], templatable_id: @ophtalmology_template.id, templatable_type: "OphtalmologyTemplate"
+			Patient.create doctor: current_doctor, name: params[:ophtalmology_template][:patients][:name], birth_date: params[:ophtalmology_template][:patients][:birth_date], sex: params[:ophtalmology_template][:patients][:sex], originary_from: params[:ophtalmology_template][:patients][:originary_from], ocupation: params[:ophtalmology_template][:patients][:ocupation], religion: params[:ophtalmology_template][:patients][:religion], address: params[:ophtalmology_template][:patients][:address], telephone: params[:ophtalmology_template][:patients][:telephone], email: params[:ophtalmology_template][:patients][:email], insurance_company: params[:ophtalmology_template][:patients][:insurance_company], insurance_policy: params[:ophtalmology_template][:patients][:insurance_policy], templatable_id: @ophtalmology_template.id, templatable_type: "OphtalmologyTemplate"
+
 
 			flash[:notice] = "Expediente guardado."
 			redirect_to @ophtalmology_template

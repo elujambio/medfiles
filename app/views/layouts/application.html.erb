@@ -35,8 +35,13 @@
 <% end %>
 
 <div id="navbar">
+		<%= form_tag(action: "search_patient", controller: "application") do %>
+			<%= autocomplete_field_tag(:patient, params[:patient], autocomplete_patient_name_path, :id_element => '#patient_id', class: "search-query", placeholder: "Busca por nombre del paciente.", type: "search" ) %>
+			<%= hidden_field_tag :patient_id, :id => "patient_id" %>
+			<%= submit_tag "Buscar", class: "ui-autocomplete-submit" %>
+		<% end %>
 	<% if doctor_signed_in? %>
-		<%= link_to("PROFILE", current_doctor) %>
+		<%= link_to("PANEL", doctor_panel_path) %>
 		<%= link_to("LOG OUT", destroy_doctor_session_path) %>
 	<% else %>
 		<%= link_to("SIGN IN", new_doctor_session_path) %>
@@ -48,8 +53,18 @@
 	<% end %>
 
 </div>
-
-<%= yield %>
+<div data-function="body">
+	<div id="sidebar-container">
+		<% if doctor_signed_in? %>
+			<%= render "layouts/sidebar" %>
+		<% end %>
+	</div>
+	<div id="body-container">
+		<div class="center-content">
+			<%= yield %>
+		</div>
+	</div>
+</div>
 <%= javascript_include_tag "autocomplete-rails.js" %>
 </body>
 </html>

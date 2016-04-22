@@ -13,7 +13,10 @@
       		<div class="double-field">
                   <div> 
                         <label><%= t :birth_date %></label>
-                        <%= patient.text_field :birth_date, placeholder: true %>
+                        <div class="date-select">
+                              <%= patient.date_select :birth_date, start_year: 1900, end_year: Time.now.year %>
+                        </div>
+
                   </div>
                   <div>
                         <label><%= t :sex %></label>
@@ -243,12 +246,12 @@
       </div>
       <div class="double-field">
             <div>
-				<label><%= t :family_cataract %></label>
-				<%= expedient.text_field :family_cataract, placeholder: true %>
+			<label><%= t :family_cataract %></label>
+			<%= expedient.text_field :family_cataract, placeholder: true %>
             </div>
             <div>
-				<label><%= t :family_retinal_deatachment %></label>
-				<%= expedient.text_field :family_retinal_deatachment, placeholder: true %>
+			<label><%= t :family_retinal_deatachment %></label>
+			<%= expedient.text_field :family_retinal_deatachment, placeholder: true %>
             </div>
       </div>
       <div class="double-field">
@@ -506,12 +509,12 @@
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :patient_retinal_deatachment_left %></label> 
-                  <%= expedient.check_box :patient_retinal_deatachment_left, placeholder: true %> 
-            </div>
-            <div>
                   <label><%= t :patient_retinal_deatachment_right %></label>  
                   <%= expedient.check_box :patient_retinal_deatachment_right, placeholder: true %>  
+            </div>
+            <div>
+                  <label><%= t :patient_retinal_deatachment_left %></label> 
+                  <%= expedient.check_box :patient_retinal_deatachment_left, placeholder: true %> 
             </div>
       </div>
       <div class="single-field">
@@ -538,22 +541,22 @@
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :surgery_left_eye %></label>
-                  <%= expedient.check_box :surgery_left_eye, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :surgery_left_eye_description %></label>
-                  <%= expedient.text_field :surgery_left_eye_description, placeholder: true %>
-            </div>
-      </div>
-      <div class="double-field">
-            <div>
                   <label><%= t :surgery_right_eye %></label>
                   <%= expedient.check_box :surgery_right_eye, placeholder: true %>
             </div>
             <div>
                   <label><%= t :surgery_right_eye_description %></label>
                   <%= expedient.text_field :surgery_right_eye_description, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <label><%= t :surgery_left_eye %></label>
+                  <%= expedient.check_box :surgery_left_eye, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :surgery_left_eye_description %></label>
+                  <%= expedient.text_field :surgery_left_eye_description, placeholder: true %>
             </div>
       </div>
       <div class="single-field">
@@ -623,46 +626,47 @@
       </div>
 </div>
 <div id="ophtalmological-exploration">
+      <h4><%= t :ophtalmological_exploration %></h4>
       <div class="multi-field">
             <div>
-                  <label><%= t :uncorrected_visual_acuity_left %></label>
-                  <%= expedient.text_field :uncorrected_visual_acuity_left, placeholder: true %>
+                  <label><%= t :uncorrected_visual_acuity_right %></label>
+                  <%= expedient.text_field :uncorrected_visual_acuity_right, placeholder: true %>
             </div>
             <div>
                   <label><%= t :uncorrected_visual_acuity_both %></label>
                   <%= expedient.text_field :uncorrected_visual_acuity_both, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :uncorrected_visual_acuity_right %></label>
-                  <%= expedient.text_field :uncorrected_visual_acuity_right, placeholder: true %>
+                  <label><%= t :uncorrected_visual_acuity_left %></label>
+                  <%= expedient.text_field :uncorrected_visual_acuity_left, placeholder: true %>
             </div>
       </div>
       <div class="multi-field">
             <div>
-                  <label><%= t :pinhole_left %></label>
-                  <%= expedient.text_field :pinhole_left, placeholder: true %>
+                  <label><%= t :pinhole_right %></label>
+                  <%= expedient.text_field :pinhole_right, placeholder: true %>
             </div>
             <div>
                   <label><%= t :pinhole_both %></label>
                   <%= expedient.text_field :pinhole_both, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :pinhole_right %></label>
-                  <%= expedient.text_field :pinhole_right, placeholder: true %>
+                  <label><%= t :pinhole_left %></label>
+                  <%= expedient.text_field :pinhole_left, placeholder: true %>
             </div>
       </div>
       <div class="multi-field">
             <div>
-                  <label><%= t :visual_acuity_with_correction_left %></label>
-                  <%= expedient.text_field :visual_acuity_with_correction_left, placeholder: true %>
+                  <label><%= t :visual_acuity_with_correction_right %></label>
+                  <%= expedient.text_field :visual_acuity_with_correction_right, placeholder: true %>
             </div>
             <div>
                   <label><%= t :visual_acuity_with_correction_both %></label>
                   <%= expedient.text_field :visual_acuity_with_correction_both, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :visual_acuity_with_correction_right %></label>
-                  <%= expedient.text_field :visual_acuity_with_correction_right, placeholder: true %>
+                  <label><%= t :visual_acuity_with_correction_left %></label>
+                  <%= expedient.text_field :visual_acuity_with_correction_left, placeholder: true %>
             </div>
       </div>
       <div class="double-field">
@@ -677,30 +681,16 @@
       </div>
       <div class="multi-field">
             <div>
-                  <label><%= t :corrected_visual_acuity_left %></label>
-                  <%= expedient.text_field :corrected_visual_acuity_left, placeholder: true %>
+                  <label><%= t :corrected_visual_acuity_right %></label>
+                  <%= expedient.text_field :corrected_visual_acuity_right, placeholder: true %>
             </div>
             <div>
                   <label><%= t :corrected_visual_acuity_both %></label>
                   <%= expedient.text_field :corrected_visual_acuity_both, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :corrected_visual_acuity_right %></label>
-                  <%= expedient.text_field :corrected_visual_acuity_right, placeholder: true %>
-            </div>
-      </div>
-      <div class="multi-field">
-            <div>
-                  <label><%= t :lensometer_left_value_1 %></label>
-                  <%= expedient.text_field :lensometer_left_value_1, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :lensometer_left_value_2 %></label>
-                  <%= expedient.text_field :lensometer_left_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :lensometer_left_value_3 %></label>
-                  <%= expedient.text_field :lensometer_left_value_3, placeholder: true %>
+                  <label><%= t :corrected_visual_acuity_left %></label>
+                  <%= expedient.text_field :corrected_visual_acuity_left, placeholder: true %>
             </div>
       </div>
       <div class="multi-field">
@@ -717,6 +707,20 @@
                   <%= expedient.text_field :lensometer_right_value_3, placeholder: true %>
             </div>
       </div>
+      <div class="multi-field">
+            <div>
+                  <label><%= t :lensometer_left_value_1 %></label>
+                  <%= expedient.text_field :lensometer_left_value_1, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :lensometer_left_value_2 %></label>
+                  <%= expedient.text_field :lensometer_left_value_2, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :lensometer_left_value_3 %></label>
+                  <%= expedient.text_field :lensometer_left_value_3, placeholder: true %>
+            </div>
+      </div>
       <div class="double-field">
             <div>
                   <label><%= t :add_1 %></label>
@@ -729,44 +733,12 @@
       </div>
       <div class="multi-field">
             <div>
-                  <label><%= t :manifested_refraction_left_value_1 %></label>
-                  <%= expedient.text_field :manifested_refraction_left_value_1, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :manifested_refraction_left_value_2 %></label>
-                  <%= expedient.text_field :manifested_refraction_left_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :manifested_refraction_left_value_3 %></label>
-                  <%= expedient.text_field :manifested_refraction_left_value_3, placeholder: true %>
-            </div>
-      </div>
-      <div class="multi-field">
-            <div>
                   <label><%= t :manifested_refraction_right_value_1 %></label>
                   <%= expedient.text_field :manifested_refraction_right_value_1, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :manifested_refraction_right_value_2 %></label>
-                  <%= expedient.text_field :manifested_refraction_right_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :manifested_refraction_right_value_3 %></label>
-                  <%= expedient.text_field :manifested_refraction_right_value_3, placeholder: true %>
-            </div>
-      </div>
-      <div class="multi-field">
-            <div>
-                  <label><%= t :subjective_refraction_left_value_1 %></label>
-                  <%= expedient.text_field :subjective_refraction_left_value_1, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :subjective_refraction_left_value_2 %></label>
-                  <%= expedient.text_field :subjective_refraction_left_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :subjective_refraction_left_value_3 %></label>
-                  <%= expedient.text_field :subjective_refraction_left_value_3, placeholder: true %>
+                  <label><%= t :manifested_refraction_left_value_1 %></label>
+                  <%= expedient.text_field :manifested_refraction_left_value_1, placeholder: true %>
             </div>
       </div>
       <div class="multi-field">
@@ -775,12 +747,8 @@
                   <%= expedient.text_field :subjective_refraction_right_value_1, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :subjective_refraction_right_value_2 %></label>
-                  <%= expedient.text_field :subjective_refraction_right_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :subjective_refraction_right_value_3 %></label>
-                  <%= expedient.text_field :subjective_refraction_right_value_3, placeholder: true %>
+                  <label><%= t :subjective_refraction_left_value_1 %></label>
+                  <%= expedient.text_field :subjective_refraction_left_value_1, placeholder: true %>
             </div>
       </div>
       <div class="single-field">
@@ -791,44 +759,12 @@
       </div>
       <div class="multi-field">
             <div>
-                  <label><%= t :autorefraction_left_value_1 %></label>
-                  <%= expedient.text_field :autorefraction_left_value_1, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :autorefraction_left_value_2 %></label>
-                  <%= expedient.text_field :autorefraction_left_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :autorefraction_left_value_3 %></label>
-                  <%= expedient.text_field :autorefraction_left_value_3, placeholder: true %>
-            </div>
-      </div>
-      <div class="multi-field">
-            <div>
                   <label><%= t :autorefraction_right_value_1 %></label>
                   <%= expedient.text_field :autorefraction_right_value_1, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :autorefraction_right_value_2 %></label>
-                  <%= expedient.text_field :autorefraction_right_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :autorefraction_right_value_3 %></label>
-                  <%= expedient.text_field :autorefraction_right_value_3, placeholder: true %>
-            </div>
-      </div>
-      <div class="multi-field">
-            <div>
-                  <label><%= t :cicloplegic_refraction_left_value_1 %></label>
-                  <%= expedient.text_field :cicloplegic_refraction_left_value_1, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :cicloplegic_refraction_left_value_2 %></label>
-                  <%= expedient.text_field :cicloplegic_refraction_left_value_2, placeholder: true %>
-            </div>
-            <div>
-                  <label><%= t :cicloplegic_refraction_left_value_3 %></label>
-                  <%= expedient.text_field :cicloplegic_refraction_left_value_3, placeholder: true %>
+                  <label><%= t :autorefraction_left_value_1 %></label>
+                  <%= expedient.text_field :autorefraction_left_value_1, placeholder: true %>
             </div>
       </div>
       <div class="multi-field">
@@ -837,66 +773,62 @@
                   <%= expedient.text_field :cicloplegic_refraction_right_value_1, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :cicloplegic_refraction_right_value_2 %></label>
-                  <%= expedient.text_field :cicloplegic_refraction_right_value_2, placeholder: true %>
+                  <label><%= t :cicloplegic_refraction_left_value_1 %></label>
+                  <%= expedient.text_field :cicloplegic_refraction_left_value_1, placeholder: true %>
             </div>
-            <div>
-                  <label><%= t :cicloplegic_refraction_right_value_3 %></label>
-                  <%= expedient.text_field :cicloplegic_refraction_right_value_3, placeholder: true %>
-            </div>
-      </div>
+      </div>      
       <div class="multi-field">
             <div>
-                  <label><%= t :better_corrected_visual_acuity_left %></label>
-                  <%= expedient.text_field :better_corrected_visual_acuity_left, placeholder: true %>
+                  <label><%= t :better_corrected_visual_acuity_right %></label>
+                  <%= expedient.text_field :better_corrected_visual_acuity_right, placeholder: true %>
             </div>
             <div>
                   <label><%= t :better_corrected_visual_acuity_both %></label>
                   <%= expedient.text_field :better_corrected_visual_acuity_both, placeholder: true %>
             </div>
             <div>
-                  <label><%= t :better_corrected_visual_acuity_right %></label>
-                  <%= expedient.text_field :better_corrected_visual_acuity_right, placeholder: true %>
+                  <label><%= t :better_corrected_visual_acuity_left %></label>
+                  <%= expedient.text_field :better_corrected_visual_acuity_left, placeholder: true %>
             </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :keratometry_left %></label>
-                  <%= expedient.text_field :keratometry_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :keratometry_right %></label>
                   <%= expedient.text_field :keratometry_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :keratometry_left %></label>
+                  <%= expedient.text_field :keratometry_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :paquimetry_left %></label>
-                  <%= expedient.text_field :paquimetry_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :paquimetry_right %></label>
                   <%= expedient.text_field :paquimetry_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :paquimetry_left %></label>
+                  <%= expedient.text_field :paquimetry_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :specular_biomicroscopy_left %></label>
-                  <%= expedient.text_field :specular_biomicroscopy_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :specular_biomicroscopy_right %></label>
                   <%= expedient.text_field :specular_biomicroscopy_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :specular_biomicroscopy_left %></label>
+                  <%= expedient.text_field :specular_biomicroscopy_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :pupillary_reflexes_left %></label>
-                  <%= expedient.text_field :pupillary_reflexes_left, placeholder: true %>
-            </div>
-            <div>
                   <label><%= t :pupillary_reflexes_right %></label>
                   <%= expedient.text_field :pupillary_reflexes_right, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :pupillary_reflexes_left %></label>
+                  <%= expedient.text_field :pupillary_reflexes_left, placeholder: true %>
             </div>
       </div>
       <div class="single-field">
@@ -907,22 +839,22 @@
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :ductions_left %></label>
-                  <%= expedient.text_field :ductions_left, placeholder: true %>
-            </div>
-            <div>
                   <label><%= t :ductions_right %></label>
                   <%= expedient.text_field :ductions_right, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :ductions_left %></label>
+                  <%= expedient.text_field :ductions_left, placeholder: true %>
             </div>
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :versions_left %></label>
-                  <%= expedient.text_field :versions_left, placeholder: true %>
-            </div>
-            <div>
                   <label><%= t :versions_right %></label>
                   <%= expedient.text_field :versions_right, placeholder: true %>
+            </div>
+            <div>
+                  <label><%= t :versions_left %></label>
+                  <%= expedient.text_field :versions_left, placeholder: true %>
             </div>
       </div>
       <div class="double-field">
@@ -937,152 +869,183 @@
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :eyelids_left %></label>
-                  <%= expedient.text_field :eyelids_left, placeholder: true %>
-            </div>
-            <div>
                   <label><%= t :eyelids_right %></label>
                   <%= expedient.text_field :eyelids_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :eyelids_left %></label>
+                  <%= expedient.text_field :eyelids_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :annexes_left %></label>
-                  <%= expedient.text_field :annexes_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :annexes_right %></label>
                   <%= expedient.text_field :annexes_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :annexes_left %></label>
+                  <%= expedient.text_field :annexes_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :lachrymal_left %></label>
-                  <%= expedient.text_field :lachrymal_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :lachrymal_right %></label>
                   <%= expedient.text_field :lachrymal_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :lachrymal_left %></label>
+                  <%= expedient.text_field :lachrymal_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :conjunctiva_left %></label>
-                  <%= expedient.text_field :conjunctiva_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :conjunctiva_right %></label>
                   <%= expedient.text_field :conjunctiva_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :conjunctiva_left %></label>
+                  <%= expedient.text_field :conjunctiva_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :cornea_left %></label>
-                  <%= expedient.text_field :cornea_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :cornea_right %></label>
                   <%= expedient.text_field :cornea_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :cornea_left %></label>
+                  <%= expedient.text_field :cornea_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :antechamber_left %></label>
-                  <%= expedient.text_field :antechamber_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :antechamber_right %></label>
                   <%= expedient.text_field :antechamber_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :antechamber_left %></label>
+                  <%= expedient.text_field :antechamber_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :intraocular_pressure_left %></label>
-                  <%= expedient.text_field :intraocular_pressure_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :intraocular_pressure_right %></label>
                   <%= expedient.text_field :intraocular_pressure_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :intraocular_pressure_left %></label>
+                  <%= expedient.text_field :intraocular_pressure_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
             <div>
-                  <label><%= t :iris_left %></label>
-                  <%= expedient.text_field :iris_left, placeholder: true %>
+                  <label><%= t :goinoscopy_right %></label>
+                  <a data-action="clear-gr">BORRAR</a>
+                  <canvas id="goinoscopy-right" height="300" data-size="2"></canvas>
             </div>
+            <div>
+                  <label><%= t :goinoscopy_left %></label>
+                  <a id="clear-gl">BORRAR</a>
+                  <canvas id="goinoscopy-left" height="300" data-size="2"></canvas>
+            </div>
+      </div>
+      <div class="double-field">
             <div>
                   <label><%= t :iris_right %></label>
                   <%= expedient.text_field :iris_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :iris_left %></label>
+                  <%= expedient.text_field :iris_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :pupil_left %></label>
-                  <%= expedient.text_field :pupil_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :pupil_right %></label>
                   <%= expedient.text_field :pupil_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :pupil_left %></label>
+                  <%= expedient.text_field :pupil_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :crystaline_left %></label>
-                  <%= expedient.text_field :crystaline_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :crystaline_right %></label>
                   <%= expedient.text_field :crystaline_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :crystaline_left %></label>
+                  <%= expedient.text_field :crystaline_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :fundus_left %></label>
-                  <%= expedient.text_field :fundus_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :fundus_right %></label>
                   <%= expedient.text_field :fundus_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :fundus_left %></label>
+                  <%= expedient.text_field :fundus_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :retina_left %></label>
-                  <%= expedient.text_field :retina_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :retina_right %></label>
                   <%= expedient.text_field :retina_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :retina_left %></label>
+                  <%= expedient.text_field :retina_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :vitreous_left %></label>
-                  <%= expedient.text_field :vitreous_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :vitreous_right %></label>
                   <%= expedient.text_field :vitreous_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :vitreous_left %></label>
+                  <%= expedient.text_field :vitreous_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
-            <div>
-                  <label><%= t :optic_nerve_left %></label>
-                  <%= expedient.text_field :optic_nerve_left, placeholder: true %>
-            </div>
             <div>
                   <label><%= t :optic_nerve_right %></label>
                   <%= expedient.text_field :optic_nerve_right, placeholder: true %>
             </div>
+            <div>
+                  <label><%= t :optic_nerve_left %></label>
+                  <%= expedient.text_field :optic_nerve_left, placeholder: true %>
+            </div>
       </div>
       <div class="double-field">
+            <div>
+                  <label><%= t :taint_right %></label>
+                  <%= expedient.text_field :taint_right, placeholder: true %>
+            </div>
             <div>
                   <label><%= t :taint_left %></label>
                   <%= expedient.text_field :taint_left, placeholder: true %>
             </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="double-field">
             <div>
-                  <label><%= t :taint_right %></label>
-                  <%= expedient.text_field :taint_right, placeholder: true %>
+                  <label><%= t :macula_right %></label>
+                  <a data-action="clear-gr">BORRAR</a>
+                  <canvas id="macula-right" height="300" data-size="2"></canvas>
+            </div>
+            <div>
+                  <label><%= t :macula_left %></label>
+                  <a id="clear-gl">BORRAR</a>
+                  <canvas id="macula-left" height="300" data-size="2"></canvas>
             </div>
       </div>
 </div>
@@ -1112,3 +1075,5 @@
 </div>
 <% end %>
 <%= javascript_include_tag "expedient_form" %>
+<%= javascript_include_tag "/assets/sketch/sketch" %>
+<%= javascript_include_tag "/assets/ophtalmology/canvas" %>

@@ -3,15 +3,20 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_filter :configure_devise_params, if: :devise_controller?
-
-
+  autocomplete :patient, :name, full: true
+  before_action :authenticate_doctor, only: [:set_sidebar]
+  before_action :set_sidebar
   before_action :set_locale
 
-  
   def set_locale
     I18n.locale = :es
   end
- 
+  def after_sign_in_path_for(resource)
+    doctor_panel_path
+  end
+  def after_sign_up_path(resource)
+    doctor_panel_path
+  end
     def configure_devise_params
       devise_parameter_sanitizer.for(:sign_up) do |parameters|
           parameters.permit(:email, :password, :password_confirmation, :name, :practice_address_1, :practice_address_2, :postal_code, :country, :state, :city, :phone, :cellphone, :facebook, :website, :profession, :speciality, :created_at, :updated_at)
@@ -99,6 +104,45 @@ class ApplicationController < ActionController::Base
 
     helper_method :check_payment_for_templates!
 
+    def search_patient
+      @patient = Patient.find(params[:patient_id])
+      redirect_to gynecology_template_path(@patient.templatable)
+    end
+    
+    def set_sidebar 
+      if doctor_signed_in?
+        @hasTemplatePlan = false
+        current_doctor.plans.each do |plan| 
+          if plan.active == -4 or plan.active == 1 or plan.active == -5
+            plan.plan_elements.each do |element| 
+              if element.element_type == "TemplatePlan" 
+                @max_files = element.element.max_files 
+                @hasTemplatePlan = true
+              end
+            end
+          end
+        end
+        case current_doctor.speciality
+          when "Ginecología"
+            @files = current_doctor.gynecology_templates.count
+          when "Oftalmología" 
+            @files = current_doctor.ophtalmology_templates.count
+        end
+      
+      end
+    end
 
+    def search_patient
+      @patient = Patient.find(params[:patient_id])
+      case current_doctor.speciality
+        when "Ginecología"
+          redirect_to gynecology_template_path(@patient.templatable)
+        when "Oftalmología"
+          redirect_to ophtalmology_template_path(@patient.templatable)
+      end
+    end
+    def get_autocomplete_items(parameters)
+      active_record_get_autocomplete_items(parameters).where(doctor: current_doctor)
+    end
 end
 

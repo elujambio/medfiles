@@ -1,24 +1,73 @@
 <%= form_for(@invoice) do |f| %>
 	<% if @invoice.errors.any? %>
 		<div id="error_explanation">
-			<h2><%= pluralize(@invoice.errors.count, "error") %> prohibieron que se guardará la información:</h2>
+			<p><%= pluralize(@invoice.errors.count, "error") %> prohibieron que se guardará la información:</p>
 			<ul><% @invoice.errors.messages.values.each do |msg| %>
 				<li><%= msg %></li>
 			<% end %></ul>
 		</div>
 	<% end %>
-	<%= f.text_field :name, placeholder: "Razón Social" %><br/>
-	<%= f.text_field :rfc, placeholder: "R.F.C"  %><br/>
-	<%= f.text_field :address1, placeholder: "Calle"  %><br/>
-	<%= f.text_field :num_int, placeholder: "Número Interior"  %><br/>
-	<%= f.text_field :num_ext, placeholder: "Número Exterior"  %><br/>
-	<%= f.text_field :address2, placeholder: "Colonia"  %><br/>
-	<%= f.text_field :city, placeholder: "Ciudad"  %><br/>
-	<%= f.text_field :state, placeholder: "Estado" %><br/>
-	<%= f.text_field :country, placeholder: "País" %><br/>
-	<%= f.text_field :cp, placeholder: "Código Postal"  %><br/>
-
-	<div><p>Si marcas estos datos como favoritos, todas las facturas se harán con estos datos.</p></div>
-	<%= f.check_box :favorite %>¿Favoritos? <br/>
+	<div id="invoice-data">
+		<div class="double-field">
+			<div>
+				<label for="">Razón Social</label>
+				<%= f.text_field :name, placeholder: "Razón Social" %>
+			</div>
+			<div>
+				<label for="">R.F.C</label>
+				<%= f.text_field :rfc, placeholder: "R.F.C"  %>
+			</div>
+		</div>
+		<div class="double-field">
+			<div>
+				<label for="">Calle</label>
+				<%= f.text_field :address1, placeholder: "Calle"  %>
+			</div>
+			<div>
+				<label for="">Número Interior</label>
+				<%= f.text_field :num_int, placeholder: "Número Interior"  %>
+			</div>
+		</div>
+		<div class="double-field">
+			<div>
+				<label for="">Número Exterior</label>
+				<%= f.text_field :num_ext, placeholder: "Número Exterior"  %>
+			</div>
+			<div>
+				<label for="">Colonia</label>
+				<%= f.text_field :address2, placeholder: "Colonia"  %>
+			</div>
+		</div>
+		<div class="double-field">
+			<div>
+				<label for="">Ciudad</label>
+				<%= f.text_field :city, placeholder: "Ciudad"  %>
+			</div>
+			<div>
+				<label for="">Estado</label>
+				<%= f.text_field :state, placeholder: "Estado" %>
+			</div>
+		</div>
+		<div class="double-field">
+			<div>
+				<label for="">País</label>
+				<%= f.text_field :country, placeholder: "País" %>
+			</div>
+			<div>
+				<label for="">Código Postal</label>
+				<%= f.text_field :cp, placeholder: "Código Postal"  %>
+			</div>
+		</div>
+		<div class="double-field">
+			<div>
+				<label>Marcar como favorito</label>
+				<%= f.check_box :favorite %> 
+			</div>
+			<div>
+				<label for="">Si marcas estos datos como favoritos, todas las facturas se harán con estos datos.</label>
+			</div>
+		</div>
+	</div>
 	<%= f.submit "Guardar" %>
 <% end %>
+<%= javascript_include_tag "expedient_form" %>

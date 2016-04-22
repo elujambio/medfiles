@@ -19,7 +19,7 @@ class GynecologyTemplatesController < ApplicationController
 		@gynecology_template = GynecologyTemplate.new(gynecology_template_params)
 		@gynecology_template.doctor = current_doctor
 		if @gynecology_template.save
-			Patient.create name: params[:gynecology_template][:patients][:name], birth_date: params[:gynecology_template][:patients][:birth_date], sex: params[:gynecology_template][:patients][:sex], originary_from: params[:gynecology_template][:patients][:originary_from], ocupation: params[:gynecology_template][:patients][:ocupation], religion: params[:gynecology_template][:patients][:religion], address: params[:gynecology_template][:patients][:address], telephone: params[:gynecology_template][:patients][:telephone], email: params[:gynecology_template][:patients][:email], insurance_company: params[:gynecology_template][:patients][:insurance_company], insurance_policy: params[:gynecology_template][:patients][:insurance_policy], templatable_id: @gynecology_template.id, templatable_type: "GynecologyTemplate"
+			Patient.create doctor: current_doctor, name: params[:gynecology_template][:patients][:name], birth_date: params[:gynecology_template][:patients][:birth_date], sex: params[:gynecology_template][:patients][:sex], originary_from: params[:gynecology_template][:patients][:originary_from], ocupation: params[:gynecology_template][:patients][:ocupation], religion: params[:gynecology_template][:patients][:religion], address: params[:gynecology_template][:patients][:address], telephone: params[:gynecology_template][:patients][:telephone], email: params[:gynecology_template][:patients][:email], insurance_company: params[:gynecology_template][:patients][:insurance_company], insurance_policy: params[:gynecology_template][:patients][:insurance_policy], templatable_id: @gynecology_template.id, templatable_type: "GynecologyTemplate"
 			flash[:notice] = "Expediente guardado."
 			redirect_to @gynecology_template
 		else
@@ -51,6 +51,11 @@ class GynecologyTemplatesController < ApplicationController
 		@gynecology_template.destroy 
 		flash[:notice] = "Expediente eliminado."
 		redirect_to root_url
+	end
+
+	def search_patient
+		@patient = Patient.find(params[:patient_id])
+		redirect_to gynecology_template_path(@patient.templatable)
 	end
 	private
 		def set_gynecology_template

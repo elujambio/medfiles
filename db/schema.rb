@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160321224037) do
+ActiveRecord::Schema.define(version: 20160414191214) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -435,6 +435,10 @@ ActiveRecord::Schema.define(version: 20160321224037) do
     t.datetime "created_at",                                              null: false
     t.datetime "updated_at",                                              null: false
     t.integer  "doctor_id"
+    t.text     "goinoscopy_left",                         default: ""
+    t.text     "goinoscopy_right",                        default: ""
+    t.text     "macula_left",                             default: ""
+    t.text     "macula_right",                            default: ""
   end
 
   add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"

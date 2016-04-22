@@ -12,6 +12,7 @@ body, html
 div, h1, h2, h3, h4, h5, h6, label, p, input, section, a, textarea, span {
 	margin:0 0;
 	padding:0 0;
+	position:relative;
 	text-decoration:none;
 	font-weight:normal;
     background: none repeat scroll 0 0 transparent;
