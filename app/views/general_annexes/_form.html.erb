@@ -1,0 +1,5 @@
+<%= form_for [@general_template, @general_annex] do |f| %>
+	<p><%= @general_template.patient.name %></p>
+	<%= f.text_area :annex, placeholder: true, rows:20 %>
+	<%= f.submit "Guardar" %>
+<% end %>

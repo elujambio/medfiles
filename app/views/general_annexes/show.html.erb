@@ -1,0 +1,5 @@
+<%= link_to "Editar", edit_general_template_general_annex_path(@general_template, @general_annex) %> <br/>
+<%= link_to "Eliminar", [@general_template, @general_annex], method: :delete, data: { confirm: "¿Está seguro? Esta acción no se puede deshacer"} %>
+
+Paciente: <%= @general_annex.general_template.patient.name %><br/>
+<%= @general_annex.annex %>

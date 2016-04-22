@@ -28,7 +28,7 @@
 <%= link_to "Editar", edit_general_template_path(@general_template) %><br/>
 <%= link_to "Eliminar", general_template_path(@general_template), method: :delete, data: {confirm: "¿Está seguro? Esta acción no se puede deshacer."} %><br/>
 
-<%= link_to "Añadir Hoja de Evolución", new_gynecology_template_gynecology_annex_path(@general_template) %><br/>
+<%= link_to "Añadir Hoja de Evolución", new_general_template_general_annex_path(@general_template) %><br/>
 <%= link_to "Añadir Receta",  new_general_template_prescription_path(@general_template)%><br/>
 
 <%= render 'prescriptions/prescriptions', prescriptable: @general_template %>
