@@ -510,6 +510,10 @@ ActiveRecord::Schema.define(version: 20160422001236) do
     t.datetime "created_at",                                              null: false
     t.datetime "updated_at",                                              null: false
     t.integer  "doctor_id"
+    t.text     "goinoscopy_left",                         default: ""
+    t.text     "goinoscopy_right",                        default: ""
+    t.text     "macula_left",                             default: ""
+    t.text     "macula_right",                            default: ""
   end
 
   add_index "ophtalmology_templates", ["doctor_id"], name: "index_ophtalmology_templates_on_doctor_id"
