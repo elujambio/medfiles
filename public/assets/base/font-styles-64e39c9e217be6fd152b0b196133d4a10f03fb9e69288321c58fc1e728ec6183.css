@@ -1,0 +1,15 @@
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-styles.scss */
+html,
+body {
+  background: #F8F8F8;
+  font-family: 'Atlas Grotesk';
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* line 9, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/base/font-styles.scss */
+input[type] {
+  font-family: 'Atlas Grotesk';
+  font-weight: normal;
+  font-style: normal;
+}

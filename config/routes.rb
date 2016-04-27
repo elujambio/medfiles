@@ -76,6 +76,14 @@ Rails.application.routes.draw do
     resources :template_files, module: :ophtalmology_templates
     resources :patients, module: :ophtalmology_templates
   end
+
+  resources :general_templates do
+    resources :general_annexes, except: [:index]
+    resources :prescriptions, module: :general_templates
+    resources :template_photos, module: :general_templates
+    resources :template_files, module: :general_templates
+    resources :patients, module: :general_templates
+  end
   resources :gynecology_templates do
     resources :gynecology_annexes, except: [:index]
     resources :prescriptions, module: :gynecology_templates

@@ -4,7 +4,29 @@ class DoctorsController < ApplicationController
 	autocomplete :patient, :name
 
 	def panel
- 		
+
+		@hasTemplatePlan = false
+		current_doctor.plans.each do |plan| 
+			if plan.active == -4 or plan.active == 1 or plan.active == -5
+				plan.plan_elements.each do |element| 
+					if element.element_type == "TemplatePlan" 
+					 	@max_files = element.element.max_files 
+					 	@hasTemplatePlan = true
+					end
+				end
+			end
+		end
+		
+		case current_doctor.speciality
+			when "Ginecología"
+				@files = current_doctor.gynecology_templates.count
+			when "Oftalmología" 
+				@files = current_doctor.ophtalmology_templates.count
+			when "General" 
+				@files = current_doctor.general_templates.count
+		end
+				 		 
+
 	end
 
 	def show
@@ -29,7 +51,17 @@ class DoctorsController < ApplicationController
 
 	def search_patient
 		@patient = Patient.find(params[:patient_id])
-		redirect_to gynecology_template_path(@patient.templatable)
+		case current_doctor.speciality
+			when "Ginecología"
+				redirect_to gynecology_template_path(@patient.templatable)
+			when "Oftalmología" 
+				redirect_to ophtalmology_template_path(@patient.templatable)
+			when "General" 
+				redirect_to general_template_path(@patient.templatable)
+				
+		end
+		
+		
 	end
 
 	private

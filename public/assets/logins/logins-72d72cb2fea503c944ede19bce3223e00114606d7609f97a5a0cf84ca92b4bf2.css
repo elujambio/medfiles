@@ -1,0 +1,124 @@
+/* line 1, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container {
+  width: auto;
+  margin-top: 144px;
+  margin-bottom: 144px;
+  padding: 96px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #E5E5E5;
+  transition: all .3s ease;
+  z-index: 100;
+  border-radius: 3px;
+}
+/* line 30, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container h4 {
+  color: #58BEF1;
+}
+/* line 34, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form {
+  width: 380px;
+}
+/* line 38, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input:not([type="checkbox"]) {
+  width: 100%;
+}
+/* line 42, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 18px;
+  font-size: 18px;
+  background: #F8F8F8;
+  border-color: #F8F8F8;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  transition: border-color 0.2s cubic-bezier(0.32, 0.05, 0.385, 0.925);
+}
+/* line 55, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #58BEF1;
+}
+/* line 61, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container label {
+  opacity: .66;
+  margin: 18px 0;
+}
+/* line 66, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form input[type="submit"] {
+  padding: 18px;
+  background-color: #58BEF1;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  transform: translate3d(0, 0, 0);
+  transition: color .1s ease, background-color .1s ease-in;
+  border-radius: 3px;
+}
+/* line 77, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container form input[type="submit"]:hover {
+  color: #58BEF1;
+  background-color: #F8f8f8;
+}
+/* line 82, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 103, /Users/ilse/Documents/nosoyilse/medfiles/app/assets/stylesheets/logins/logins.scss */
+.login-container div:nth-of-type(3) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
