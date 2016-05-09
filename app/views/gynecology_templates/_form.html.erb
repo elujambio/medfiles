@@ -430,8 +430,8 @@
 </div>
 
 <h4></h4>
-<%= f.fields_for :pregnancies do |builder| %>
 <div id="pregnancies">
+<%= f.fields_for :pregnancies do |builder| %>
       <div class="double-field">       
             <div>       
                   <%= builder.label :pregnancy_number %>
@@ -494,9 +494,9 @@
                   <%= link_to_remove_fields "Eliminar", f %>
             </div>
       </div>
+<% end %>
       <%= link_to_add_fields "Añadir Embarazo", f, :pregnancies, "css-class add-form", "Añadir Embarazo" %>
 </div>
-<% end %>
 <div id="sexual-habits">
       <div class="double-field">       
             <div>

@@ -127,6 +127,8 @@ class ApplicationController < ActionController::Base
             @files = current_doctor.gynecology_templates.count
           when "Oftalmología" 
             @files = current_doctor.ophtalmology_templates.count
+          when "General"
+            @files = current_doctor.general_templates.count
         end
       
       end

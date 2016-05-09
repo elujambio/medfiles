@@ -1,16 +1,64 @@
 <div class="fields">
-	<%= f.label :pregnancy_number %><%= f.text_field :pregnancy_number, placeholder: true %> 
-	<%= f.label :pregnancy_date %><%= f.date_field :pregnancy_date, { :discard_day => true} %>
-	<%= f.label :abortion %><%= f.select :abortion, ['Esporádico', 'Provocado'] %>
-	<%= f.label :delivery %><%= f.select :delivery, ['Pretérmino', 'Término', 'PostTérmino'] %>
-	<%= f.label :induction %><%= f.select :induction, ['Sí', 'No'] %>
-	<%= f.label :ending %><%= f.select :ending, ['Esporádico', 'Fórceps', 'Césarea'] %>
-	<%= f.label :newborn %><%= f.select :newborn, ['Sí', 'No'] %>
-	<%= f.label :rn %><%= f.select :rn, ['Neonáto', 'Post-Neo'] %>
-	<%= f.label :baby_weight %><%= f.text_field :baby_weight, placeholder: true %>
-	<%= f.label :baby_sex %><%= f.select :baby_sex, ['Femenino', 'Masculino'] %>
-	<%= f.label :puerperium %><%= f.select :puerperium, ['Fís', 'Pat']%>
-
-	<%= f.hidden_field :_destroy %>
-	 <%= link_to_remove_fields "Eliminar", f %>
+	<div class="double-field">
+		<div>
+			<%= f.label :pregnancy_number %>
+			<%= f.text_field :pregnancy_number, placeholder: true %> 
+		</div>
+		<div>
+			<%= f.label :pregnancy_date %>
+			<span class="date-select">
+				<%= f.date_select :pregnancy_date, { :discard_day => true } %>
+			</span>
+		</div>
+	</div>
+	<div class="double-field">
+		<div>
+			<%= f.label :abortion %>
+			<%= f.select :abortion, ['Esporádico', 'Provocado'] %>
+		</div>
+		<div>
+			<%= f.label :delivery %>
+			<%= f.select :delivery, ['Pretérmino', 'Término', 'PostTérmino'] %>
+		</div>
+	</div>
+	<div class="double-field">
+		<div>
+			<%= f.label :induction %>
+			<%= f.select :induction, ['Sí', 'No'] %>
+		</div>
+		<div>
+			<%= f.label :ending %>
+			<%= f.select :ending, ['Esporádico', 'Fórceps', 'Césarea'] %>
+		</div>
+	</div>
+	<div class="double-field">
+		<div>
+			<%= f.label :newborn %>
+			<%= f.select :newborn, ['Sí', 'No'] %>
+		</div>
+		<div>
+			<%= f.label :rn %>
+			<%= f.select :rn, ['Neonáto', 'Post-Neo'] %>
+		</div>
+	</div>
+	<div class="double-field">
+		<div>
+			<%= f.label :baby_weight %>
+			<%= f.text_field :baby_weight, placeholder: true %>
+		</div>
+		<div>
+			<%= f.label :baby_sex %>
+			<%= f.select :baby_sex, ['Femenino', 'Masculino'] %>
+		</div>
+	</div>
+	<div class="double-field">
+		<div>
+			<%= f.label :puerperium %>
+			<%= f.select :puerperium, ['Fís', 'Pat']%>
+		</div>
+		<div>
+			<%= f.hidden_field :_destroy %>
+			<%= link_to_remove_fields "Eliminar", f %>
+		</div>
+	</div>
 </div>
