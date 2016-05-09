@@ -1,0 +1,1049 @@
+<h4><%= t :expedient %></h4>
+<% @ophtalmology_template.patients.each do |patient|  %>
+	<% patient.doctor.name %>
+<div class="form-container">
+	<form>
+		<div id="patient-data">
+			<div class="double-field">
+				<div>
+					<label><%= :name %></label>
+					<p><%= patient.name %></p>
+				</div>
+				<div>
+					<label><%= t :email %></label>
+					<p><%= patient.email %></p>
+				</div>
+			</div>
+			<div class="double-field">				
+				<div>
+					<label><%= t :birth_date %></label>
+					<p><%= patient.birth_date %></p>
+				</div>
+				<div>
+					<label><%= t :sex %></label>
+					<p><%= patient.sex %></p>
+				</div>
+			</div>
+			<div class="double-field">				
+				<div>
+					<label><%= t :ocupation %></label>
+					<p><%= patient.ocupation %></p>
+				</div>
+				<div>
+					<label><%= t :religion %></label>
+					<p><%= patient.religion %></p>
+				</div>
+			</div>
+			<div class="double-field">				
+				<div>
+					<label><%= t :address %></label>
+					<p><%= patient.address %></p>
+				</div>
+				<div>
+					<label><%= t :telephone %></label>
+					<p><%= patient.telephone %></p>
+				</div>
+			</div>
+			<div class="double-field">				
+				<div>
+					<label><%= t :insurance_company %></label>
+					<p><%= patient.insurance_company %></p>
+				</div>
+				<div>
+					<label><%= t :insurance_policy %></label>
+					<p><%= patient.insurance_policy %></p>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<% end %>
+<div class="form-container">
+	<div id="annex-links">
+		<%= link_to "Editar",  edit_ophtalmology_template_path(@ophtalmology_template)%>
+
+		<%= link_to "Añadir Receta",  new_ophtalmology_template_prescription_path(@ophtalmology_template)%>
+
+		<%= render 'prescriptions/prescriptions', prescriptable: @ophtalmology_template %>
+
+		<%= link_to "Añadir Foto",  new_ophtalmology_template_template_photo_path(@ophtalmology_template)%>
+
+		<%= render 'template_photos/template_photos', photable: @ophtalmology_template %>
+
+		<%= link_to "Añadir Archivo",  new_ophtalmology_template_template_file_path(@ophtalmology_template)%>
+
+		<%= render 'template_files/template_files', fileable: @ophtalmology_template %>
+	</div>
+</div>
+<div class="form-container">
+	<form>
+		<div id="patient-data">
+			<div class="double-field">
+			    <div>
+			        <label><%= t :previous_revisions %></label>
+			        <p><%= @ophtalmology_template.previous_revisions %></p>
+			    </div>
+			    <div>
+			        <label><%= t :previous_revision_date %></label>
+			        <p><%= @ophtalmology_template.previous_revision_date %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :current_ailments %></label>
+			        <p><%= @ophtalmology_template.current_ailments %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_diabetes_mellitus %></label>
+			        <p><%= @ophtalmology_template.family_diabetes_mellitus %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_nephropathy %></label>
+			        <p><%= @ophtalmology_template.family_nephropathy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_hypertension %></label>
+			        <p><%= @ophtalmology_template.family_hypertension %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_cardiopathy %></label>
+			        <p><%= @ophtalmology_template.family_cardiopathy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_thyroid %></label>
+			        <p><%= @ophtalmology_template.family_thyroid %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_cancer %></label>
+			        <p><%= @ophtalmology_template.family_cancer %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_other %></label>
+			        <p><%= @ophtalmology_template.family_other %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_myopia %></label>
+			        <p><%= @ophtalmology_template.family_myopia %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_farsightedness %></label>
+			        <p><%= @ophtalmology_template.family_farsightedness %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_astigmatism %></label>
+			        <p><%= @ophtalmology_template.family_astigmatism %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_keratoconus %></label>
+			        <p><%= @ophtalmology_template.family_keratoconus %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_strabismus %></label>
+			        <p><%= @ophtalmology_template.family_strabismus %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_diabetic_retinopathy %></label>
+			        <p><%= @ophtalmology_template.family_diabetic_retinopathy %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_eye_surgery %></label>
+			        <p><%= @ophtalmology_template.family_eye_surgery %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_cataract %></label>
+			        <p><%= @ophtalmology_template.family_cataract %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_retinal_deatachment %></label>
+			        <p><%= @ophtalmology_template.family_retinal_deatachment %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_laser_surgery %></label>
+			        <p><%= @ophtalmology_template.family_laser_surgery %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :family_glaucoma %></label>
+			        <p><%= @ophtalmology_template.family_glaucoma %></p>
+			    </div>
+			    <div>
+			        <label><%= t :family_other_ailments_2 %></label>
+			        <p><%= @ophtalmology_template.family_other_ailments_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_diabetes_mellitus %></label>
+			        <p><%= @ophtalmology_template.patient_diabetes_mellitus %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_diabetes_mellitus_since %></label>
+			        <p><%= @ophtalmology_template.patient_diabetes_mellitus_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_diabetes_mellitus_treatment %></label>
+			        <p><%= @ophtalmology_template.patient_diabetes_mellitus_treatment %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_arterial_hypertension %></label>
+			        <p><%= @ophtalmology_template.patient_arterial_hypertension %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_arterial_hypertension_since %></label>
+			        <p><%= @ophtalmology_template.patient_arterial_hypertension_since %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_arterial_hypertension_treatment %></label>
+			        <p><%= @ophtalmology_template.patient_arterial_hypertension_treatment %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_thyroid %></label>
+			        <p><%= @ophtalmology_template.patient_thyroid %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_thyroid_description %></label>
+			        <p><%= @ophtalmology_template.patient_thyroid_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_nefropathy %></label>
+			        <p><%= @ophtalmology_template.patient_nefropathy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_nefropathy_description %></label>
+			        <p><%= @ophtalmology_template.patient_nefropathy_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_alergies %></label>
+			        <p><%= @ophtalmology_template.patient_alergies %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_alergies_description %></label>
+			        <p><%= @ophtalmology_template.patient_alergies_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_cardiopathy %></label>
+			        <p><%= @ophtalmology_template.patient_cardiopathy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_cardiopathy_description %></label>
+			        <p><%= @ophtalmology_template.patient_cardiopathy_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_surgery %></label>
+			        <p><%= @ophtalmology_template.patient_surgery %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_surgery_description %></label>
+			        <p><%= @ophtalmology_template.patient_surgery_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_cancer %></label>
+			        <p><%= @ophtalmology_template.patient_cancer %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_cancer_description %></label>
+			        <p><%= @ophtalmology_template.patient_cancer_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_transfusion %></label>
+			        <p><%= @ophtalmology_template.patient_transfusion %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_transfusion_description %></label>
+			        <p><%= @ophtalmology_template.patient_transfusion_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_smoking %></label>
+			        <p><%= @ophtalmology_template.patient_smoking %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_ailments_other %></label>
+			        <p><%= @ophtalmology_template.patient_ailments_other %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_myopia %></label>
+			        <p><%= @ophtalmology_template.patient_myopia %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_myopia_description %></label>
+			        <p><%= @ophtalmology_template.patient_myopia_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_hyperopia %></label>
+			        <p><%= @ophtalmology_template.patient_hyperopia %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_hyperopia_description %></label>
+			        <p><%= @ophtalmology_template.patient_hyperopia_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_astigmatism %></label>
+			        <p><%= @ophtalmology_template.patient_astigmatism %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_astigmatism_description %></label>
+			        <p><%= @ophtalmology_template.patient_astigmatism_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_keratoconus %></label>
+			        <p><%= @ophtalmology_template.patient_keratoconus %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_keratoconus_description %></label>
+			        <p><%= @ophtalmology_template.patient_keratoconus_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_presbyopia %></label>
+			        <p><%= @ophtalmology_template.patient_presbyopia %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_presbyopia_description %></label>
+			        <p><%= @ophtalmology_template.patient_presbyopia_description %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_uses_glasses %></label>
+			        <p><%= @ophtalmology_template.patient_uses_glasses %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_uses_glasses_since %></label>
+			        <p><%= @ophtalmology_template.patient_uses_glasses_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_uses_contact_lenses %></label>
+			        <p><%= @ophtalmology_template.patient_uses_contact_lenses %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_uses_contact_lenses_since %></label>
+			        <p><%= @ophtalmology_template.patient_uses_contact_lenses_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_strabismus %></label>
+			        <p><%= @ophtalmology_template.patient_strabismus %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_strabismus_treatment %></label>
+			        <p><%= @ophtalmology_template.patient_strabismus_treatment %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_cataracts %></label>
+			        <p><%= @ophtalmology_template.patient_cataracts %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_cataracts_since %></label>
+			        <p><%= @ophtalmology_template.patient_cataracts_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_glaucoma %></label>
+			        <p><%= @ophtalmology_template.patient_glaucoma %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_glaucoma_since %></label>
+			        <p><%= @ophtalmology_template.patient_glaucoma_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_glaucoma_treatment %></label>
+			        <p><%= @ophtalmology_template.patient_glaucoma_treatment %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_diabetic_retinopathy %></label>
+			        <p><%= @ophtalmology_template.patient_diabetic_retinopathy %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_laser_surgery %></label>
+			        <p><%= @ophtalmology_template.patient_laser_surgery %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_retinal_deatachment_left %></label>
+			        <p><%= @ophtalmology_template.patient_retinal_deatachment_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_retinal_deatachment_right %></label>
+			        <p><%= @ophtalmology_template.patient_retinal_deatachment_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_retinal_deatachment_since %></label>
+			        <p><%= @ophtalmology_template.patient_retinal_deatachment_since %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_retinal_deatachment_treatment %></label>
+			        <p><%= @ophtalmology_template.patient_retinal_deatachment_treatment %></p>
+			    </div>
+			    <div>
+			        <label><%= t :shocks %></label>
+			        <p><%= @ophtalmology_template.shocks %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :shocks_description %></label>
+			        <p><%= @ophtalmology_template.shocks_description %></p>
+			    </div>
+			    <div>
+			        <label><%= t :surgery_left_eye %></label>
+			        <p><%= @ophtalmology_template.surgery_left_eye %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :surgery_left_eye_description %></label>
+			        <p><%= @ophtalmology_template.surgery_left_eye_description %></p>
+			    </div>
+			    <div>
+			        <label><%= t :surgery_right_eye %></label>
+			        <p><%= @ophtalmology_template.surgery_right_eye %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :surgery_right_eye_description %></label>
+			        <p><%= @ophtalmology_template.surgery_right_eye_description %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_other_eye_ailments %></label>
+			        <p><%= @ophtalmology_template.patient_other_eye_ailments %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_is_pregnant %></label>
+			        <p><%= @ophtalmology_template.patient_is_pregnant %></p>
+			    </div>
+			    <div>
+			        <label><%= t :lactation %></label>
+			        <p><%= @ophtalmology_template.lactation %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :gynobstetric_revision_during_pregnancy %></label>
+			        <p><%= @ophtalmology_template.gynobstetric_revision_during_pregnancy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :ailment_presence_during_pregnancy %></label>
+			        <p><%= @ophtalmology_template.ailment_presence_during_pregnancy %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :ailments_during_pregnancy %></label>
+			        <p><%= @ophtalmology_template.ailments_during_pregnancy %></p>
+			    </div>
+			    <div>
+			        <label><%= t :ailments_during_pregnancy_treatment %></label>
+			        <p><%= @ophtalmology_template.ailments_during_pregnancy_treatment %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :weight_at_birth %></label>
+			        <p><%= @ophtalmology_template.weight_at_birth %></p>
+			    </div>
+			    <div>
+			        <label><%= t :size_at_birth %></label>
+			        <p><%= @ophtalmology_template.size_at_birth %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :born_of_term %></label>
+			        <p><%= @ophtalmology_template.born_of_term %></p>
+			    </div>
+			    <div>
+			        <label><%= t :problems_during_birth %></label>
+			        <p><%= @ophtalmology_template.problems_during_birth %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :uncorrected_visual_acuity_left %></label>
+			        <p><%= @ophtalmology_template.uncorrected_visual_acuity_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :uncorrected_visual_acuity_both %></label>
+			        <p><%= @ophtalmology_template.uncorrected_visual_acuity_both %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :uncorrected_visual_acuity_right %></label>
+			        <p><%= @ophtalmology_template.uncorrected_visual_acuity_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :pinhole_left %></label>
+			        <p><%= @ophtalmology_template.pinhole_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :pinhole_both %></label>
+			        <p><%= @ophtalmology_template.pinhole_both %></p>
+			    </div>
+			    <div>
+			        <label><%= t :pinhole_right %></label>
+			        <p><%= @ophtalmology_template.pinhole_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :visual_acuity_with_correction_left %></label>
+			        <p><%= @ophtalmology_template.visual_acuity_with_correction_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :visual_acuity_with_correction_both %></label>
+			        <p><%= @ophtalmology_template.visual_acuity_with_correction_both %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :visual_acuity_with_correction_right %></label>
+			        <p><%= @ophtalmology_template.visual_acuity_with_correction_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :patient_uses_contact_lenses_current %></label>
+			        <p><%= @ophtalmology_template.patient_uses_contact_lenses_current %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :patient_uses_glasses_current %></label>
+			        <p><%= @ophtalmology_template.patient_uses_glasses_current %></p>
+			    </div>
+			    <div>
+			        <label><%= t :corrected_visual_acuity_left %></label>
+			        <p><%= @ophtalmology_template.corrected_visual_acuity_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :corrected_visual_acuity_both %></label>
+			        <p><%= @ophtalmology_template.corrected_visual_acuity_both %></p>
+			    </div>
+			    <div>
+			        <label><%= t :corrected_visual_acuity_right %></label>
+			        <p><%= @ophtalmology_template.corrected_visual_acuity_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :lensometer_left_value_1 %></label>
+			        <p><%= @ophtalmology_template.lensometer_left_value_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :lensometer_left_value_2 %></label>
+			        <p><%= @ophtalmology_template.lensometer_left_value_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :lensometer_left_value_3 %></label>
+			        <p><%= @ophtalmology_template.lensometer_left_value_3 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :lensometer_right_value_1 %></label>
+			        <p><%= @ophtalmology_template.lensometer_right_value_1 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :lensometer_right_value_2 %></label>
+			        <p><%= @ophtalmology_template.lensometer_right_value_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :lensometer_right_value_3 %></label>
+			        <p><%= @ophtalmology_template.lensometer_right_value_3 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :add_1 %></label>
+			        <p><%= @ophtalmology_template.add_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :refraction %></label>
+			        <p><%= @ophtalmology_template.refraction %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :manifested_refraction_left_value_1 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_left_value_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :manifested_refraction_left_value_2 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_left_value_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :manifested_refraction_left_value_3 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_left_value_3 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :manifested_refraction_right_value_1 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_right_value_1 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :manifested_refraction_right_value_2 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_right_value_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :manifested_refraction_right_value_3 %></label>
+			        <p><%= @ophtalmology_template.manifested_refraction_right_value_3 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :subjective_refraction_left_value_1 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_left_value_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :subjective_refraction_left_value_2 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_left_value_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :subjective_refraction_left_value_3 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_left_value_3 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :subjective_refraction_right_value_1 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_right_value_1 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :subjective_refraction_right_value_2 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_right_value_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :subjective_refraction_right_value_3 %></label>
+			        <p><%= @ophtalmology_template.subjective_refraction_right_value_3 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :add_2 %></label>
+			        <p><%= @ophtalmology_template.add_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :autorefraction_left_value_1 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_left_value_1 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :autorefraction_left_value_2 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_left_value_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :autorefraction_left_value_3 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_left_value_3 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :autorefraction_right_value_1 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_right_value_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :autorefraction_right_value_2 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_right_value_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :autorefraction_right_value_3 %></label>
+			        <p><%= @ophtalmology_template.autorefraction_right_value_3 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :cicloplegic_refraction_left_value_1 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_left_value_1 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :cicloplegic_refraction_left_value_2 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_left_value_2 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :cicloplegic_refraction_left_value_3 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_left_value_3 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :cicloplegic_refraction_right_value_1 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_right_value_1 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :cicloplegic_refraction_right_value_2 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_right_value_2 %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :cicloplegic_refraction_right_value_3 %></label>
+			        <p><%= @ophtalmology_template.cicloplegic_refraction_right_value_3 %></p>
+			    </div>
+			    <div>
+			        <label><%= t :better_corrected_visual_acuity_left %></label>
+			        <p><%= @ophtalmology_template.better_corrected_visual_acuity_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :better_corrected_visual_acuity_both %></label>
+			        <p><%= @ophtalmology_template.better_corrected_visual_acuity_both %></p>
+			    </div>
+			    <div>
+			        <label><%= t :better_corrected_visual_acuity_right %></label>
+			        <p><%= @ophtalmology_template.better_corrected_visual_acuity_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :keratometry_left %></label>
+			        <p><%= @ophtalmology_template.keratometry_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :keratometry_right %></label>
+			        <p><%= @ophtalmology_template.keratometry_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :paquimetry_left %></label>
+			        <p><%= @ophtalmology_template.paquimetry_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :paquimetry_right %></label>
+			        <p><%= @ophtalmology_template.paquimetry_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :specular_biomicroscopy_left %></label>
+			        <p><%= @ophtalmology_template.specular_biomicroscopy_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :specular_biomicroscopy_right %></label>
+			        <p><%= @ophtalmology_template.specular_biomicroscopy_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :pupillary_reflexes_left %></label>
+			        <p><%= @ophtalmology_template.pupillary_reflexes_left %></p>
+			    </div>
+			    <div>
+			        <label><%= t :pupillary_reflexes_right %></label>
+			        <p><%= @ophtalmology_template.pupillary_reflexes_right %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :ocular_movements %></label>
+			        <p><%= @ophtalmology_template.ocular_movements %></p>
+			    </div>
+			    <div>
+			        <label><%= t :ductions_left %></label>
+			        <p><%= @ophtalmology_template.ductions_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :ductions_right %></label>
+			        <p><%= @ophtalmology_template.ductions_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :versions_left %></label>
+			        <p><%= @ophtalmology_template.versions_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :versions_right %></label>
+			        <p><%= @ophtalmology_template.versions_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :primary_position_of_gaze_left %></label>
+			        <p><%= @ophtalmology_template.primary_position_of_gaze_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :primary_position_of_gaze_right %></label>
+			        <p><%= @ophtalmology_template.primary_position_of_gaze_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :eyelids_left %></label>
+			        <p><%= @ophtalmology_template.eyelids_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :eyelids_right %></label>
+			        <p><%= @ophtalmology_template.eyelids_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :annexes_left %></label>
+			        <p><%= @ophtalmology_template.annexes_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :annexes_right %></label>
+			        <p><%= @ophtalmology_template.annexes_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :lachrymal_left %></label>
+			        <p><%= @ophtalmology_template.lachrymal_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :lachrymal_right %></label>
+			        <p><%= @ophtalmology_template.lachrymal_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :conjunctiva_left %></label>
+			        <p><%= @ophtalmology_template.conjunctiva_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :conjunctiva_right %></label>
+			        <p><%= @ophtalmology_template.conjunctiva_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :cornea_left %></label>
+			        <p><%= @ophtalmology_template.cornea_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :cornea_right %></label>
+			        <p><%= @ophtalmology_template.cornea_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :antechamber_left %></label>
+			        <p><%= @ophtalmology_template.antechamber_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :antechamber_right %></label>
+			        <p><%= @ophtalmology_template.antechamber_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :intraocular_pressure_left %></label>
+			        <p><%= @ophtalmology_template.intraocular_pressure_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :intraocular_pressure_right %></label>
+			        <p><%= @ophtalmology_template.intraocular_pressure_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :iris_left %></label>
+			        <p><%= @ophtalmology_template.iris_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :iris_right %></label>
+			        <p><%= @ophtalmology_template.iris_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :pupil_left %></label>
+			        <p><%= @ophtalmology_template.pupil_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :pupil_right %></label>
+			        <p><%= @ophtalmology_template.pupil_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :crystaline_left %></label>
+			        <p><%= @ophtalmology_template.crystaline_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :crystaline_right %></label>
+			        <p><%= @ophtalmology_template.crystaline_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :fundus_left %></label>
+			        <p><%= @ophtalmology_template.fundus_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :fundus_right %></label>
+			        <p><%= @ophtalmology_template.fundus_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :retina_left %></label>
+			        <p><%= @ophtalmology_template.retina_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :retina_right %></label>
+			        <p><%= @ophtalmology_template.retina_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :vitreous_left %></label>
+			        <p><%= @ophtalmology_template.vitreous_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :vitreous_right %></label>
+			        <p><%= @ophtalmology_template.vitreous_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :optic_nerve_left %></label>
+			        <p><%= @ophtalmology_template.optic_nerve_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :optic_nerve_right %></label>
+			        <p><%= @ophtalmology_template.optic_nerve_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :taint_left %></label>
+			        <p><%= @ophtalmology_template.taint_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :taint_right %></label>
+			        <p><%= @ophtalmology_template.taint_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :observations %></label>
+			        <p><%= @ophtalmology_template.observations %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :diagnosis %></label>
+			        <p><%= @ophtalmology_template.diagnosis %></p>
+			    </div>
+			    <div>
+			        <label><%= t :plan_and_treatment %></label>
+			        <p><%= @ophtalmology_template.plan_and_treatment %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :created_at %></label>
+			        <p><%= @ophtalmology_template.created_at %></p>
+			    </div>
+			    <div>
+			        <label><%= t :updated_at %></label>
+			        <p><%= @ophtalmology_template.updated_at %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :doctor_id %></label>
+			        <p><%= @ophtalmology_template.doctor_id %></p>
+			    </div>
+			    <div>
+			        <label><%= t :goinoscopy_left %></label>
+			        <p><%= @ophtalmology_template.goinoscopy_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :goinoscopy_right %></label>
+			        <p><%= @ophtalmology_template.goinoscopy_right %></p>
+			    </div>
+			    <div>
+			        <label><%= t :macula_left %></label>
+			        <p><%= @ophtalmology_template.macula_left %></p>
+			    </div>
+			</div>
+			<div class="double-field">
+			    <div>
+			        <label><%= t :macula_right %></label>
+			        <p><%= @ophtalmology_template.macula_right %></p>
+			    </div>
+			</div>
+		</div>
+	</form>
+</div>

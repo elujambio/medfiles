@@ -1,0 +1,50 @@
+<div id="sidebar">
+	<div class="expedient-count">
+		<p>Número de Expedientes:</p>
+		<h3><%= @files %> / <%= @max_files %></h3>
+	</div>
+
+	<% if @hasTemplatePlan == true and @files < @max_files %>
+		<% case current_doctor.speciality %>
+			<% when "Ginecología" %>
+				<%= link_to "Crear Nuevo Expediente", new_gynecology_template_path %>
+				<%= link_to "Expedientes", gynecology_templates_path %>
+		
+			<% when "Oftalmología" %>
+				<%= link_to "Crear Nuevo Expediente", new_ophtalmology_template_path %>
+				<%= link_to "Expedientes", ophtalmology_templates_path %>
+			<% when "General" %>
+				<%= link_to "Crear Nuevo Expediente", new_general_template_path %>
+				<%= link_to "Expedientes", general_templates_path %>
+		<% end %>
+	<% else %>
+		<%= link_to "Agregar espacio para expedientes", add_template_plan_path, class: "notice" %>
+	<% end %>
+	
+	<%= link_to "Panel de Pagos", doctor_payment_panel_path %>
+
+
+	<% current_doctor.plans.each do |plan| %>
+		<% plan.plan_elements.each do |element| %>
+			<% if plan.active == -1 and element.element_type == "TemplatePlan" %>
+				<p> No hemos recibido tu pago, si crees que esto es un error envía un correo a sipague@medfiles.com.mx, en caso de que no recibamos ningún correo tuyo eliminaremos la información en 15 días</p>
+			<% end %>
+		<% end %>
+	<% end %>
+
+
+
+	 
+
+	<% if @hasTemplatePlan == true and @files > @max_files - 50 and @files <= @max_files %>
+		<p class="notice">Estás cerca del límite de expedientes, aumenta tu plan para que puedas crear más expedientes.</p>
+		<%= link_to "Aumentar Plan", add_template_plan_path %>
+	<% end %>
+	<% current_doctor.plans.each do |plan| %>
+		<% if plan.active == -5 %>
+			<p class="notice">Tu prueba vence el <%= plan.valid_til.to_date %></p>
+			<%= link_to "¡Agrega un plan!", add_template_plan_path %>
+		<% end %>
+		
+	<% end %>
+</div>

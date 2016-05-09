@@ -1,0 +1,15 @@
+#goinoscopy-left,
+#goinoscopy-right
+{
+	background:url("/assets/crosshair-01.svg"), #f5f5f5;
+	background-repeat:no-repeat; 
+	background-position:center center;
+}
+#macula-left,
+#macula-right
+{
+	background:url("/assets/crosshair-02.svg"), #f5f5f5;
+	background-repeat:no-repeat; 
+	background-position:center center;
+	background-size:50% 50%; 
+}

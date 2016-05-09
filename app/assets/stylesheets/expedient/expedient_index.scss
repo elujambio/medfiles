@@ -1,0 +1,52 @@
+$max-width:820px;
+#patient-index
+{
+	width:$max-width; 
+	padding-top:72px;
+	a
+	{
+		width:100%; 
+		display:flex;
+		background:none;
+		color:#424242;
+	}
+	.patient-container 
+	{
+		width:100%; 
+		display:flex; 
+		flex-direction:row; 
+		label
+		{
+			padding:12px;
+			display:flex;
+		}
+		& > div
+		{
+			background:#ffffff;
+			width:25%; 
+			border: 1px solid #E5E5E5;
+		    margin:-1px 0 0 -1px;	
+
+		}
+		p
+		{
+			padding:12px;
+		}
+		.patient-name
+		{
+			// width:30%; 
+		}
+		.patient-ocupation
+		{
+			// width:20%; 
+		}
+		.patient-birth-date
+		{
+			// width:10%; 
+		}
+		.patient-telephone
+		{
+			// width:20%; 
+		}
+	}
+}

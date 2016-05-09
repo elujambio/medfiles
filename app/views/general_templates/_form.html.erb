@@ -10,231 +10,461 @@
 		</div>
 	<% end %>
       
-	 <% if @general_template.new_record? %>
+<div id="patient-data">
+       <% if @general_template.new_record? %>
             <%= f.fields_for :patients do |patient| %>
       		<div class="double-field">
-                  <div>
-                        <label><%= t :name %></label>
-                        <%= patient.text_field :name, placeholder: true %>
-                  </div>
-                 
+                        <div>
+                              <label><%= t :name %></label>
+                              <%= patient.text_field :name, placeholder: true %>
+                        </div>
+                       
       		</div>
       		<div class="double-field">
-                  <div> 
-                        <label><%= t :birth_date %></label>
-                        <%= patient.text_field :birth_date, placeholder: true %>
-                  </div>
-                  <div>
-                        <label><%= t :sex %></label>
-                        <span>
-                              <label><%= t :male %></label>
-                              <%= patient.radio_button :sex, :male %>
-                        </span>
-                        <span>
-                              <label><%= t :female %></label>
-                              <%= patient.radio_button :sex, :female %>
-                        </span>
-                  </div>
-      		</div>
-      		<div class="double-field">
-                  <div>
-                        <label><%= t :originary_from %></label>
-                        <%= patient.text_field :originary_from, placeholder: true %>
-                  </div>
-                  <div>
-                        <label><%= t :ocupation %></label>
-                        <%= patient.text_field :ocupation, placeholder: true %>
-                  </div>
-      		</div>
-      		<div class="double-field">
-                  <div>
-                        <label><%= t :religion %></label>
-                        <%= patient.text_field :religion, placeholder: true %>
-                  </div>
-                  <div>
-                        <label><%= t :address %></label>
-                        <%= patient.text_field :address, placeholder: true %>
-                  </div>
-      		</div>
-      		<div class="double-field">
-                  <div>
-                        <label><%= t :telephone %></label>
-                        <%= patient.text_field :telephone, placeholder: true %>
-                  </div>
-                  <div>
-                        <label><%= t :email %></label>
-                        <%= patient.text_field :email, placeholder: true %>
-                  </div>
-      		</div>
-      		<div class="double-field">
-                  <div>
-                        <label><%= t :insurance_company %></label>
-                        <%= patient.text_field :insurance_company, placeholder: true %>
-                  </div>
-                  <div>
-                        <label><%= t :insurance_policy %></label>
-                        <%= patient.text_field :insurance_policy, placeholder: true %>
-                  </div>
-      		</div>
-            <% end %>
-            <% else %>
-                  <%= f.fields_for :patients do |patient| %>
-                  <div class="double-field">
-                  <div>
-                        <label><%= t :name %></label>
-                        <%= patient.text_field :name, placeholder: true, value: @patient.name  %>
-                  </div>
-                 
-                  </div>
-                  <div class="double-field">
-                  <div> 
-                        <label><%= t :birth_date %></label>
-                        <%= patient.text_field :birth_date, placeholder: true, value: @patient.birth_date %>
-                  </div>
-                  <div>
-                        <label><%= t :sex %></label>
-                        <% if @patient.sex == "male" %>
-                              <span>
-                                    <label><%= t :male %></label>
-                                    <%= patient.radio_button :sex, :male, checked: true %>
-                              </span>
-                              <span>
-                                    <label><%= t :female %></label>
-                                    <%= patient.radio_button :sex, :female %>
-                              </span>
-                        <% else %>
+                        <div> 
+                              <label><%= t :birth_date %></label>
+                              <%= patient.text_field :birth_date, placeholder: true %>
+                        </div>
+                        <div>
+                              <label><%= t :sex %></label>
                               <span>
                                     <label><%= t :male %></label>
                                     <%= patient.radio_button :sex, :male %>
                               </span>
                               <span>
                                     <label><%= t :female %></label>
-                                    <%= patient.radio_button :sex, :female, checked: true %>
+                                    <%= patient.radio_button :sex, :female %>
                               </span>
-                        <% end %>
-                        
-                  </div>
-                  </div>
-                  <div class="double-field">
-                  <div>
-                        <label><%= t :originary_from %></label>
-                        <%= patient.text_field :originary_from, placeholder: true, value: @patient.originary_from %>
-                  </div>
-                  <div>
-                        <label><%= t :ocupation %></label>
-                        <%= patient.text_field :ocupation, placeholder: true, value: @patient.ocupation %>
-                  </div>
-                  </div>
-                  <div class="double-field">
-                  <div>
-                        <label><%= t :religion %></label>
-                        <%= patient.text_field :religion, placeholder: true, value: @patient.religion %>
-                  </div>
-                  <div>
-                        <label><%= t :address %></label>
-                        <%= patient.text_field :address, placeholder: true, value: @patient.address %>
-                  </div>
-                  </div>
-                  <div class="double-field">
-                  <div>
-                        <label><%= t :telephone %></label>
-                        <%= patient.text_field :telephone, placeholder: true, value: @patient.telephone %>
-                  </div>
-                  <div>
-                        <label><%= t :email %></label>
-                        <%= patient.text_field :email, placeholder: true, value: @patient.email %>
-                  </div>
-                  </div>
-                  <div class="double-field">
-                  <div>
-                        <label><%= t :insurance_company %></label>
-                        <%= patient.text_field :insurance_company, placeholder: true, value: @patient.insurance_company%>
-                  </div>
-                  <div>
-                        <label><%= t :insurance_policy %></label>
-                        <%= patient.text_field :insurance_policy, placeholder: true, value: @patient.insurance_policy%>
-                  </div>
+                        </div>
+      		</div>
+      		<div class="double-field">
+                        <div>
+                              <label><%= t :originary_from %></label>
+                              <%= patient.text_field :originary_from, placeholder: true %>
+                        </div>
+                        <div>
+                              <label><%= t :ocupation %></label>
+                              <%= patient.text_field :ocupation, placeholder: true %>
+                        </div>
+      		</div>
+      		<div class="double-field">
+                        <div>
+                              <label><%= t :religion %></label>
+                              <%= patient.text_field :religion, placeholder: true %>
+                        </div>
+                        <div>
+                              <label><%= t :address %></label>
+                              <%= patient.text_field :address, placeholder: true %>
+                        </div>
+      		</div>
+      		<div class="double-field">
+                        <div>
+                              <label><%= t :telephone %></label>
+                              <%= patient.text_field :telephone, placeholder: true %>
+                        </div>
+                        <div>
+                              <label><%= t :email %></label>
+                              <%= patient.text_field :email, placeholder: true %>
+                        </div>
+      		</div>
+      		<div class="double-field">
+                        <div>
+                              <label><%= t :insurance_company %></label>
+                              <%= patient.text_field :insurance_company, placeholder: true %>
+                        </div>
+                        <div>
+                              <label><%= t :insurance_policy %></label>
+                              <%= patient.text_field :insurance_policy, placeholder: true %>
+                        </div>
+      		</div>
+            <% end %>
+            <% else %>
+                  <%= f.fields_for :patients do |patient| %>
+                  <div id="patient-data">
+                        <div class="double-field">
+                              <div>
+                                    <label><%= t :name %></label>
+                                    <%= patient.text_field :name, placeholder: true, value: @patient.name  %>
+                              </div>
+                       
+                        </div>
+                        <div class="double-field">
+                              <div> 
+                                    <label><%= t :birth_date %></label>
+                                    <%= patient.text_field :birth_date, placeholder: true, value: @patient.birth_date %>
+                              </div>
+                              <div>
+                                    <label><%= t :sex %></label>
+                                    <% if @patient.sex == "male" %>
+                                          <span>
+                                                <label><%= t :male %></label>
+                                                <%= patient.radio_button :sex, :male, checked: true %>
+                                          </span>
+                                          <span>
+                                                <label><%= t :female %></label>
+                                                <%= patient.radio_button :sex, :female %>
+                                          </span>
+                                    <% else %>
+                                          <span>
+                                                <label><%= t :male %></label>
+                                                <%= patient.radio_button :sex, :male %>
+                                          </span>
+                                          <span>
+                                                <label><%= t :female %></label>
+                                                <%= patient.radio_button :sex, :female, checked: true %>
+                                          </span>
+                                    <% end %>
+                                    
+                              </div>
+                        </div>
+                        <div class="double-field">
+                              <div>
+                                    <label><%= t :originary_from %></label>
+                                    <%= patient.text_field :originary_from, placeholder: true, value: @patient.originary_from %>
+                              </div>
+                              <div>
+                                    <label><%= t :ocupation %></label>
+                                    <%= patient.text_field :ocupation, placeholder: true, value: @patient.ocupation %>
+                              </div>
+                        </div>
+                        <div class="double-field">
+                              <div>
+                                    <label><%= t :religion %></label>
+                                    <%= patient.text_field :religion, placeholder: true, value: @patient.religion %>
+                              </div>
+                              <div>
+                                    <label><%= t :address %></label>
+                                    <%= patient.text_field :address, placeholder: true, value: @patient.address %>
+                              </div>
+                        </div>
+                        <div class="double-field">
+                              <div>
+                                    <label><%= t :telephone %></label>
+                                    <%= patient.text_field :telephone, placeholder: true, value: @patient.telephone %>
+                              </div>
+                              <div>
+                                    <label><%= t :email %></label>
+                                    <%= patient.text_field :email, placeholder: true, value: @patient.email %>
+                              </div>
+                        </div>
+                        <div class="double-field">
+                              <div>
+                                    <label><%= t :insurance_company %></label>
+                                    <%= patient.text_field :insurance_company, placeholder: true, value: @patient.insurance_company%>
+                              </div>
+                              <div>
+                                    <label><%= t :insurance_policy %></label>
+                                    <%= patient.text_field :insurance_policy, placeholder: true, value: @patient.insurance_policy%>
+                              </div>
+                        </div>
                   </div>
             <% end %>
-            <% end %>
-	
-	<%= f.label :marital_status %><%= f.select :marital_status, ['Casada', 'Soltera', 'Viuda', 'Divorcidad'], {:prompt => 'Seleccione Uno'} %><br/>
-	
-	<%= f.label :reason %><%= f.text_area :reason, placeholder: :reason %><br/>
-	
-	<h3><%= t :family_background %></h3>
-	<%= f.label :mother_background %><%= f.text_area :mother_background, placeholder: true %><br/>
-	<%= f.label :father_background %><%= f.text_area :father_background, placeholder: true %><br/>
-	<%= f.label :grandparents_background %><%= f.text_area :grandparents_background, placeholder: true %><br/>
-	<%= f.label :siblings_background %><%= f.text_area :siblings_background, placeholder: true %><br/>
-	<%= f.label :parents_siblings_background %><%= f.text_area :parents_siblings_background, placeholder: true %><br/>
-	<%= f.label :children_background %><%= f.text_area :children_background, placeholder: true %><br/>
-	<%= f.label :husband_background %><%= f.text_area :husband_background, placeholder: true %><br/>
-	<%= f.label :personal_background %><%= f.text_area :personal_background, placeholder: true %><br/>
-	
-      <h3>Antecedentes Personales no Patólogicos</h3>
-      <%= f.label :diet %><%= f.text_area :diet, placeholder: true %><br/>
-      <%= f.label :physical_exercise %><%= f.text_area :physical_exercise, placeholder: true %><br/>
-	<%= f.label :smoking %><%= f.text_area :smoking, placeholder: true %><br/>
-	<%= f.label :alergies %><%= f.text_area :alergies, placeholder: true %><br/>
-	<%= f.label :drugs %><%= f.text_area :drugs, placeholder: true %><br/>
-	<%= f.label :alcoholism %><%= f.text_area :alcoholism, placeholder: true %><br/>
-	<%= f.label :inmunizations %><%= f.text_area :inmunizations, placeholder: true %><br/>
-	
-      <h3>Antecedentes Personales no Patólogicos</h3>
-      <%= f.label :traumatics %><%= f.text_area :traumatics, placeholder: true %><br/>
-	<%= f.label :surgicals %><%= f.text_area :surgicals, placeholder: true %><br/>
-	<%= f.label :transfusions %><%= f.text_area :transfusions, placeholder: true %><br/>
-	
-      <h3><%= t :physical_exploration %></h3>
-      <%= f.label :ta %><%= f.text_field :ta, placeholder: true %><br/>
-      <%= f.label :fc %><%= f.text_field :fc, placeholder: true %><br/>
-      <%= f.label :fr %><%= f.text_field :fr, placeholder: true %><br/>
-      <%= f.label :temperature %><%= f.text_field :temperature, placeholder: true %><br/>
-
-      <%= f.label :weight %><%= f.text_field :weight, placeholder: true %><br/>
-      <%= f.label :size %><%= f.text_field :size, placeholder: true %><br/>
-      <%= f.label :habitus %><%= f.text_field :habitus, placeholder: true %><br/>
-      <%= f.label :head %><%= f.text_field :head, placeholder: true %><br/>
-      <%= f.label :neck %><%= f.text_field :neck, placeholder: true %><br/>
-      <%= f.label :torax %><%= f.text_field :torax, placeholder: true %><br/>
-      <%= f.label :abdomen %><%= f.text_field :abdomen, placeholder: true %><br/>
-      <%= f.label :limbs %><%= f.text_field :limbs, placeholder: true %><br/>
-
-	<h3><%= t :gynecological_background %></h3>
-	<%= f.label :menarche %><%= f.text_field :menarche, placeholder: true %><br/>
-	<%= f.label :rhythm %><%= f.text_field :rhythm, placeholder: true %><br/>
-	
-	<%= f.label :pregnancies %><%= f.text_area :pregnancies, placeholder: true %><br/>
-      <%= f.label :gesta %><%= f.text_area :gesta, placeholder: true %><br/>
-      <%= f.label :abortions %><%= f.text_area :abortions, placeholder: true %><br/>
-      <%= f.label :contraceptives %><%= f.text_area :contraceptives, placeholder: true %><br/>
-
-	<%= f.label :ivsa %><%= f.text_field :ivsa, placeholder: true %><br/>
-	
-	<%= f.label :last_period_date %><%= f.date_select :last_period_date, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %><br/>
-	
-      <%= f.label :current_ailment %><%= f.text_area :current_ailment, placeholder: true %><br/>
-      <%= f.label :cardio %><%= f.text_area :cardio, placeholder: true %><br/>
-      <%= f.label :neuro %><%= f.text_area :neuro, placeholder: true %><br/>
-      <%= f.label :gastro %><%= f.text_area :gastro, placeholder: true %><br/>
-	<%= f.label :respiratory %><%= f.text_area :respiratory, placeholder: true %><br/>
-      <%= f.label :derma %><%= f.text_area :derma, placeholder: true %><br/>
-      <%= f.label :muscle %><%= f.text_area :muscle, placeholder: true %><br/>
-      <%= f.label :urinary %><%= f.text_area :urinary, placeholder: true %><br/>
-
-      <%= f.label :lab_results %><%= f.text_area :lab_results, placeholder: true %><br/>
-	
-	<%= f.label :diagnosis %><%= f.text_area :diagnosis, placeholder: true %><br/>
-      <%= f.label :treatment %><%= f.text_area :treatment, placeholder: true %><br/>
-
-	<%= f.label :other_1 %><%= f.text_field :other_1, placeholder: true %><br/>
-	<%= f.label :other_2 %><%= f.text_field :other_2, placeholder: true %><br/>
-	<%= f.label :other_3 %><%= f.text_field :other_3, placeholder: true %><br/>
-	<%= f.label :other_4 %><%= f.text_field :other_4, placeholder: true %><br/>
-	<%= f.label :other_5 %><%= f.text_field :other_5, placeholder: true %><br/>
-
-
+      <% end %>	
+      <div class="single-field">
+            <div>
+            	<%= f.label :marital_status %>
+	<%= f.select :marital_status, ['Casada', 'Soltera', 'Viuda', 'Divorcidad'], {:prompt => 'Seleccione Uno'} %>
+            </div>
+      </div>
+      <div class="single-field">
+            <div>
+            	<%= f.label :reason %>
+                  <%= f.text_field :reason, placeholder: :reason %>
+            </div>
+      </div>
+</div>
+<div id="family-background">
+<h4><%= t :family_background %></h4>
+      <div class="double-field">
+            <div>
+            	<%= f.label :mother_background %>
+            	<%= f.text_field :mother_background, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :father_background %>
+                  <%= f.text_field :father_background, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+            	<%= f.label :grandparents_background %>
+            	<%= f.text_field :grandparents_background, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :siblings_background %>
+                  <%= f.text_field :siblings_background, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :parents_siblings_background %>
+                  <%= f.text_field :parents_siblings_background, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :children_background %>
+                  <%= f.text_field :children_background, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :husband_background %>
+                  <%= f.text_field :husband_background, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :personal_background %>
+                  <%= f.text_field :personal_background, placeholder: true %>
+            </div>
+      </div>
+</div>
+<div id="patient-personal-background">
+<h4>Antecedentes Personales no Patólogicos</h4>
+      <div class="double-field">
+            <div>
+                  <%= f.label :diet %>
+                  <%= f.text_field :diet, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :physical_exercise %>
+                  <%= f.text_field :physical_exercise, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :smoking %>
+                  <%= f.text_field :smoking, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :alergies %>
+                  <%= f.text_field :alergies, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :drugs %>
+                  <%= f.text_field :drugs, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :alcoholism %>
+                  <%= f.text_field :alcoholism, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :inmunizations %>
+                  <%= f.text_field :inmunizations, placeholder: true %>
+            </div>
+      </div>
+</div>
+<div id="patient-pathological-background">
+<h4>Antecedentes Personales Patólogicos</h4>      
+      <div class="double-field">
+            <div>
+                  <%= f.label :traumatics %>
+                  <%= f.text_field :traumatics, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :surgicals %>
+                  <%= f.text_field :surgicals, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :transfusions %>
+                  <%= f.text_field :transfusions, placeholder: true %>
+            </div>
+      </div>
+</div>
+<div id="physical-exploration">
+<h4><%= t :physical_exploration %></h4>
+      <div class="double-field">
+            <div>
+                  <%= f.label :ta %>
+            	<%= f.text_field :ta, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :fc %>
+                  <%= f.text_field :fc, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :fr %>
+            	<%= f.text_field :fr, placeholder: true %>
+            </div>
+            <div>
+                  
+                  <%= f.label :temperature %>
+                  <%= f.text_field :temperature, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :weight %>
+            	<%= f.text_field :weight, placeholder: true %>
+            </div>
+            <div>
+                  
+                  <%= f.label :size %>
+                  <%= f.text_field :size, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :habitus %>
+            	<%= f.text_field :habitus, placeholder: true %>
+            </div>
+            <div>
+                  
+                  <%= f.label :head %>
+                  <%= f.text_field :head, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :neck %>
+            	<%= f.text_field :neck, placeholder: true %>
+            </div>
+            <div>
+                  
+                  <%= f.label :torax %>
+                  <%= f.text_field :torax, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :abdomen %>
+            	<%= f.text_field :abdomen, placeholder: true %>
+            </div>
+            <div>
+                  
+                  <%= f.label :limbs %>
+                  <%= f.text_field :limbs, placeholder: true %>
+            </div>
+      </div>
+</div>
+<div id="gynecological_background">
+<h4><%= t :gynecological_background %></h4>
+      <div class="double-field">
+            <div>
+                  <%= f.label :menarche %>
+                  <%= f.text_field :menarche, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :rhythm %>
+                  <%= f.text_field :rhythm, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :pregnancies %>
+                  <%= f.text_field :pregnancies, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :gesta %>
+                  <%= f.text_field :gesta, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :abortions %>
+                  <%= f.text_field :abortions, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :contraceptives %>
+                  <%= f.text_field :contraceptives, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :ivsa %>
+                  <%= f.text_field :ivsa, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :last_period_date %>
+                  <%= f.date_select :last_period_date, start_year: Date.today.year - 90, end_year: Date.today.year, discard_day: true %>
+            </div>            	
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :current_ailment %>
+            	<%= f.text_field :current_ailment, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :cardio %>
+            	<%= f.text_field :cardio, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :neuro %>
+            	<%= f.text_field :neuro, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :gastro %>
+            	<%= f.text_field :gastro, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+            	<%= f.label :respiratory %>
+            	<%= f.text_field :respiratory, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :derma %>
+            	<%= f.text_field :derma, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :muscle %>
+            	<%= f.text_field :muscle, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :urinary %>
+            	<%= f.text_field :urinary, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :lab_results %>
+                  <%= f.text_field :lab_results, placeholder: true %>
+            </div>
+            <div>
+                  <%= f.label :diagnosis %>
+                  <%= f.text_field :diagnosis, placeholder: true %>
+            </div>            	
+      </div>
+      <div class="double-field">
+            <div>
+                  <%= f.label :treatment %>
+            	<%= f.text_field :treatment, placeholder: true %>
+            </div>
+            <div>
+            	<%= f.label :other_1 %>
+            	<%= f.text_field :other_1, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+            	<%= f.label :other_2 %>
+            	<%= f.text_field :other_2, placeholder: true %>
+            </div>
+            <div>
+            	<%= f.label :other_3 %>
+            	<%= f.text_field :other_3, placeholder: true %>
+            </div>
+      </div>
+      <div class="double-field">
+            <div>
+            	<%= f.label :other_4 %>
+            	<%= f.text_field :other_4, placeholder: true %>
+            </div>
+            <div>
+            	<%= f.label :other_5 %>
+            	<%= f.text_field :other_5, placeholder: true %>
+            </div>
+      </div>
+</div>
 
 	<%= f.submit "Guardar" %>
 <% end %>

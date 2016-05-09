@@ -6,16 +6,19 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'doctors#panel'
+  root 'start#index'
  
-  resources :doctors, only: [:show] do
-    get :autocomplete_patient_name, :on => :collection
-  end   
+  resources :doctors, only: [:show]
+
+  get "autocomplete_patient_name", controller: "application"
 
   resources :patients, only: [:show]
   resources :invoices
-  get 'search_patient'  => 'doctors#search_patient'
-  post 'search_patient'  => 'doctors#search_patient'
+  get 'search_patient'  => 'application#search_patient'
+  post 'search_patient'  => 'application#search_patient'
+
+  # get 'search_patient'  => 'gynecology_templates#search_patient'
+  # post 'search_patient'  => 'gynecology_templates#search_patient'
 
 
   # Example of regular route:
@@ -114,6 +117,7 @@ Rails.application.routes.draw do
   get '/template_plan_history', to: "plans#template_plan_history", :as => "template_plan_history"
 
   get '/doctor_payment_panel', to: "doctors#doctor_payment_panel", :as => "doctor_payment_panel"
+  get '/doctor_panel', to: "doctors#panel", :as => "doctor_panel"
   
   get '/admin_panel', to: "admins#admin_panel", :as => "admin_panel"
   get '/admin_templates_panel', to: "admins#admin_templates_panel", :as => "admin_templates_panel"
@@ -123,5 +127,6 @@ Rails.application.routes.draw do
   get '/show_doctor', to: "admins#show_doctor", :as => "show_doctor"
   get '/show_invoice_data', to: "admins#show_invoice_data", :as => "show_invoice_data"
 
+  resources :start, only: [:index]
 
 end

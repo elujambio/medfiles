@@ -146,7 +146,7 @@ es:
   patient_retinal_deatachment_since: "Desde"       
   patient_retinal_deatachment_treatment: "Tratamiento"       
 
-  shocks: "Golpes"
+  shocks: "Traumatismos"
   shocks_description: "Descripción"
 
   surgery_left_eye: "Cirugía (OS)"

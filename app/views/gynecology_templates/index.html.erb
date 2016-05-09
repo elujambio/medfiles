@@ -1,9 +1,41 @@
-<%= link_to "Nuevo Expediente", new_gynecology_template_path %><br/>
-<% @gynecology_templates.each do |expedient| %>
-	<div>
-		<%= expedient.id %>
-		
-		<%= link_to expedient.patient.name, expedient %>
-	
-	</div>
-<% end %>
+<h4><%= t :expedients %></h4>
+<div id="patient-index">
+	<a>
+		<div class="patient-container">
+			<div class="patient-name">
+				<label><%= t :name %></label>
+			</div>
+			<div class="patient-ocupation">
+				<label><%= t :ocupation %></label>
+			</div>
+			<div class="patient-birth-date">
+				<label><%= t :birth_date %></label>
+			</div>
+			<div class="patient-telephone">
+				<label><%= t :telephone %></label>
+			</div>
+		</div>
+	</a>
+	<% @gynecology_templates.each do |expedient| %>
+		<% expedient.id %>
+		<% expedient.patients.each do |patient| %>
+			<%= link_to expedient do %>
+				<div class="patient-container">
+					<div class="patient-name">
+						<p><%= patient.name %></p>
+					</div>
+					<div class="patient-ocupation">
+						<p><%= patient.ocupation %></p>
+					</div>
+					<div class="patient-birth-date">
+						<p><%= patient.birth_date %></p>
+					</div>
+					<div class="patient-telephone">
+						<p><%= patient.telephone %></p>
+					</div>
+				</div>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>
+<%= javascript_include_tag "/assets/expedient/show" %>

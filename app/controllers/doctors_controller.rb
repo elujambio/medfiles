@@ -1,10 +1,10 @@
 class DoctorsController < ApplicationController
-
 	before_action :authenticate_doctor!
 	before_action :set_doctor, only: [:show, :edit, :update, :destroy]
 	autocomplete :patient, :name
 
 	def panel
+
 		@hasTemplatePlan = false
 		current_doctor.plans.each do |plan| 
 			if plan.active == -4 or plan.active == 1 or plan.active == -5
@@ -76,4 +76,6 @@ class DoctorsController < ApplicationController
 		def doctor_params
 			params.require(:doctor).permit(:email, :name, :practice_address_1, :practice_address_2, :postal_code, :country, :state, :city, :phone, :cellphone, :website, :facebook, :profession, :speciality, :professional_license, :site_active, :templates_active, :templates_active_medium, :templates_active_big, :templates_active_personalized, :max_files, :site_active_from, :templates_active_from, :templates_active_medium_from, :templates_active_big_from, :templates_active_personalized_from)
 		end
+
+
 end
